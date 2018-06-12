@@ -1,0 +1,46 @@
+<html>
+	<head>		
+	</head>
+	<body>
+		
+	input date	<input type="number" value = ""  id="date" onchange="fun()"/>
+	input month<input type="number" value = ""  id="month" onchange="fun()"/>
+	input year<input type="number" value = ""  id="year" onchange="fun()"/>
+	<p id="day"></p>	
+	<script>	
+	
+	
+var current = new Date();
+ var currentDate = current.getDate();
+ var currentMonth = current.getMonth();
+var currentYear = current.getFullYear();
+document.getElementById("date").value = currentDate;
+		document.getElementById("month").value = currentMonth+1;
+		document.getElementById("year").value = currentYear;
+	function fun(){
+	  	getDays();
+	}
+	
+	
+		function getDays(){
+			
+			var date = ((document.getElementById("date").value) == "") ? currentDate : parseInt(document.getElementById("date").value);
+		var month = ((document.getElementById("month").value) == "")?currentMonth : parseInt(document.getElementById("month").value-1);
+		var year= ((document.getElementById("year").value) == "")?currentYear : parseInt(document.getElementById("year").value);	
+		console.log(date)	
+		var d = new Date(year,month,date);	
+		
+		document.getElementById("day").innerHTML = d;
+		if(((currentYear<=year )&&(currentMonth<month)) ||(currentYear<year ) || ((currentYear==year )&&(currentMonth==month)&&(currentDate<=date)) ){
+			document.getElementById("day").style.color = "green";
+		}
+		else{
+			document.getElementById("day").style.color = "red";
+		}
+			
+
+		}
+		getDays();
+	</script>
+	</body>
+</html>

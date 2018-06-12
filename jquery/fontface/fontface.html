@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="sis191">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<style>
+			
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		
+		
+		<script>
+		$(document).ready(function(){
+		 var myData="";	
+			
+		$.ajax({
+  type: "POST",
+  url: "fontface.json",
+   dataType:"json",
+  success: function(data){ 
+   myData=JSON.stringify(data)
+    //console.log(data) 
+       demo(data); 
+  },error:function(err){
+  	console.log('err')
+  	console.log(err)
+  }  
+});
+function demo(data){
+	var src = "";
+	$.each(data.font_face,function(key,val){
+		// /console.log(JSON.stringify(val.ttf));
+		var holdEot = JSON.stringify(val.eot);
+		var holdTtf = JSON.stringify(val.ttf);
+		var holdWoff = JSON.stringify(val.woff);
+		var holdWoff2 = JSON.stringify(val.woff2);
+		
+		var stringEot = holdEot.slice(-4,-1); 
+		var stringTtf = holdTtf.slice(-4,-1);
+		var stringWoff = holdWoff.slice(-5,-1);
+		var stringWoff2 = holdWoff2.slice(-6,-1);
+		console.log();
+		src = '@font-face {'
+		src = src +  'font-family: "'+val.fontFamily+'";';
+		if(stringEot == "eot"){
+		
+		 src = src +	  'src:url('+holdEot+');src:url("'+val.eot+'?#iefix") format("embedded-opentype"),';
+	
+		
+		}
+		if(stringWoff == "woff"){
+			
+			 src = 	 src + 'url('+holdWoff+') format("woff"),';
+		
+			//console.log(stringWoff)
+		}
+		if(stringTtf == "ttf"){
+			 src = 	src+  ' url('+holdTtf+') format("truetype"),';
+		
+		}
+		
+		if(stringWoff2 == "woff2"){
+			src = src + ' url("'+val.woff2+'#coolremote") format("woff2");';
+			console.log(src)
+			//console.log(stringWoff2)
+		}
+		src = src +'}'
+		//console.log(src);
+		
+	})
+}
+
+		})
+		 
+			
+		</script>
+	</body>
+</html>

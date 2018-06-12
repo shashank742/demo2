@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+     #testMap,
+#testList{
+	display:inline-block;
+	vertical-align:top;
+}
+#testMap{
+	width:600px;
+	height:400px;
+}
+#testList{
+	list-style:none;
+	margin:0;
+	padding:20px 0 0 30px;
+}
+#testList .item{
+	float:left;
+	clear:left;
+	height:30px;
+	padding:0 5px 0 10px;
+	border-radius:15px;
+	line-height:30px;
+	background:#f0f0f0;
+	cursor:pointer;
+}
+#testList .item + .item{
+	margin-top:10px;
+}
+#testList .item.active{
+	color:#fff;
+	background:#369;
+}
+#testList .item .close{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	margin:0 0 0 10px;
+	border-radius:100%;
+	line-height:20px;
+	text-align:center;
+	font-weight:bolder;
+	color:#fff;
+	background:#f60;
+}
+#testList .item.active .close{
+	color:#f60;
+	background:#fff;
+}
+.balloon .title{
+	margin:0 0 10px;
+	font-weight:700;
+}
+.balloon{
+	white-space:nowrap;
+}
+    </style>
+  </head>
+  <body>
+   <div id="testMap"></div>
+<ul id="testList"></ul>
+    <script>
+
+      // This example displays a marker at the center of Australia.
+      // When the user clicks the marker, an info window opens.
+
+    var objects = {
+	o1: {
+		coords: [55.049687, 73.179416],
+		title: 'Дом Бендера',
+		description: 'Запрещено бить стекло'
+	},
+	o2: {
+		coords: [55.030235, 73.289065],
+		title: 'Дом Лилы',
+		description: 'Приходить только со своим'
+	},
+	o3: {
+		coords: [54.905089, 73.335886],
+		title: 'Дом Фрая',
+		description: 'Приходить со своим запрешено'
+	},
+	o4: {
+		coords: [55.015352, 73.498620],
+		title: 'Офис Межгалактического Курьера',
+		description: 'Профессора не будить'
+	}
+};
+
+$(function () {
+	var myMap = new google.maps.Map($('#testMap').get(0), {
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			mapTypeControl: false,
+			draggable: true,
+			zoomControl: false,
+			panControl: false,
+			streetViewControl: false,
+			center:  new google.maps.LatLng(55.004530, 73.294073),
+			zoom: 10
+		}),
+		$list = $('#testList'),
+		list = {},
+		balloon = new google.maps.InfoWindow();
+
+	for (var i in objects) {
+		var title = objects[i].title,
+			description = '<div class="balloon"><div class="title">' + title + '</div><div class="content">' + objects[i].description + '</div></div>';
+
+		list[i] = $('<li>', {
+				'class': 'item active'
+			})
+			.html(title)
+			.append(
+				$('<span>', {
+					'class': 'close',
+					'data-action': 'close',
+					'title': 'Удалить'
+				}).html('×').on('click', function () {
+					var $parent = $(this).closest('.item');
+
+					$parent.data('marker').setMap(null);
+					$parent.remove();
+				})
+			)
+			.data('marker', new google.maps.Marker({
+				position: new google.maps.LatLng(
+					objects[i].coords[0],
+					objects[i].coords[1]
+				),
+				title: title,
+				id: i
+			}))
+			.data('description', description)
+			.data('balloon', new google.maps.InfoWindow({
+				content: description
+			}))
+			.on('click', function () {
+				var $item = $(this);
+
+				if ($item.hasClass('active')) {
+					$item.data('marker').setMap(null);
+					$item.removeClass('active');
+				} else {
+					$item.data('marker').setMap(myMap);
+					$item.addClass('active');
+				}
+			})
+			.prependTo($list);
+
+		list[i].data('marker').setMap(myMap);
+		google.maps.event.addListener(list[i].data('marker'), 'click', function () {
+			var $item = list[this.id];
+
+			balloon.setContent($item.data('description'));
+			balloon.open(myMap, $item.data('marker'));
+		});
+	}
+});
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOlcCUiQVaZIsE_G3jmhpvJnkKgJjKpF0 &callback=initMap">
+    </script>
+  </body>
+</html>

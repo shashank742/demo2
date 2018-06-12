@@ -1,0 +1,39 @@
+{
+	"cars": [
+		{
+			"carName": "Audi",
+			"features": [
+				{
+					"model": "Q3",
+					"year": "2016",
+					"price": "60lac"
+				}, {
+					"model": "Q2",
+					"year": "2015",
+					"price": "50lac"
+				}, {
+					"model": "Q1",
+					"year": "2014",
+					"price": "40lac"
+				}
+			]
+		}, {
+			"carName": "Jaguar",
+			"features": [
+				{
+					"model": "jaguar f pace",
+					"year": "2017",
+					"price": "80lac"
+				}, {
+					"model": "jaguar range",
+					"year": "2011",
+					"price": "70lac"
+				}, {
+					"model": "jaguar sj",
+					"year": "2013",
+					"price": "50lac"
+				}
+			]
+		}
+	]
+}

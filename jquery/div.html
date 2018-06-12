@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<style>
+			.div {
+				float: left;
+				width: 33%;
+				border: 2px solid #000000;
+			}
+			div {
+				background-color: red;
+				text-align: center;
+			}
+			.ap{
+				background-color:#00ff00;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="div">
+			shashank
+		</div>
+		<div class="ap">
+			ashish keshri
+		</div>
+
+		<script>
+			$(document).ready(function() {
+				$(".div").click(function() {
+					var ap=$(".ap");
+					$(".ap").remove();
+					// alert(ap)
+					// alert($(this).index());
+					// var index=$(this).index();
+					// var mod=index/3;
+// 									
+					// var m= Math.floor(mod);						
+					// var no=m+((m+1)*2);
+					// $(".div").eq(no).after($(ap));
+					
+					var index=Math.floor(($(this).index())/3);														
+					$(".div").eq((index+((index+1)*2))).after($(ap));
+					
+				})
+			});
+		</script>
+
+	</body>
+</html>

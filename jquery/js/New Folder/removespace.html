@@ -1,0 +1,40 @@
+<html>
+	<head></head>
+<body>
+<input type="text" id="input">
+<button onclick="removeSpace()">Remove Space</button>
+<button onclick="addSpace()">Add Space</button>
+<p id="p"></p>
+<script>
+var	a
+	function removeSpace(){
+	a=document.getElementById("input").value;
+	// var b=a.split(" ");   // var x=a.split(" ");
+   // t="";
+	// // alert(b.length);
+// for(i=0;i<x.length;i++){
+	// t=t+x[i]+"";
+// }
+// document.getElementById("p").innerHTML=t;
+	for(i=0;i<a.length;i++)
+	{
+		if(a[i]==" "){
+	a=a.replace(" ","");
+
+
+	document.getElementById("p").innerHTML=a;
+	}
+	else{
+		document.getElementById("p").innerHTML=a;
+	}
+	}}function addSpace(){
+	a=document.getElementById("input").value;
+	document.getElementById("p").innerHTML=a;
+}
+
+	// var b=a.replace(" ", "");
+	
+	
+</script>	
+</body>
+</html>

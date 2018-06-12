@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+	
+		<script>	  
+	   var button = document.createElement("button");
+	   var bt= document.createTextNode("try it");
+	   button.appendChild(bt);
+	   document.body.appendChild(button);
+	   document.getElementsByTagName("button")[0].setAttribute("id", "btn"); 
+	   
+	   
+	 document.getElementById("btn").addEventListener("click",function(){	  
+	   	
+	   	
+	   	 	 
+	   	var p = document.createElement("p");
+	    var t= document.createTextNode("shashank sharma");
+	    p.appendChild(t);
+	     		
+	   document.body.appendChild(p);	
+	   var a = document.getElementsByTagName("p").length;
+	   for(var i=0; i<a; i++){
+	   	
+	   if(a>3 && a<=6){
+	   	  // document.removeEventListener("click", Function);
+	   	    document.getElementsByClassName("pp")[i].style.color="orange";
+	   	  
+	   }
+	   else{
+	   document.getElementsByTagName("p")[i].setAttribute("class", "pp"); 	
+       document.getElementsByClassName("pp")[i].innerHTML = "shashank harit";
+	   document.getElementsByClassName("pp")[i].style.color="red";  
+	   }
+	 }
+	
+	 
+	  
+	  
+	   });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<style>
+			div{
+				float:left;
+				margin-right:50px;
+				width:200px;
+				height:50px;
+				background-color:yellow;
+				border:2px solid;
+			}
+		</style>
+	</head>
+	<title>Drag &amp;Drop</title>
+	<body>
+		<div ondrop="drop(event)" ondragover="dragOver(event)" >
+			<p ondragstart="dragStart(event)" draggable="true" id="drag">Shashank Harit</p>
+		</div>
+		<div ondrop="drop(event)" ondragover="dragOver(event)"></div>
+		<div ondrop="drop(event)" ondragover="dragOver(event)"></div>
+		<div ondrop="drop(event)" ondragover="dragOver(event)"></div>
+		<script>
+			function dragStart(event){
+				event.dataTransfer.setData("Text",event.target.id);
+			} 
+			function dragOver(event){
+				event.preventDefault();
+			}
+			function drop(event){
+				event.preventDefault();
+				var data=event.dataTransfer.getData("Text");
+				event.target.appendChild(document.getElementById(data));
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+
+		<!-- 	<p id="demo"></p> -->
+		<select id="demo" onchange="cars(this)"></select>
+		<select id="dem"  onchange="features(this)"></select>
+		<h1>YEAR & PRICE</h1>
+		<h2 id="data" ></h2>
+
+		<p ></p>
+		<script>
+			var a;
+			var currentindex=0;
+
+			loadJSON()
+			function loadJSON() 
+{
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() 
+{
+					if (this.readyState == 4 && this.status == 200) 
+        {
+   						a = JSON.parse(this.responseText);
+						for ( i = 0; i < a.cars.length; i++) 
+						{														
+							var b = a.cars[i].carName;
+							var option = document.createElement("option");
+							var carname = document.createTextNode(b)
+							option.appendChild(carname);
+							document.getElementById("demo").appendChild(option);
+                          }
+						
+						for ( j = 0; j < a.cars[0].features.length; j++) 
+		                  {
+							var f = a.cars[0].features[j].model;
+							var opt = document.createElement("option");
+							var feature = document.createTextNode(f)
+							opt.appendChild(feature);
+							document.getElementById("dem").appendChild(opt);
+		                    }               
+		               for(k=0; k<a.cars[0].features[0].pricelist.length;k++)
+		                   {
+		               	    var e=a.cars[0].features[0].pricelist[k].year+" "+a.cars[0].features[0].pricelist[k].price;
+		               	    var g=document.createElement("h2");
+		               	    var price = document.createTextNode(e);
+		               	    g.appendChild(price);
+		               	    document.getElementById("data").appendChild(g);
+		                   }
+        }
+};
+				xhttp.open("GET", "jaguar.json", true);
+				xhttp.send();
+}
+
+			function cars(select) {
+
+				var selectedOption = select.options[select.selectedIndex];
+                
+                 // document.getElementById("dem").innerHTML='';
+                removeList("dem");
+                 removeList("data");
+                 setTimeout(function(){
+				for (var i = 0; i < a.cars.length; i++) {					
+					if (a.cars[i].carName == selectedOption.value) {
+						
+						 currentindex=i;
+						for ( j = 0; j < a.cars[i].features.length; j++) {
+							
+							var f = a.cars[i].features[j].model;
+							var opt = document.createElement("option");
+							var feature = document.createTextNode(f)
+							opt.appendChild(feature);
+							document.getElementById("dem").appendChild(opt);
+						}
+						
+						for(k=0; k<a.cars[0].features[0].pricelist.length;k++)
+		               {
+		               	var e=a.cars[i].features[0].pricelist[k].year+" "+a.cars[i].features[0].pricelist[k].price;
+		               	var g=document.createElement("h2");
+		               	var price = document.createTextNode(e);
+		               	g.appendChild(price);
+		               	document.getElementById("data").appendChild(g);
+		               }
+                       }
+					}
+					
+},0)
+}
+				
+			
+
+function features(select) {
+	 var selectedOption = select.options[select.selectedIndex];
+	 removeList("data");
+	 for ( j = 0; j < a.cars[currentindex].features.length; j++) {
+	 if(a.cars[currentindex].features[j].model == selectedOption.value)
+	 {
+	 	 for(k=0; k<a.cars[0].features[0].pricelist.length;k++)
+		               {
+		               	var e=a.cars[currentindex].features[j].pricelist[k].year+" "+a.cars[currentindex].features[j].pricelist[k].price;
+		               		
+		               	var g=document.createElement("h2");
+		               	var price = document.createTextNode(e);
+		               	g.appendChild(price);
+		               	document.getElementById("data").appendChild(g);
+		               }
+	 }
+}}
+			
+function removeList(x){                 
+     var list=document.getElementById(x);
+     var len=list.childNodes.length
+     for (var k = 0; k <len; k++) {
+     list.removeChild(list.childNodes[0]);
+     
+}}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>map demo</title>
+  <style>
+  div {
+    width: 40px;
+    float: left;
+  }
+  input {
+    clear: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<input type="button" value="equalize div heights">
+<div style="background: red; height: 40px; ">abc</div>
+<div style="background: green; height: 70px;">def</div>
+<div style="background: blue; height: 50px; ">ghi</div>
+ 
+<script>
+$.fn.equalizeHeights = function() {
+  var maxHeight = this.map(function( i, e ) {
+  
+    return $( e ).height();
+  }).get();
+ 
+  console.log(Math.max.apply( this, maxHeight ))
+  return this.height( Math.max.apply( this, maxHeight ) );
+};
+ var arr = [2,1,5,7,9,15,99,10];
+ console.log(Math.max.apply( this, arr ))
+$( "input" ).click(function() {
+  $( "div" ).equalizeHeights();
+});
+</script>
+ 
+</body>
+</html>

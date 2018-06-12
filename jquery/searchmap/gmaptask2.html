@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+			/* Always set the map height explicitly to define the size of the div
+			 * element that contains the map. */
+			.addressList {
+				position: relative;
+			}
+			#map {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				position: relative;
+			}
+			/* Optional: Makes the sample page fill the window. */
+			html, body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				position: relative;
+			}
+			.gm-style-mtc {
+				top: 20px;
+			}
+			#pac-input {
+				position: absolute;
+				z-index: 1;
+			}
+			.searchData {
+				z-index: 11;
+				position: absolute;
+				top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class= "addressList">
+			<ul class="searchData"></ul>
+			<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+		</div>
+		<div id="map"></div>
+
+		<script>
+			var map;
+			var gmarkers = [];
+			var gmarkerss = [];
+			var infowindow = null;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+					zoom : 7,
+					center : new google.maps.LatLng(5.9775, 26.3832),
+					mapTypeId : 'terrain'
+				});
+
+				// Create a <script> tag and set the USGS URL as the source.
+				var script = document.createElement('script');
+				// This example uses a local copy of the GeoJSON stored at
+				// http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+				script.src = 'geoJson.json';
+				document.getElementsByTagName('head')[0].appendChild(script);
+			}
+
+			// Loop through the results array and place a marker for each
+			// set of coordinates.
+			window.dataJson = function(results) {
+				for (var i = 0; i < results.features.length; i++) {
+
+					var coords = results.features[i].geometry.coordinates;
+					var latLng = new google.maps.LatLng(coords[1], coords[0]);
+					var icons = results.features[i].icon;
+					console.log(icons);
+
+					// infowindow = new google.maps.InfoWindow({
+					// content : results.features[i].properties.label
+					// });
+
+					var marker = new google.maps.Marker({
+						position : latLng,
+						icon : " ",
+						map : map,
+
+					});
+					console.log(marker.icon)
+
+					// marker.addListener('click', function() {
+					// infowindow.open(map, marker);
+					// });
+
+					//map.setCenter(marker.getPosition())
+				}
+				function removeMarkers() {
+					//	console.log(gmarkers.length)
+					for ( i = 0; i < gmarkers.length; i++) {
+						gmarkers[i].setMap(null);
+
+					}
+
+				}
+
+				function removeMarkersOnclick() {
+					console.log(gmarkerss.length)
+					for (var j = 0; j < gmarkerss.length; j++) {
+						gmarkerss[j].setMap(null);
+					}
+				}
+
+
+				$(".searchData").empty();
+				$("#pac-input").keyup(function(e) {
+					//alert()
+					$(".searchData").empty();
+					//console.log(marker.setIcon(null))
+					removeMarkers();
+					gmarkers = [];
+					removeMarkersOnclick()
+					var yourtext = $(this).val().toUpperCase();
+					var storedVal = [];
+
+					if (yourtext.length > 0) {
+
+						for (var i = 0; i < results.features.length; i++) {
+
+							var zipCode1 = results.features[i].properties.zip;
+							var place1 = results.features[i].properties.place.toUpperCase();
+
+							if (place1.search(yourtext) > (-1) || zipCode1.search(yourtext) > (-1)) {
+								var obj = {
+									"zipcode" : zipCode1,
+									"place" : place1
+								}
+								storedVal.push(obj);
+								// for(var i=0;i<=storedVal.length;i++){
+								$(".searchData").append("<li><a href=#>" + place1 + "</a></li>");
+								// }
+								// marker.setIcon(results.features[i].icon);
+
+								console.log(i)
+								coords = results.features[i].geometry.coordinates;
+								latLng = new google.maps.LatLng(coords[1], coords[0]);
+								icons = results.features[i].icon;
+								marker = new google.maps.Marker({
+									position : latLng,
+									icon : results.features[i].icon,
+									map : map,
+
+								});
+								gmarkers.push(marker);
+							}
+
+						}
+
+					}
+				})
+
+				$(".searchData").on("click", "li", function() {
+
+					removeMarkersOnclick();
+					removeMarkers();
+					gmarkerss = [];
+					gmarkers = [];
+					console.log(results.features.length)
+
+					for (var i = 0; i < results.features.length; i++) {
+
+						if (results.features[i].properties.place.toUpperCase() == $(this).children("a").text()) {
+							coords = results.features[i].geometry.coordinates;
+							latLng = new google.maps.LatLng(coords[1], coords[0]);
+
+							marker = new google.maps.Marker({
+								position : latLng,
+								icon : results.features[i].icons,
+								map : map,
+							});
+
+							gmarkerss.push(marker);
+
+							//console.log(gmarkers[i].setMap(null));
+							//console.log(marker.setIcon("https://onlinelearningconsortium.org/wp-content/uploads/2015/08/map_icon.png "))
+							//console.log(results.features[i].geometry.coordinates[0]);
+
+							//  var midpoint = {lat:26.3832, lng:5.9775 };
+							// marker.setPosition(midpoint);
+							//map.setCenter(midpoint);
+
+							map.setCenter({
+								lat : results.features[i].geometry.coordinates[1],
+								lng : results.features[i].geometry.coordinates[0]
+							})
+
+							//console.log(google.maps)
+
+							infoWindow = new google.maps.InfoWindow();
+							infoWindow.setOptions({
+								content : "<div>" + results.features[i].properties.label + "</div>",
+								position : latLng,
+							});
+							infoWindow.open(map, marker);
+
+						}
+						for (var j = 0; j < $(".searchData li").length; j++) {
+
+							if (results.features[i].properties.place.toUpperCase() == $(".searchData li").eq(j).children("a").text() && results.features[i].properties.place.toUpperCase() != $(this).children("a").text()) {
+								console.log($(this).siblings("li").eq(i).children("a").text())
+								coords = results.features[i].geometry.coordinates;
+								latLng = new google.maps.LatLng(coords[1], coords[0]);
+
+								marker = new google.maps.Marker({
+									position : latLng,
+									icon : results.features[i].icon,
+									map : map,
+								});
+								gmarkers.push(marker);
+							}
+						}
+
+					}
+
+				})
+				//})
+
+			}
+
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places &callback=initMap"></script>
+	</body>
+</html>

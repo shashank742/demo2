@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Listing markers in clusters</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/leaflet.markercluster.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.css' rel='stylesheet' />
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.Default.css' rel='stylesheet' />
+<style>
+.ui-coordinates {
+  background:rgba(0,0,0,0.5);
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  padding:5px 10px;
+  color:#fff;
+  font-size:11px;
+  line-height:18px;
+  border-radius:3px;
+  max-height:240px;
+  overflow:auto;  
+  width:300px;
+  } 
+  #colors {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 150px;
+    padding:5px;
+}
+#country{
+	 position: absolute;
+    top: 0;
+    right: 165px;
+    background: #fff;
+    width: 150px;
+    padding:5px;
+	}
+	#map{
+		width:1200px;
+	}
+	.container{
+		position:relative;
+		
+		width:100%;
+	}
+</style>
+<div class="container">
+<div id='map'></div>
+<pre id='coordinates' class='ui-coordinates'></pre>
+<form id='colors'>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='red' checked> red</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='green' checked> green</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='orange' checked> orange</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='yellow' checked> yellow</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='blue' checked> blue</div>
+</form>
+<form id='country'>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='known' checked> know</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='unknown' checked> unknown</div>  
+</form>
+</div>
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+$(".container").height($(window).height())
+L.mapbox.accessToken = 'pk.eyJ1IjoianRob21hc3NpZSIsImEiOiJHaUxIakJNIn0.-YMjtvwXuWt_ZwB9L5ZZYA';
+var map = L.mapbox.map('map', 'mapbox.streets').addControl(L.mapbox.geocoderControl('mapbox.places', {
+        autocomplete: true
+    })).setView([38.9, -77], 13);
+    
+var markers = new L.MarkerClusterGroup();
+var overlays = L.layerGroup().addTo(map);
+var layers;
+L.mapbox.featureLayer()
+    .loadURL('assets/json/mapfilter.json')
+    .on('ready', function(e) {
+        layers = e.target;
+        showStations();
+    });
+    
+var filters = document.getElementById('colors').filters;
+var filters2 = document.getElementById('country').filters;
+
+function showStations() {
+    var list = [];
+   
+    for (var i = 0; i < filters.length; i++) {    	
+       if (filters[i].checked) list.push(filters[i].value);       
+    }
+    
+     for (var i = 0; i < filters2.length; i++) {    	
+       if (filters2[i].checked) list.push(filters2[i].value);      
+    }   
+    overlays.clearLayers();     
+    markers.clearLayers(); 
+    var clusterGroup = new L.MarkerClusterGroup().addTo(overlays);
+    layers.eachLayer(function(layer) {
+    	
+    	 
+        if (list.indexOf(layer.feature.properties.line) !== -1 && list.indexOf(layer.feature.properties.city) !== -1) {  
+        	 var title = layer.feature.properties.title;
+    	 var marker = L.marker(new L.LatLng(layer._latlng.lat, layer._latlng.lng),{
+    	 	//icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': '0044FF'}),
+        title: title
+    	 });      	
+    	  markers.addLayer(marker);      	
+            clusterGroup.addLayer(layer);
+            
+           //	$("body").find("img.leaflet-marker-icon").attr('src','assets/images/circle.png').css({"height":"20","width":"20"});
+        }        
+       onmove()
+    });  
+}
+function onmove() {
+    var inBounds = [],
+        bounds = map.getBounds();
+    markers.eachLayer(function(marker) {
+        if (bounds.contains(marker.getLatLng())) {        	
+            inBounds.push(marker.options.title);         
+        }
+    }); 
+  var listAllAddress = ""; 
+  $.each(inBounds,function(index,val){
+  	listAllAddress = listAllAddress + '<div class = address_list>'+ val+'</div>'
+  	//$("body").find("img.leaflet-marker-icon").attr('src','assets/images/circle.png').css({"height":"20","width":"20"});
+  })
+  $("#coordinates").empty();
+  $("#coordinates").append(listAllAddress)
+}
+
+$("body").on("click","img.leaflet-marker-icon",function(){
+	var avoid = $(this).attr('title');
+var storeAtFirst =	$("#coordinates").find('div:contains('+avoid+')');
+$("#coordinates").prepend(storeAtFirst);
+})
+document.getElementById("map").addEventListener("wheel", myFunction);
+
+function myFunction() {
+  setTimeout(function(){
+		//$("body").find("img.leaflet-marker-icon").attr('src','assets/images/circle.png').css({"height":"20","width":"20"});
+	},600)
+}
+myFunction();
+
+$("body").on("click",".leaflet-marker-icon",function(){
+	setTimeout(function(){
+		//$("body").find("img.leaflet-marker-icon").attr('src','assets/images/circle.png').css({"height":"20","width":"20"});
+	},500)
+})
+map.on('move', onmove);
+map.on('ready', onmove);
+onmove();
+ var srcc;
+$("body").on("mouseenter",".address_list",function(){
+	var thisText = $(this).text();
+     srcc = $("body").find("[title='"+thisText+"']").attr('src')
+	 $("body").find("[title='"+thisText+"']").attr('src','assets/images/circle2.png').css({"height":"20","width":"20"});	
+})	
+$("body").on("mouseout",".address_list",function(){
+	var thisText = $(this).text();
+	 $("body").find("[title='"+thisText+"']").attr('src',srcc).css({"height":"70","width":"30"});
+})
+
+
+</script>
+</body>
+</html>

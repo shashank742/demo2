@@ -1,0 +1,240 @@
+[
+	{
+		"id": 0,
+		"name": "Default Category",
+		"status": false,
+		"subCategory": true,
+		"category": [
+			{
+
+				"id": 1,
+				"name": "Gear",
+				"status": false,
+				"subCategory": true,
+				"category": [
+					{
+						"id": 11,
+						"name": "Bags",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 12,
+						"name": "Fitness Equipment",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 13,
+						"name": "Watches",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}
+				]
+			}, {
+				"id": 2,
+				"name": "Collection",
+				"status": false,
+				"subCategory": true,
+				"category": [
+					{
+						"id": 21,
+						"name": "New1",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 22,
+						"name": "New2",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 23,
+						"name": "New3",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}
+				]
+			}, {
+				"id": 3,
+				"name": "Training",
+				"status": false,
+				"subCategory": true,
+				"category": [
+					{
+						"id": 31,
+						"name": "New11",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 32,
+						"name": "New21",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 33,
+						"name": "New31",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}
+				]
+			}, {
+				"id": 4,
+				"name": "Men",
+				"status": false,
+				"subCategory": true,
+				"category": [
+					{
+						"id": 41,
+						"name": "New17",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 42,
+						"name": "New22",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 43,
+						"name": "New32",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}
+				]
+			}, {
+				"id": 5,
+				"name": "Women",
+				"status": false,
+				"subCategory": true,
+				"category": [
+					{
+						"id": 51,
+						"name": "New15",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 52,
+						"name": "New25",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 53,
+						"name": "New35",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}
+				]
+			}, {
+				"id": 6,
+				"name": "Promotion",
+				"status": false,
+				"subCategory": true,
+				"category": [
+					{
+						"id": 61,
+						"name": "New16",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 62,
+						"name": "New26",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}, {
+						"id": 63,
+						"name": "New36",
+						"status": false,
+						"subCategory": false,
+						"category": [
+							{
+							}
+						]
+					}
+				]
+			}, {
+				"id": 7,
+				"name": "Sales",
+				"status": false,
+				"subCategory": false,
+				"category": [
+					{
+					}
+				]
+			}, {
+				"id": 8,
+				"name": "What's New",
+				"status": false,
+				"subCategory": false,
+				"category": [
+					{
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta content="" name="description">
+		<title>Holiday Ninja</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/css/multiple-select.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery.fileupload.css" media="screen">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/global.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="screen">
+	</head>
+	<body>
+		<!--Page Wrapper Start-->
+		<div class="wrapper">
+			<!--Header Section Start-->
+			<header class="header inner-header">
+				<div class="container">
+					<div class="header-wrap d-flex align-item-center">
+						<a href="index.html" class="logo"> <img src="assets/images/logo-two.png" alt="logo" /> </a>
+						<div class="banner-content">
+							<form class="text-left">
+								<div class="select-wrap">
+									<select class="selectpicker" data-size="5">
+										<option data-subtext="(Apr-Sept)">Summer </option>
+										<option data-subtext="(Apr-Sept)">Winter </option>
+									</select>
+									<i class="icon-carret-down"></i>
+								</div>
+								<div class="input-wrap">
+									<select multiple="multiple" class="multi-selectbox">
+										<option value="1" selected="selected"> Last minute </option>
+										<option value="2"> City breaks </option>
+										<option value="3"> Cruise </option>
+										<option value="4"> Escorted tours </option>
+										<option value="5"> Luxury </option>
+										<option value="6"> Ski </option>
+										<option value="7"> Sun sea sand </option>
+										<option value="8"> UK break </option>
+										<option value="9"> USA </option>
+										<option value="10"> Worldwide </option>
+										<option value="11"> Other </option>
+									</select>
+									<i class="icon-carret-down"></i>
+								</div>
+								<button class="btn">
+									search
+								</button>
+							</form>
+						</div>
+						<div class="menu-hamburger">
+							<span class="text-uppercase menu-text"> menu </span>
+							<span class="text-uppercase close-text"> close </span>
+							<div class="hamburger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<img src="assets/images/tree3.png" alt="aeroplane" class="tree-three"/>
+					</div>
+				</div>
+			</header>
+			<!--Header Section End-->
+
+			<!--Content Area Start-->
+			<div class="content form-space">
+				<div class="booking-form">
+					<div class="container">
+						<div class="form-wrap d-flex ">
+							<div class="form-data">
+								<div class="form-content">
+									<div class="title">
+										<h2 class="text-uppercase"><i> <img src="assets/images/ninja-wheel.png" alt="ninja-wheel"> </i><span>holiday</span></h2>
+									</div>
+									<form>
+										<!-- Create fields for the honeypot -->
+										<input name="firstname" type="text"  class="hide">
+										<!-- honeypot fields end -->
+										<div class="from-group d-flex">
+											<label>agent name *</label>
+											<div class="select-wrap">
+												<select class="selectpicker required">
+													<option> -Select agent name- </option>
+													<option>name1 </option>
+													<option>name2 </option>
+													<option>name3 </option>
+												</select>
+												<i class="icon-carret-down"></i>
+											</div>
+											<span class="help"> The name of the agent this listing belongs. </span>
+										</div>
+									</form>
+									<!-- file -->
+									<div class="file-upload">
+										<form id="fileupload" action="https://jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+											<!-- Create fields for the honeypot -->
+											<input name="firstname" type="text"  class="hide">
+											<!-- honeypot fields end -->
+											<!-- Redirect browsers with JavaScript disabled to the origin page -->
+
+											<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+											<div class="row fileupload-buttonbar">
+												<label>IMAGES *</label>
+												<!-- The fileinput-button span is used to style the file input field as button -->
+												<span class="btn btn-primary fileinput-button">
+													<input type="file" name="files[]" multiple >
+													Upload files </span>
+
+												<input type="checkbox" class="toggle" />
+												<span class="help">Add between 1 and 10 images to the listing</span>
+											</div>
+
+											<!-- The table listing the files available for upload/download -->
+											<table role="presentation" class="table table-striped">
+												<tbody class="files"></tbody>
+											</table>
+										</form>
+									</div>
+									<!-- file -->
+									<form>
+										<!-- Create fields for the honeypot -->
+										<input name="firstname" type="text"  class="hide">
+										<!-- honeypot fields end -->
+										<div class="from-group d-flex md-two">
+											<div class="form-input">
+												<input type="text" class="required"/>
+											</div>
+											<span class="help"> Add a link if you want to show a YouTube video. </span>
+										</div>
+										<div class="from-group d-flex md-two">
+											<div class="form-input">
+												<input type="text" placeholder="country *" class="text-bold text-uppercase required text-only"/>
+											</div>
+											<span class="help"> The country the holiday is in </span>
+										</div>
+										<div class="from-group d-flex md-two">
+											<div class="form-input">
+												<input type="text" placeholder="city *" class="text-bold text-uppercase required text-only"/>
+											</div>
+											<span class="help"> The city the holiday is in </span>
+										</div>
+										<div class="from-group d-flex md-margin">
+											<label>holiday type *</label>
+											<div class="select-wrap">
+												<select class="selectpicker required" >
+													<option> -Select- </option>
+													<option>type1 </option>
+													<option>type2 </option>
+													<option>type3 </option>
+												</select>
+												<i class="icon-carret-down"></i>
+											</div>
+											<span class="help"> Select the type of holiday </span>
+										</div>
+										<div class="from-group d-flex">
+											<label >holiday category </label>
+											<div class="input-wrap form-input">
+												<select multiple="multiple" class="multi-selectbox">
+													<option value="1" selected="selected"> Last minute </option>
+													<option value="2"> City breaks </option>
+													<option value="3"> Cruise </option>
+													<option value="4"> Escorted tours </option>
+													<option value="5"> Luxury </option>
+													<option value="6"> Ski </option>
+													<option value="7"> Sun sea sand </option>
+													<option value="8"> UK break </option>
+													<option value="9"> USA </option>
+													<option value="10"> Worldwide </option>
+													<option value="11"> Other </option>
+												</select>
+												<i class="icon-carret-down"></i>
+											</div>
+											<span class="help visible-xs"> The main body of content with details about the holiday </span>
+										</div>
+										<div class="from-group d-flex">
+											<label>description </label>
+											<div class="form-input">
+												<textarea></textarea>
+											</div>
+											<span class="help align-help hidden-xs"> The main body of content with details about the holiday </span>
+										</div>
+									</form>
+								</div>
+								<div class="form-content flight-content">
+									<div class="title">
+										<h2 class="text-uppercase"><i> <img src="assets/images/ninja-wheel.png" alt="ninja-wheel"> </i><span>flight</span></h2>
+									</div>
+									<form>
+										<!-- Create fields for the honeypot -->
+										<input name="firstname" type="text"  class="hide">
+										<!-- honeypot fields end -->
+										<div class="from-group d-flex">
+											<label >departure airport *</label>
+											<div class="select-wrap">
+												<select class="selectpicker required" >
+													<option> -Select- </option>
+													<option>name1 </option>
+													<option>name2 </option>
+													<option>name3 </option>
+												</select>
+												<i class="icon-carret-down"></i>
+											</div>
+											<span class="help"> The airport for departure </span>
+										</div>
+										<div class="from-group d-flex">
+											<label >departure date *</label>
+											<div class="date-picker-wrap">
+												<div id="datepicker" class="input-group date " data-date-format="mm-dd-yyyy">
+													<input class="form-control required" type="text" placeholder="Date" />
+													<span class="input-group-addon"><i class="icon-carret-down"></i></span>
+												</div>
+											</div>
+											<span class="help"> The date of departure </span>
+										</div>
+										<div class="from-group d-flex checkbox-grp">
+											<label >transfer included *</label>
+											<div class="checkbox-wrap">
+												<input type="checkbox" id="check1"/>
+												<i></i>
+												<label class="checkbox-label" for="check1"> Check this box if transfer are included </label>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="form-content hotel-content">
+									<div class="title">
+										<h2 class="text-uppercase"><i> <img src="assets/images/ninja-wheel.png" alt="ninja-wheel"> </i><span>hotel</span></h2>
+									</div>
+									<form>
+										<!-- Create fields for the honeypot -->
+										<input name="firstname" type="text"  class="hide">
+										<!-- honeypot fields end -->
+										<div class="from-group d-flex">
+											<div class="form-input">
+												<input type="text" placeholder="acomodation name*" class="text-bold text-uppercase required text-only"/>
+											</div>
+											<span class="help"> The name of the accommodation </span>
+										</div>
+										<div class="from-group d-flex">
+											<div class="form-input">
+												<input type="text" placeholder="DURATION *" class="text-bold uppercase required text-only"/>
+											</div>
+											<span class="help"> The length of the holiday </span>
+										</div>
+										<div class="from-group d-flex">
+											<label >BOARD BASIS *</label>
+											<div class="select-wrap">
+												<select class="selectpicker required" >
+													<option> -Select- </option>
+													<option>name1 </option>
+													<option>name2 </option>
+													<option>name3 </option>
+												</select>
+												<i class="icon-carret-down"></i>
+											</div>
+											<span class="help"> The type of board service offered</span>
+										</div>
+									</form>
+								</div>
+								<div class="form-content pricing-content">
+									<div class="title">
+										<h2 class="text-uppercase"><i> <img src="assets/images/ninja-wheel.png" alt="ninja-wheel"> </i><span>pricing</span></h2>
+									</div>
+									<form>
+										<!-- Create fields for the honeypot -->
+										<input name="firstname" type="text"  class="hide">
+										<!-- honeypot fields end -->
+										<div class="from-group d-flex">
+											<div class="form-input">
+												<input type="text" placeholder="PRICE (per person) *" class="text-bold uppercase required"/>
+											</div>
+											<span class="help"> The price per person for the holiday </span>
+										</div>
+										<div class="from-group d-flex">
+											<div class="form-input">
+												<input type="text" placeholder="DEPOSIT OPTION  *" class="text-bold uppercase required text-only"/>
+											</div>
+											<span class="help"> Any details regarding the deposit </span>
+										</div>
+										<div class="from-group d-flex">
+											<div class="form-input">
+												<input type="text" placeholder="OFFER EXPIRY DATE *" class="text-bold uppercase required text-only"/>
+											</div>
+											<span class="help">The date which the offer expires on. The listing will be removed from the website at the end of the day </span>
+										</div>
+									</form>
+								</div>
+								<div class="btn-wrap">
+									<button class="btn btn-primary">
+										send details
+									</button>
+								</div>
+								<div class="pagination">
+									<ul class="d-flex">
+										<li>
+											<a href="#">1</a>
+										</li>
+										<li class="active">
+											<a href="#">2</a>
+										</li>
+										<li>
+											<a href="#">3</a>
+										</li>
+										<li>
+											...
+										</li>
+										<li>
+											<a href="#">21</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="fly-add hidden-xs form-flyimg">
+								<img src="assets/images/flying-ning.png" alt="flying-ning" class="flying-ninja">
+								<i class="wheel-one"> <img src="assets/images/wheel-one.png" alt="wheel"> </i>
+								<i class="wheel-two"> <img src="assets/images/wheel-small.png" alt="wheel"> </i>
+								<i class="wheel-large"> <img src="assets/images/wheel-large.png" alt="wheel"> </i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--Content Area End-->
+
+			<!--Footer Section Start-->
+			<footer class="footer">
+				<div class="container">
+					<div class="footer-wrap d-flex">
+						<div class="left d-flex">
+							<a href="#" class="footer-logo"> <img src="assets/images/footer-logo.png" alt="footer-logo" /> </a>
+							<ul class="footer-list d-flex">
+								<li>
+									<a href="#" class="active">Contact </a>
+								</li>
+								<li>
+									<a href="#">Advertise with NInja </a>
+								</li>
+								<li>
+									<a href="#">T&amp;C's </a>
+								</li>
+								<li>
+									<a href="#">Privacy Policy </a>
+								</li>
+							</ul>
+						</div>
+						<div class="right d-flex">
+							<h6> Crafted by Traffick </h6>
+							<ul class="social-icon">
+								<li>
+									<a href="#"> <i class="icon-fb"></i> </a>
+								</li>
+								<li>
+									<a href="#"> <i class="icon-twitter"></i> </a>
+								</li>
+								<li>
+									<a href="#"> <i class="icon-insta"></i> </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--Footer Section End-->
+			<div class="menu-wrap d-flex  justify-content-center">
+				<div class="menu-content text-center">
+					<ul class="menu-list">
+						<li>
+							<a href="#"> about </a>
+						</li>
+						<li>
+							<a href="#"> summer holidays </a>
+						</li>
+						<li>
+							<a href="#"> winter holidays </a>
+						</li>
+						<li>
+							<a href="#"> ninja verdict </a>
+						</li>
+						<li>
+							<a href="#"> agent directory </a>
+						</li>
+						<li>
+							<a href="#"> ni travel news </a>
+						</li>
+						<li>
+							<a href="#"> contact </a>
+						</li>
+					</ul>
+					<ul class="social-icon text-center">
+						<li>
+							<a href="#"> <i class="icon-fb"></i> </a>
+						</li>
+						<li>
+							<a href="#"> <i class="icon-twitter"></i> </a>
+						</li>
+						<li>
+							<a href="#"> <i class="icon-insta"></i> </a>
+						</li>
+					</ul>
+				</div>
+				<img src="assets/images/organischevorm-03.svg" alt="organischevorm-03" class="animation-block"/>
+			</div>
+		</div>
+		<script id="template-upload" type="text/x-tmpl">
+			{% for (var i=0, file; file=o.files[i]; i++) { %}
+			<tr class="template-upload fade">
+			<td>
+			<span class="preview"></span>
+			</td>
+			<td>
+			<p class="name">{%=file.name%}</p>
+			<strong class="error text-danger"></strong>
+			</td>
+
+			<td>
+			{% if (!i) { %}
+			<button class="btn btn-warning cancel">
+			<i class="glyphicon glyphicon-ban-circle"></i>
+			<span>Cancel</span>
+			</button>
+			{% } %}
+			</td>
+			</tr>
+			{% } %}
+		</script>
+		<!--Page Wrapper End-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" ></script>
+		<script src="assets/js/vendor/jquery.ui.widget.js"></script>
+		<script src="assets/js/deo.js"></script>
+		<script src="assets/js/jquery.fileupload.js"></script>
+		<script src="assets/js/jquery.fileupload-ui.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/multiple-select.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="assets/js/bootstrap-select.js"></script>
+		<script src="assets/js/date-picker.js"></script>
+		<script src="assets/js/site.js"></script>
+
+	</body>
+</html>

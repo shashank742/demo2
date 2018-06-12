@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<style>
+			.comments_body {
+   display: none;
+ }
+
+.active {
+   display: block !important;
+ }
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="post_info">
+  <div class="col">
+    <i class="post_comments">icon</i>
+  </div>
+</div>
+
+
+<div class="comments_body">
+  <ul>
+    <li>Many comments.</li>
+  </ul>
+</div>
+<div class="post_info">
+  <div class="col">
+    <i class="post_comments">icon</i>
+  </div>
+</div>
+<div class="comments_body">
+  <ul>
+    <li>Many comments.</li>
+  </ul>
+</div>
+<div class="post_info">
+  <div class="col">
+    <i class="post_comments">icon</i>
+  </div>
+</div>
+<div class="comments_body">
+  <ul>
+    <li>Many comments.</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+    $(".post_info").click(function(event) {
+   
+      $(event.target).parent().parent().next().toggleClass('active');
+    });
+</script>
+
+	</body>
+</html>

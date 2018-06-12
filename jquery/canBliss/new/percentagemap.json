@@ -1,0 +1,27 @@
+{
+"defSet":{
+						"defaultFill" : "#F5DA81",
+						"USAColor" : "rgba(202,202,202,0.9)",
+						"INDColor" : "rgba(202,202,202,0.6)",
+						"CHNColor" : "rgba(202,202,202,0.4)"
+						
+					},
+
+"country":{
+						"USA" : {
+							"fillKey" : "USAColor",
+							"percentage":"90%"
+							
+						},
+						
+						"IND" : {
+							"fillKey" : "INDColor",
+							"percentage":"60%"
+						},
+						"CHN" : {
+							"fillKey" : "CHNColor",
+							"percentage":"40%"
+						}
+					}
+
+}

@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Play Basketball</title>
+		<style>
+			
+			.boy{
+				position:relative;
+				background-color:#000000;
+				width:100%;
+				height:90%;
+			}
+			.ball{
+				position:absolute;
+				bottom:0;
+				left:0%;
+			}
+			
+			
+		</style>
+		</head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<body>
+			
+			
+			<button class="jump">jump</button>
+			<button class="stop">stop</button>
+			<div class="boy">
+				
+			
+			<div class="ball">
+				<img src="ball.jpeg"/>
+			</div>
+			</div>
+			<script>
+			var a=600;
+			  var x = Math.floor((Math.random() * 10) + 5);
+				$(document).ready(function(){
+					
+					var speed=2000;
+					 $(".stop").click(function(){
+					 	$(".ball").removeClass();
+					 })
+					$(".jump").click(jump);
+					 
+					 function jump(){
+					 	 $(".ball").animate({top: 600,left:0}, 100);
+					 $(".ball").animate({top: 00,left:300}, speed);
+					 $(".ball").animate({left: 600,top:600}, speed);
+					  $(".ball").animate({top: 00,left:900}, speed);
+					 $(".ball").animate({left: 1200,top:600}, speed);
+                      $(".ball").animate({left: 1500,top:00}, speed);
+                      
+                      
+                      
+                     $(".ball").animate({left: 1200,top:600}, speed);   
+                          $(".ball").animate({top: 00,left:900}, speed); 
+                  
+					    $(".ball").animate({left: 600,top:600}, speed); 
+                        $(".ball").animate({top: 00,left:300}, speed,jump); 
+                         $(".ball").animate({top: 600,left:0}, speed);   
+					 }
+					
+					
+					
+				});
+				
+			</script>
+			
+		</body>
+	
+</html>

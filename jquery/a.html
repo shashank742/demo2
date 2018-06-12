@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $(".right").click(function(){
+        $("div").animate({right: '0%'},"slow");
+    });
+  $(".left").click(function(){
+        $("div").animate({right: '86%'},"slow");
+    });
+     $(".center").click(function(){
+     $("div").css("transform","translateX('-50%')");
+        $("div").animate({right: '50%'},"slow");
+    });
+     
+});
+</script> 
+</head>
+<body>
+<button class="left">left</button>
+<button class="center">center</button>
+<button class="right">right</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

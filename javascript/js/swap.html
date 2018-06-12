@@ -1,0 +1,162 @@
+<html>
+    <head>
+    	<title>swap tags</title>
+        <style>
+        ul{
+            text-align:center;
+            display:inline-block;
+           
+        }
+            li{
+                width:100px;
+                height:100px;
+                display:inline-block;
+                 position:relative;
+              border:1px solid #000000;
+              color:#ffffff;
+            }
+      
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li class="red" style="background-color: red"> prakash</li>
+            <li class="green"  style="background-color: green">vikash</li>
+            <li class="blue"  style="background-color: blue">akash</li>
+            <li class="pink"  style="background-color: pink">munfed</li>
+             <li id="demo" style="background-color: #000000" class="blank">shashank</li>
+        </ul>
+       
+        <script>
+   
+      	var li=document.getElementsByTagName("li").length;
+      	  var x=0; 	
+      var y=0;
+        for(var i=0; i<li; i++){  
+        	document.getElementsByTagName("li")[i].addEventListener("click",demo);
+        }
+          document.getElementsByTagName("li")[4].removeEventListener("click",demo);
+         
+         function demo(event){
+
+              var posli =event.target.offsetLeft;
+          	  var poslastli= document.getElementsByTagName("li")[4].offsetLeft;
+          	  	myMove(event);
+          alert(posli);
+          alert(poslastli);
+          	
+}
+          function myMove(event){
+          	document.getElementsByTagName("li");
+          
+           var d=0; 	
+           var c=0;  
+             var id = setInterval(frame, 1);
+              var	posli =event.target.offsetLeft;
+          	  var poslastli= document.getElementsByTagName("li")[4].offsetLeft;
+          	  var a=posli;
+          	  var b=poslastli;
+          	 
+               var diff=posli-poslastli;
+              
+             function frame(){
+             	
+             	if(a<b){
+             		a++;
+             		x++;
+             		y--;
+             		d++;
+             		document.getElementsByTagName("li")[4].style.left=(y) + "px";
+             		if( event.target.style.left== 0 ){
+          		  event.target.style.left=(x) + "px";
+             	}
+             	else{
+             		 event.target.style.left=(d) + "px";
+             	}
+             	}
+             	else if(a>b){
+             		b++;
+             		x--;
+             		y++;
+             		d--;
+             		document.getElementsByTagName("li")[4].style.left=(y) + "px";
+             		if(event.target.style.left!=0 ){
+          		  event.target.style.left=(x) + "px";
+             	}
+             	else{
+             		  event.target.style.left=(d) + "px";
+             	}
+             	}
+             	else{
+             		clearInterval(id);
+             		
+             	}
+             	 // var y=0;	
+          	// if(x>diff){
+          		// x--;
+          		// y++;
+//           	    
+          		// document.getElementsByTagName("li")[4].style.left=(x) + "px";
+          		 // event.target.style.left=(y) + "px";
+//           		 
+          	// }
+          	// else if(x<diff){
+//           		
+          		// x++;
+          		// y--;
+//           	
+          		// document.getElementsByTagName("li")[4].style.left=(x) + "px";
+          		 // event.target.style.left=(y) + "px";
+          	// }
+          	// else{
+          		 // clearInterval(id);
+          	// }
+             	// if(x==diff){
+             		  // clearInterval(id);
+             		 	// alert(x);
+             		 	// alert(poslastli);
+//              		 	
+             	// }
+             	// else{
+             		// if(a>poslastli){
+             			// poslastli++;
+             			// var diff= a-poslastli;
+             			// x++;
+//              		
+//              			
+             			// document.getElementsByTagName("li")[4].style.left=(x) + "px";
+//              			
+             		// }
+             		// else{
+//              			
+             			// var diff= poslastli-a;
+//              			
+//              			
+             			// document.getElementsByTagName("li")[4].style.right=(x) + "px";
+//              				
+             		// }
+             		// if(b>posli){
+             			// var diff= b-posli;
+             		// posli++;
+             			// x++;
+//              			
+             			// event.target.style.left=(x) + "px";
+//              				
+             		// }
+             		// else{
+             			// posli--;
+             			// var diff= posli-b;
+             			// x++;
+//              			
+             			// event.target.style.right=(x) + "px";
+//              				
+             		// }
+             	// }
+             }
+             
+          }
+          
+        </script>
+    </body>
+</html>

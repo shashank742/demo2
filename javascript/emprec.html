@@ -1,0 +1,120 @@
+<html>
+	<head>
+		
+	</head>
+	<style>
+		table,td,th,tr{
+			border:1px solid;
+			border-collapse:collapse;
+		}
+		#table{
+			margin-left:95px;
+			
+		}
+		th{ 
+			padding-right:70px;
+		}
+	</style>
+	<body>
+		<div class="userInput">
+Employee name<input type="text" id="input1" autofocus />
+Department name<input type="text" id="input2"><button onclick="update()" id="update">Update</button><br>
+</div>
+
+<button onclick="empRecord()" id="emprecord">click to add record in table</button>
+<table id="table"></table>
+	
+
+	</body>
+	<script>
+	function clearData(){
+		//document.querySelector('userInput')
+ for(i=0;i<document.getElementsByTagName("INPUT").length;i++)
+		 
+		// document.querySelector("body").getElementsByTagName("INPUT")[i].value="";
+
+		document.getElementsByTagName("INPUT")[i].value="";			
+	}
+	
+	
+	var table=document.createElement("table");	
+	var tr=document.createElement("tr");				
+	var th=document.createElement("th");
+	var emp=document.createTextNode("emp name");
+	th.appendChild(emp);
+	tr.appendChild(th);	
+	
+	
+	var th=document.createElement("th");
+	var dept=document.createTextNode("dept name");
+	th.appendChild(dept);
+	tr.appendChild(th);
+	table.appendChild(tr);
+	document.getElementById("table").appendChild(table);
+	
+	
+	function empRecord(){
+		
+		
+		
+	
+	
+	var tr=document.createElement("tr");	
+	var td=document.createElement("td");			
+	var Empname=document.createTextNode(document.getElementById("input1").value);
+	
+	
+	td.appendChild(Empname);
+	tr.appendChild(td); 
+	
+	
+		
+	var td=document.createElement("td");			
+	var Deptname=document.createTextNode(document.getElementById("input2").value);
+	
+	td.appendChild(Deptname);
+	tr.appendChild(td);
+	
+	var button=document.createElement("button");
+	var btn=document.createTextNode("edit");	
+	button.appendChild(btn);
+	tr.appendChild(button);	
+	var bt=document.createElement("button");
+	var btn=document.createTextNode("remove");	
+	
+	bt.setAttribute('onclick','removeNode(event)')
+	button.setAttribute('onclick','edit(event)')
+	
+	// bt.addEventListener("click", dis(this) );
+
+
+	
+
+
+
+	bt.appendChild(btn);
+	tr.appendChild(bt);
+	table.appendChild(tr);
+	
+	clearData();
+	document.getElementById("update").disabled = true;
+	}	
+		function removeNode(event){
+			(event.target).parentNode.remove();
+			// console.log(event)
+		// console.log("hello");
+
+	}
+	function edit(event){
+	document.getElementById("input2").value=(event.target).previousSibling.textContent;	
+	document.getElementById("input1").value=(event.target).previousSibling.previousSibling.textContent;
+	document.getElementById("emprecord").disabled = true;
+	document.getElementById("update").disabled = false;
+	document.getElementById("input1").focus();
+	}
+	function update(){
+		document.getElementById("emprecord").disabled = false;
+		
+	}
+	</script>
+</html>

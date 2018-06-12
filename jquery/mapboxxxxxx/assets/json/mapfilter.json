@@ -1,0 +1,266 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Van Dorn Street",
+       "marker-color": "#0000ff",
+        "marker-symbol": "o",
+        "description": "Starbucks",
+"title":	"100 Williams Street11111",
+"id": "marker-hr6td3dua",
+"marker-size" :	"medium",     
+        "line": "blue",
+        "city": "known"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.12911152370515,
+          38.79930767201779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Franconia-Springfield",
+        "description": "Starbucks",
+"title":	"100 Williams Street2",
+"id": "marker-hr6td3dua1",
+"marker-color": "#0000ff",
+  "marker-size" :	"medium",      
+        "marker-symbol": "o",
+        "line": "blue",
+        "city": "known"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.16797018042666,
+          38.766521892689916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Federal Center SW",
+        "description": "Starbucks",
+"title":	"100 Williams Street3",
+"id": "marker-hr6td3dua2",
+"marker-size" :	"medium", 
+       "marker-color": "#0000ff",
+        "marker-symbol": "o",
+        "line": "blue",
+        "city": "known"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01586821694521,
+          38.885072355144786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Judiciary Sq",
+        "description": "Starbucks",
+"title":	"100 Williams Street4",
+"id": "marker-hr6td3dua3",
+"marker-size" :	"medium", 
+       "marker-color": "#ff0000",
+        "marker-symbol": "circle",
+        "line": "red",
+        "city": "known"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01663895662587,
+          38.896090317663166
+        ]
+      }
+    },
+    
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Woodley Park-Zoo Adams Morgan",
+        "description": "Starbucks",
+"title":	"100 Williams Street5",
+"id": "marker-hr6td3dua4",
+"marker-size" :	"medium", 
+       "marker-color": "#ff0000",
+        "marker-symbol": "square",
+        "line": "red",
+        "city": "known"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05241802079871,
+          38.92508513710051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L'Enfant Plaza",
+        "description": "Starbucks",
+"title":	"100 Williams Street6",
+"id": "marker-hr6td3dua5",
+"marker-size" :	"medium", 
+       "marker-color": "#00ff00",
+        "marker-symbol": "triangle",
+        "line": "green",
+        "city": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02190848409535,
+          38.88483772791197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smithsonian",
+      "marker-color": "#0000ff",
+        "marker-symbol": "rail-metro",
+        "description": "Starbucks",
+"title":	"100 Williams Street7",
+"id": "marker-hr6td3dua6",
+"marker-size" :	"medium",
+      
+        "line": "blue",
+        "city": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02806623428602,
+          38.888018702051426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pentagon City",
+        "description": "Starbucks",
+"title":	"100 Williams Street8",
+"id": "marker-hr6td3dua7",
+"marker-size" :	"medium",
+       "marker-color": "#0000ff",
+        "marker-symbol": "a",
+        "line": "blue",
+        "city": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.05953892154457,
+          38.86188238675449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Federal Triangle",
+        "description": "Starbucks",
+"title":	"100 Williams Street9",
+"id": "marker-hr6td3dua8",
+"marker-size" :	"medium", 
+      "marker-color": "#0000ff",
+        "marker-symbol": "1",
+        "line": "blue",
+        "city": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02813199840536,
+          38.89318087185462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Archives-Navy Mem'l",
+        "description": "Starbucks",
+"title":	"100 Williams Street10",
+"id": "marker-hr6td3dua9",
+"marker-size" :	"medium", 
+       "marker-color": "#00ff00",
+        "marker-symbol": "rail-metro",
+        "line": "green",
+        "city": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.02191438799919,
+          38.89366522352208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waterfront",
+        "description": "Starbucks",
+"title":	"100 Williams Street11",
+"id": "marker-hr6td3dua10",
+"marker-size" :	"medium", 
+       "marker-color": "#00ff00",
+        "marker-symbol": "rail-metro",
+        "line": "green",
+        "city": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01750520880347,
+          38.87646186689611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ronald Reagan Washington National Airport",
+        "description": "Starbucks",
+"title":	"100 Williams Street12",
+"id": "marker-hr6td3dua11",
+"marker-size" :	"medium", 
+       "marker-color": "#0000ff",
+        "marker-symbol": "rail-metro",
+        "line": "blue",
+        "city": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.04404229438322,
+          38.85341638599062
+        ]
+      }
+    }
+  ]
+}
+

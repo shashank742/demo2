@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.makeArray demo</title>
+  <style>
+  div {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ <div class = "parent">
+<div>First</div>
+<div>Second</div>
+<div>Third</div>
+<div>Fourth</div>
+ </div>
+<script>
+// Returns a NodeList
+console.log(window)
+console.log(document)
+var elems = document.getElementsByTagName( "div" );
+console.log(elems)
+// Convert the NodeList to an Array
+var arr = $.makeArray( elems );
+// Use an Array method on list of dom elements
+var b = [1,2,3,4,5,65,7,5,6];
+b.reverse();
+console.log(b)
+arr.reverse();
+console.log(arr)
+//$( arr ).appendTo( ".parent" );
+$(".parent").append(arr)
+</script>
+ 
+</body>
+</html>

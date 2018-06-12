@@ -1,0 +1,190 @@
+[
+	{
+		"name": "Airfield Supply",
+		"address": "1190 Coleman Avenue #140",
+		"city": "San Jose",
+		"state": "CA",
+		"zip": "95110",
+		"lat": "37.356808",
+		"lng": "-121.931839",
+		"web": "http:\/\/www.airfieldsupplyco.com\/",
+		"tel": "408.320.0230",
+		"filter": "delivery"
+	}, {
+		"name": "Bl\u00fcm Oakland",
+		"address": "578 W Grand Ave",
+		"city": "Oakland",
+		"state": "CA",
+		"zip": "94612",
+		"lat": "37.812502",
+		"lng": "-122.270956",
+		"web": "http:\/\/www.blumoak.com\/",
+		"tel": "510.338.3632",
+		"filter": "store"
+	}, {
+		"name": "Berkeley Patient Care Center",
+		"address": "2590 Telegraph Ave",
+		"city": "Berkeley",
+		"state": "CA",
+		"zip": "94704",
+		"lat": "37.86354",
+		"lng": "-122.258877",
+		"web": "http:\/\/www.berkeleypatientscare.com\/",
+		"tel": "510.540.7878",
+		"filter": "adult"
+	}, {
+		"name": "Blue Mountain Collective",
+		"address": "692 Marshall Ave",
+		"city": "San Andreas",
+		"state": "CA",
+		"zip": "95249",
+		"lat": "38.190194",
+		"lng": "-120.671593",
+		"web": "http:\/\/www.weedmaps.com\/dispensaries\/blue-mountain-collective-2",
+		"tel": "209.754.3289",
+		"filter": "store"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.441972",
+		"lng": "-121.906571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.341972",
+		"lng": "-121.906571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.241972",
+		"lng": "-121.906571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.141972",
+		"lng": "-121.906571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.541972",
+		"lng": "-121.806571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.741972",
+		"lng": "-121.906571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.841972",
+		"lng": "-121.906571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.941972",
+		"lng": "-121.506571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7656",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.141972",
+		"lng": "-121.916571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "delivery"
+	}, {
+		"name": "Big Sur Canna Botanicals",
+		"address": "26352 Carmel Rancho Ln Suite 100",
+		"city": "Carmel-By-The-Sea",
+		"state": "CA",
+		"zip": "93923",
+		"lat": "36.521972",
+		"lng": "-121.706571",
+		"web": "https:\/\/www.bigsurcannabotanicals.com\/",
+		"tel": "831.250.7756",
+		"filter": "store"
+	}, {
+		"name": "Berkeley Patients Group",
+		"address": "2366 San Pablo Ave",
+		"city": "Berkeley",
+		"state": "CA",
+		"zip": "94702",
+		"lat": "37.883485",
+		"lng": "-122.290605",
+		"web": "http:\/\/www.mybpg.com\/",
+		"tel": "510.540.6013",
+		"filter": "adult"
+	}, {
+		"name": "Berkeley Patients Group",
+		"address": "2366 San Pablo Ave",
+		"city": "Berkeley",
+		"state": "CA",
+		"zip": "94702",
+		"lat": "37.843485",
+		"lng": "-122.290605",
+		"web": "http:\/\/www.mybpg.com\/",
+		"tel": "510.540.6013",
+		"filter": "delivery"
+	}, {
+		"name": "California Caregivers Alliance",
+		"address": "2815 W Sunset Blvd",
+		"city": "Los Angeles",
+		"state": "CA",
+		"zip": "90026",
+		"lat": "34.082363",
+		"lng": "-118.261798",
+		"web": "http:\/\/www.weedmaps.com\/dispensaries\/california-caregivers-alliance",
+		"tel": "213.353.0100",
+		"filter": "store"
+	}
+]

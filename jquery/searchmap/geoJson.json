@@ -1,0 +1,95 @@
+dataJson({  
+   "type":"FeatureCollection",
+   "features":[  
+      {  
+         "type":"Feature",
+         "properties":{  
+            "zip":"12345",
+            "place":"New York",
+            "time":1348176066,
+            "tz":480,
+            "label":"this is goood",
+            
+            
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               68.3832,
+               6.9775
+               
+            ]
+         },
+         "icon":" https://onlinelearningconsortium.org/wp-content/uploads/2015/08/map_icon.png ",
+         "icons":"https://www.google.com/mapfiles/marker_green.png "
+      },
+      {
+      "type":"Feature",
+         "properties":{  
+            "zip":"123412",
+            "place":"India",
+            "time":1348176066,
+            "tz":480,
+            "label":"this is soo goood",
+            
+            
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               26.3832,
+               5.9775
+             
+            ]
+         },
+       
+        
+            "icon":"https://www.google.com/mapfiles/marker_green.png",
+            "icons":"https://onlinelearningconsortium.org/wp-content/uploads/2015/08/map_icon.png "
+          
+      
+      },{  
+         "type":"Feature",
+         "properties":{  
+            "zip":"12345",
+            "place":"London",
+            "time":1348176066,
+            "tz":480,
+            "label":"this is goood",
+            
+            
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               18.3832,
+               6.9775
+               
+            ]
+         },
+         "icon":"https://www.google.com/mapfiles/marker_green.png",
+         "icons":"https://onlinelearningconsortium.org/wp-content/uploads/2015/08/map_icon.png "
+      },{  
+         "type":"Feature",
+         "properties":{  
+            "zip":"12345",
+            "place":"Delhi",
+            "time":1348176066,
+            "tz":480,
+            "label":"this is goood",
+            
+            
+         },
+         "geometry":{  
+            "type":"Point",
+            "coordinates":[  
+               28.3832,
+               6.9775
+               
+            ]
+         },
+         "icon":"https://www.google.com/mapfiles/marker_green.png",
+         "icons":"https://onlinelearningconsortium.org/wp-content/uploads/2015/08/map_icon.png "
+      }
+   ]
+});

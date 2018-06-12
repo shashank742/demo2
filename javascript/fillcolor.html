@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+        ul{ text-align:center; display:inline-block; }    
+        li{  width:100px; height:100px; display:inline-block; position:relative; border:1px solid #000000; color:#ffffff;  }          
+        </style>
+    </head>
+    <body>        
+         <ul>   <li> </li> <li> </li> <li> </li>  <li> </li> <li> </li> <li> </li> <li> </li> <li> </li> <li> </li> </ul>    
+        <script>
+        var store=[];
+       	var li=document.getElementsByTagName("li").length;
+        for(var i=0; i<li; i++){
+        	document.getElementsByTagName("li")[i].addEventListener("click",demo);          	     	
+        }  
+         var classes = ['#000000', '#595b58', '#103c6b', '#f68d04', '#ff0000','#4f4b43','#7bebd1','#00ff00','#0000ff'];      
+       function demo(event){          
+       	var bool=true;       
+          var index = Math.floor(Math.random() * classes.length);                                   
+         if(store.length==0){         	
+          bool=true;
+         }else{
+         	 for(var i=0; i<store.length; i++){
+          	if(store[i]==index){
+          		
+          		bool=false;
+          		          		
+          	}                   	                
+           }
+          
+          }
+                    if(bool){
+                    	 if(event.target.getAttribute("style","background-color")){                    		
+                    		console.log(store)
+                    		store.splice(-1);
+                    		
+                    		console.log(store)
+                    		
+                       }
+                    	  store.push(index);
+                    	var className = classes[index];
+                    	
+                    	event.target.style.backgroundColor=classes[index];                       	              	
+                    	// event.target.removeEventListener("click",demo);                     	                     	  
+                  }
+                    else{
+                    	demo(event)                   	
+                     } 
+                    	 
+       	}
+        </script>
+    </body>
+</html>

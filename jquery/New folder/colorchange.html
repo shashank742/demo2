@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="plugin.js"></script>
+		<style>
+		body{
+			
+		}
+			.overlay{
+				
+				width:100%;
+				height:100%;
+				color:#ffffff;
+				background-color:#4f4f5f;				
+					display:none;	
+					position:fixed;
+					top:0;	
+			}
+			.popup{
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				background-color:yellow;
+				color:#000000;
+				/*height:100px;
+				width:300px;*/								
+				padding:80px;
+			}
+			.close{
+				position:absolute;
+				top:2%;
+				right:2%;
+				background:url("close.png")no-repeat;
+				height:17px;
+				width:17px;
+			}
+		</style>
+	</head>
+	<body>
+		<div><span >click to see =></span> <a class="setColor">overlay</a></div>
+	 
+	    <script>
+	  
+	    	$("div" ).click(function(){
+	    		$("div").greenify({
+	    		color:"blue",
+	    		backgroundColor:"red"
+	    	})
+	    		
+	    	});
+	    	 
+	    	
+	    </script>
+	</body>
+	
+</html>

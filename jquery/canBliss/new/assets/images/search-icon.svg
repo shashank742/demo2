@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>SearchIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.8105703,26.3587233 L28.5755919,31.2428467 C29.104848,31.7853316 29.9495558,31.7837404 30.4790683,31.2409927 C31.009635,30.6971645 31.0089112,29.8311713 30.480877,29.2899389 L25.7158554,24.4058155 L23.8105703,26.3587233 Z M21.5553136,27.952912 C20.244791,28.5280261 18.8015292,28.8464286 17.2857143,28.8464286 C11.2894799,28.8464286 6.42857143,23.8639974 6.42857143,17.7178571 C6.42857143,11.5717169 11.2894799,6.58928571 17.2857143,6.58928571 C23.2819487,6.58928571 28.1428571,11.5717169 28.1428571,17.7178571 C28.1428571,19.2715555 27.8322253,20.7508882 27.2711465,22.0941656 L32.3861622,27.3370311 C33.9657261,28.9560763 33.9679115,31.5707614 32.3843534,33.1939005 C30.8041455,34.8136057 28.2533936,34.8184106 26.6703067,33.1957545 L21.5553136,27.952912 Z M17.2857143,26.0642857 C21.7828901,26.0642857 25.4285714,22.3274624 25.4285714,17.7178571 C25.4285714,13.1082519 21.7828901,9.37142857 17.2857143,9.37142857 C12.7885385,9.37142857 9.14285714,13.1082519 9.14285714,17.7178571 C9.14285714,22.3274624 12.7885385,26.0642857 17.2857143,26.0642857 Z" id="path-1"></path>
+        <linearGradient x1="7.6875%" y1="-12.1523438%" x2="100%" y2="116.397135%" id="linearGradient-3">
+            <stop stop-color="#B19039" offset="0%"></stop>
+            <stop stop-color="#E2C25C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1185.000000, -56.000000)">
+            <g id="TopHeader" transform="translate(5.000000, -2.000000)">
+                <g id="Header">
+                    <g id="Icon-/-Simple-Outlined-/-*Icon-Pack" transform="translate(1173.000000, 50.845528)">
+                        <g id="Icon-/-Simple-Outlined-/-Search" transform="translate(0.706897, 0.724138)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#4A4A4A" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="Base-/-Fill-/-Primary" mask="url(#mask-2)" fill="url(#linearGradient-3)" fill-rule="evenodd">
+                                <rect id="Fill" x="0" y="0" width="40" height="41"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

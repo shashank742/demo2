@@ -1,0 +1,219 @@
+[
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"sativa",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"sativa",
+		"filterLocation":"indoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"sativa",
+		"filterLocation":"indoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"Indica Dominant Hybrid",
+		"filterLocation":"indoor",
+		"filterLighting":"mixed light",
+		"filterTrimmed":"by hand"
+	},
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"artificial light",
+		"filterTrimmed":"by machine"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"greenhouse",
+		"filterLighting":"artificial light",
+		"filterTrimmed":"by hand"
+	},
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"Sativa Dominanat Hybrid",
+		"filterLocation":"greenhouse",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"Sativa Dominanat Hybrid",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	},
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	},
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	},
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"indoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"indoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	},
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"indoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"indoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	},
+	{
+		"image":"assets/images/haze1product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+		
+		
+	}, {
+		"image":"assets/images/haze2-product.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	}, {
+		"image":"assets/images/haze3.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"outdoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by hand"
+	}, {
+		"image":"assets/images/haze4.png",		
+		"filterSpecies":"indica",
+		"filterLocation":"indoor",
+		"filterLighting":"sunshine",
+		"filterTrimmed":"by machine"
+	}
+ 
+]

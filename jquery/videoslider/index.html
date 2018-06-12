@@ -1,0 +1,3530 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ayo World</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" />
+		<link type="text/css" rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/plugins.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/themes.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/rtl.css" media="screen">
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+		<link href="http://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+
+		<!-- If you'd like to support IE8 -->
+		<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<![endif]-->
+		<!-- <script type="text/javascript" src="assets/js/jquery.min.js"></script> -->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script></script>
+		<script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.js"></script>
+		<script  type="text/javascript" src="assets/js/jquery.multiselect.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script> -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.selectBoxIt.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/bootstrap-tagsinput.min.js"></script>
+		<script type="text/javascript" src="assets/js/site.js"></script>
+		<style>
+			.video-head {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			.vjs-tech {
+				width: auto;
+				height: auto;
+				min-width: 100%;
+				min-height: 100%;
+				max-width: none;
+				max-height: none;
+			}
+			.video-player-wrapper.is-fullscreen {
+				position: relative;
+				height: 100%;
+				width: 100%;
+				top: 0;
+				left: 0;
+			}
+			.video-js {
+				width: 100%;
+				height: 100%;
+				min-width: 0;
+				min-height: 0;
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.home-slider .bx-viewport, .home-slider .bx-wrapper, .home-slider .bx-viewport > ul, .home-slider .bx-viewport > ul > li {
+				background-color: transparent !important;
+			}
+
+			.home-slider .bx-controls-direction {
+				display: block;
+			}
+			.home-slider .bx-controls-direction a {
+				position: absolute;
+				z-index: 5000;
+				top: 50%;
+				font-size: 0;
+				width: 20px;
+				height: 37px;
+				background-color: black;
+			}
+			.home-slider .bx-controls-direction .bx-prev {
+				left: 50px;
+				
+				background: url(assets/images/prv-arrow.png) no-repeat 0 0;
+			
+			}
+			.home-slider .bx-controls-direction .bx-next {
+				right: 50px;
+				background: url(assets/images/next-arrow.png) no-repeat 0 0;
+			}
+			.bxslider > li {
+				background-color: #a8b3d4;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Page Wrapper Start-->
+		<div id="main-wrapper">
+			<header id="header">
+				<div class="primary-header clearfix">
+					<a class="logo" href="index.html"><img src="assets/images/logo.png" alt="logo"/></a>
+					<div class="side-menu">
+						<div class="vertical-scroll-content">
+							<ul>
+								<li class="expend">
+									<a href="javascript:void(0);">About</a>
+									<ul class="sub-label">
+										<li>
+											<a href="#!">Sub mnenu 1</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 2</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 3</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 4</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#!">Rent</a>
+								</li>
+								<li class="expend">
+									<a href="javascript:void(0);">Vacation rental</a>
+									<ul class="sub-label">
+										<li>
+											<a href="#!">Sub mnenu 1</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 2</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 3</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 4</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#!">Sell</a>
+								</li>
+								<li>
+									<a href="#!">Mortgage</a>
+								</li>
+								<li class="expend">
+									<a href="javascript:void(0);">New construction</a>
+									<ul class="sub-label">
+										<li>
+											<a href="#!">Sub mnenu 1</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 2</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 3</a>
+										</li>
+										<li>
+											<a href="#!">Sub mnenu 4</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#!">Pro Finder</a>
+								</li>
+								<li>
+									<a href="#!">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="right-header">
+						<ul class="clearfix">
+							<li>
+								<span class="wishlist"><em>2</em></span>
+							</li>
+							<li>
+								<a href="#!" class="signin-box">Sign In</a>
+							</li>
+							<li>
+								<a href="#!" class="add-list"><span>+</span></a>
+							</li>
+							<li>
+								<a href="#!" class="global">&nbsp;</a>
+								<div class="dropdown global-dropdown language-CustomScrollbar">
+									<div class="choose-location">
+										<div class="select-row">
+											<label>Choose your Location</label>
+											<select class="select selectThis">
+												<option>Country</option>
+												<option>aaaa</option>
+												<option>bbbb</option>
+												<option>cccc</option>
+												<option>dddd</option>
+												<option>eeee</option>
+												<option>ffff</option>
+											</select>
+										</div>
+										<div class="select-row odd">
+											<label>Units of Measure</label>
+											<select class="select selectThis">
+												<option>aaaa</option>
+												<option>bbbb</option>
+												<option>cccc</option>
+												<option>dddd</option>
+												<option>eeee</option>
+												<option>ffff</option>
+											</select>
+										</div>
+										<div class="select-row even">
+											<label>Currency</label>
+											<select class="select selectThis">
+												<option>aaaa</option>
+												<option>bbbb</option>
+												<option>cccc</option>
+												<option>dddd</option>
+												<option>eeee</option>
+												<option>ffff</option>
+											</select>
+										</div>
+										<input type="submit" class="btn" value="Save Now" />
+
+									</div>
+									<div class="language-box">
+										<h3>Language</h3>
+										<form action="#" class="custom-form">
+											<div class="vertical-scroll-content language-CustomScrollbar">
+												<ul class="clearfix">
+													<li>
+														<label class="label_radio">Hindi
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">English
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Arabic
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">French
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Hindi
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">English
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Arabic
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">French
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Hindi
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">English
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Arabic
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">French
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Hindi
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">English
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Arabic
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">French
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Hindi
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">English
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">Arabic
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+													<li>
+														<label class="label_radio">French
+															<input type="radio" name="lan" />
+														</label>
+													</li>
+												</ul>
+											</div>
+										</form>
+									</div>
+
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="left-header">
+						<span class="toggle-bar"></span>
+						<div class="toggle-bar-right">
+							<div class="hamburger hamburger--arrow-r">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</div>
+						</div>
+						<ul class="main-menu clearfix">
+							<li class="main-expend">
+								<a href="#!">Buy</a>
+								<div class="nav-content">
+									<div class="nav-wrap">
+										<div class="box-row">
+											<h3>Heading Row 000</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 000</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 000</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 000</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="main-expend">
+								<a href="#!">Rent</a>
+								<div class="nav-content">
+									<div class="nav-wrap">
+										<div class="box-row">
+											<h3>Heading Row 111</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 111</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 111</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="main-expend">
+								<a href="#!">Holidays</a>
+								<div class="nav-content">
+									<div class="nav-wrap">
+										<div class="box-row">
+											<h3>Heading Row 222</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 222</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 222</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="main-expend">
+								<a href="#!">Lease</a>
+								<div class="nav-content">
+									<div class="nav-wrap">
+										<div class="box-row">
+											<h3>Heading Row 333</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 333</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 333</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="main-expend">
+								<a href="#!">Project(s)</a>
+								<div class="nav-content">
+									<div class="nav-wrap">
+										<div class="box-row">
+											<h3>Heading Row 444</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 444</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 444</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="main-expend">
+								<a href="#!">Professionals</a>
+								<div class="nav-content">
+									<div class="nav-wrap">
+										<div class="box-row">
+											<h3>Heading Row 555</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 555</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+										<div class="box-row">
+											<h3>Heading Row 555</h3>
+											<ul class="clearfix">
+												<li>
+													<a href="#!">aaaa</a>
+												</li>
+												<li>
+													<a href="#!">bbbb</a>
+												</li>
+												<li>
+													<a href="#!">cccc</a>
+												</li>
+												<li>
+													<a href="#!">dddd</a>
+												</li>
+												<li>
+													<a href="#!">eeee</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="home-content">
+				<div class="mob-tab-res mobile-search-row">
+					<ul class="tab-row clearfix">
+						<li>
+							<a class="tab1 active" href="#!">Buy</a>
+						</li>
+						<li>
+							<a class="tab2" href="#!">Rent</a>
+						</li>
+						<li>
+							<a class="tab3" href="#!">Holidays</a>
+						</li>
+						<li>
+							<a class="tab4" href="#!">Projects</a>
+						</li>
+					</ul>
+				</div>
+				<!-- <div class="mobile-search-row">
+				Enter Landmark,Location or Project
+				</div> -->
+				<div class="search-content">
+					<span class="close"><img src="assets/images/logo.png" alt="logo" /></span>
+					<h1><small>Welcome</small> AY<em>O</em>. <span>World</span></h1>
+					<div class="search-tab tab-container">
+						<ul class="tab-row clearfix">
+							<li>
+								<a class="tab1 active" href="#!">Buy</a>
+							</li>
+							<li>
+								<a class="tab2" href="#!">Rent</a>
+							</li>
+							<li>
+								<a class="tab3" href="#!">Holidays</a>
+							</li>
+							<li>
+								<a class="tab4" href="#!">Projects</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-1 tab-col">
+								<div class="select-filter clearfix">
+									<div class="search-row clearfix">
+										<span class="select-row tab-row-select first">
+											<select class="select selectboxinit">
+												<option>Buy</option>
+												<option>Rent</option>
+												<option>Holidays</option>
+												<option>Projects</option>
+											</select> </span>
+										<div class="select-row residentialProject">
+											<div class="dropdown-row increase-num-wrap">
+												<span class="dropdown-value">
+													<input type="hidden"  value="" />
+													Residential Project <em><b>&nbsp;</b></em></span>
+												<div class="dropdown-box clearfix">
+													<select name="users_list" id="users_list04" multiple="multiple" size="15">
+														<optgroup label="Residential Project">
+															<option value="a1">Residential Project 000 </option>
+															<option value="a2">Residential Project 000 </option>
+															<option value="a3">Residential Project 000</option>
+															<option value="a4">Residential Project 000</option>
+															<option value="a5">Residential Project 000</option>
+															<option value="a6">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 01">
+															<option value="b1">Residential Project 000</option>
+															<option value="b2">Residential Project 000</option>
+															<option value="b3">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 02">
+															<option value="c1">Residential Project 000</option>
+															<option value="c2">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 03">
+															<option value="d1">Residential Project 000</option>
+															<option value="d2">Residential Project 000</option>
+															<option value="d3">Residential Project 000</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="search-field input_remove">
+											<div class="tags-default">
+												<input type="text"  data-role="tagsinput" placeholder="Enter Landmark,Location or Project" class="input" default-value="Enter Landmark,Location or Project"  set-value="Add places"    />
+												<button type="button" class="submit-search">
+													&nbsp;
+												</button>
+											</div>
+										</div>
+										<span class="map-search"><a href="#!" class="map-search-btn">Map Search</a></span>
+									</div>
+									<div class="search-row-fields clearfix">
+										<!-- <span class="status-row">
+										<select class="select">
+										<option>Construction Status</option>
+										<option>aaaa</option>
+										<option>bbbb</option>
+										<option>cccc</option>
+										<option>dddd</option>
+										<option>eeee</option>
+										</select> </span> -->
+										<div class=" dropdown-row range-row slide-tg" default-text="Any price">
+											<span class="dropdown-value">Any price<em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box range-box min-max-range clearfix">
+												<strong class="min-max"><span class="Min">Min</span> - <span class="Max">Max</span></strong>
+												<div class="clearfix">
+													<span class="select_text">Select Minimum</span>
+													<span class="select_text">Select Maximum</span>
+												</div>
+												<div class="clearfix">
+													<div class="min-box">
+														<!-- <span class="price-range">&nbsp;</span> -->
+														<!-- <div class="input-box">
+														<input type="text" value="Min" />
+														</div> -->
+														<div class="clearfix price_list">
+															<!-- <h3>min</h3> -->
+															<ul>
+																<li>
+																	Min
+																</li>
+																<li>
+																	5 Lac
+																</li>
+																<li>
+																	10 Lac
+																</li>
+																<li>
+																	15 Lac
+																</li>
+																<li>
+																	20 Lac
+																</li>
+																<li>
+																	25 Lac
+																</li>
+																<li>
+																	30 Lac
+																</li>
+																<li>
+																	35 Lac
+																</li>
+																<li>
+																	40 Lac
+																</li>
+																<li>
+																	45 Lac
+																</li>
+																<li>
+																	50 Lac
+																</li>
+																<li>
+																	55 Lac
+																</li>
+																<li>
+																	60 Lac
+																</li>
+																<li>
+																	65 Lac
+																</li>
+																<li>
+																	70 Lac
+																</li>
+																<li>
+																	75 Lac
+																</li>
+																<li>
+																	80 Lac
+																</li>
+																<li>
+																	85 Lac
+																</li>
+																<li>
+																	90 Lac
+																</li>
+																<li>
+																	105 Lac
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="max-box">
+														<!-- <div class="input-box">
+														<input type="text" value="Max" />
+														</div> -->
+														<div class="clearfix price_list">
+															<!-- <h3>Max</h3> -->
+															<ul>
+																<li>
+																	Max
+																</li>
+																<li>
+																	5 Lac
+																</li>
+																<li>
+																	10 Lac
+																</li>
+																<li>
+																	15 Lac
+																</li>
+																<li>
+																	20 Lac
+																</li>
+																<li>
+																	25 Lac
+																</li>
+																<li>
+																	30 Lac
+																</li>
+																<li>
+																	35 Lac
+																</li>
+																<li>
+																	40 Lac
+																</li>
+																<li>
+																	45 Lac
+																</li>
+																<li>
+																	50 Lac
+																</li>
+																<li>
+																	55 Lac
+																</li>
+																<li>
+																	60 Lac
+																</li>
+																<li>
+																	65 Lac
+																</li>
+																<li>
+																	70 Lac
+																</li>
+																<li>
+																	75 Lac
+																</li>
+																<li>
+																	80 Lac
+																</li>
+																<li>
+																	85 Lac
+																</li>
+																<li>
+																	90 Lac
+																</li>
+																<li>
+																	105 Lac
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-row bedroom-row increase-num-wrap slide-tg bed-row" default-text="0+ Beds">
+
+											<span class="dropdown-value" >0+ Beds <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form advance-box clearfix">
+												<ul>
+													<li>
+														<a href="#!" class="active">1+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">2+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">3+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">4+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">5+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">6+ Beds</a>
+													</li>
+												</ul>
+
+											</div>
+										</div>
+										<div class="dropdown-row lifestyle-row increase-num-wrap slide-tg" default-text="Lifestyle">
+											<input type="hidden" value="" />
+											<span class="dropdown-value">Lifestyle <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form clearfix">
+												<ul>
+													<li>
+														<label class="label_check">
+															<input type="checkbox" name="sample-checkbox-01" value="1">
+															Desert</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01" value="2">
+															Sky</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox" name="sample-checkbox-01" value="3">
+															Eco-Friendly</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="4">
+															Beach</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="5">
+															Country Living</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="6">
+															Metropolitian</label>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+
+										<div class="dropdown-row post-row post-by slide-tg" default-text="Posted By">
+											<span class="dropdown-value">Posted By <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form clearfix">
+												<ul class="clearfix">
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01">
+															Owner</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01">
+															Builder</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01">
+															Dealer</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<span class="dropdown-row clear-row" ><a href="#!" class="clear-btn">clear all</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-2 tab-col">
+								<div class="select-filter clearfix">
+									<div class="search-row clearfix">
+										<span class="select-row tab-row-select first">
+											<select class="select selectboxinit">
+												<option>Buy</option>
+												<option>Rent</option>
+												<option>Holidays</option>
+												<option>Projects</option>
+											</select> </span>
+										<div class="select-row residentialProject">
+											<div class="dropdown-row increase-num-wrap">
+												<span class="dropdown-value">Residential Project <em><b></b></em></span>
+												<div class="dropdown-box clearfix">
+													<select name="users_list" id="users_list05" multiple="multiple" size="15">
+														<optgroup label="Residential Project">
+															<option value="e1">Residential Project 000 </option>
+															<option value="e2">Residential Project 000 </option>
+															<option value="e3">Residential Project 000</option>
+															<option value="e4">Residential Project 000</option>
+															<option value="e5">Residential Project 000</option>
+															<option value="e6">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 01">
+															<option value="f1">Residential Project 000</option>
+															<option value="f2">Residential Project 000</option>
+															<option value="f3">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 02">
+															<option value="g1">Residential Project 000</option>
+															<option value="g2">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 03">
+															<option value="h1">Residential Project 000</option>
+															<option value="h2">Residential Project 000</option>
+															<option  value="h3">Residential Project 000</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="search-field input_remove">
+											<div class="tags-default">
+												<input type="text"  data-role="tagsinput" placeholder="Enter Landmark,Location or Project" class="input" default-value="Enter Landmark,Location or Project"  set-value="Add places"  />
+												<button type="button" class="submit-search">
+													&nbsp;
+												</button>
+											</div>
+										</div>
+										<span class="map-search"> <a href="#!" class="map-search-btn">Map Search</a> </span>
+									</div>
+									<div class="search-row-fields clearfix">
+										<!-- <span class="status-row">
+										<select class="select">
+										<option>Construction Status</option>
+										<option>aaaa</option>
+										<option>bbbb</option>
+										<option>cccc</option>
+										<option>dddd</option>
+										<option>eeee</option>
+										</select> </span> -->
+										<div class="dropdown-row range-row slide-tg" default-text="Any price">
+											<span class="dropdown-value">Any price<em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box range-box min-max-range clearfix">
+												<strong class="min-max"><span class="Min">Min</span> - <span class="Max">Max</span></strong>
+												<div class="clearfix">
+													<span class="select_text">Select Minimum</span>
+													<span class="select_text">Select Maximum</span>
+												</div>
+												<div class="clearfix">
+													<div class="min-box">
+														<!-- <span class="price-range">&nbsp;</span> -->
+														<!-- <div class="input-box">
+														<input type="text" value="Min" />
+														</div> -->
+														<div class="clearfix price_list">
+															<!-- <h3>min</h3> -->
+															<ul>
+																<li>
+																	Min
+																</li>
+																<li>
+																	5 Lac
+																</li>
+																<li>
+																	10 Lac
+																</li>
+																<li>
+																	15 Lac
+																</li>
+																<li>
+																	20 Lac
+																</li>
+																<li>
+																	25 Lac
+																</li>
+																<li>
+																	30 Lac
+																</li>
+																<li>
+																	35 Lac
+																</li>
+																<li>
+																	40 Lac
+																</li>
+																<li>
+																	45 Lac
+																</li>
+																<li>
+																	50 Lac
+																</li>
+																<li>
+																	55 Lac
+																</li>
+																<li>
+																	60 Lac
+																</li>
+																<li>
+																	65 Lac
+																</li>
+																<li>
+																	70 Lac
+																</li>
+																<li>
+																	75 Lac
+																</li>
+																<li>
+																	80 Lac
+																</li>
+																<li>
+																	85 Lac
+																</li>
+																<li>
+																	90 Lac
+																</li>
+																<li>
+																	105 Lac
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="max-box">
+														<!-- <div class="input-box">
+														<input type="text" value="Max" />
+														</div> -->
+														<div class="clearfix price_list">
+															<!-- <h3>Max</h3> -->
+															<ul>
+																<li>
+																	Max
+																</li>
+																<li>
+																	5 Lac
+																</li>
+																<li>
+																	10 Lac
+																</li>
+																<li>
+																	15 Lac
+																</li>
+																<li>
+																	20 Lac
+																</li>
+																<li>
+																	25 Lac
+																</li>
+																<li>
+																	30 Lac
+																</li>
+																<li>
+																	35 Lac
+																</li>
+																<li>
+																	40 Lac
+																</li>
+																<li>
+																	45 Lac
+																</li>
+																<li>
+																	50 Lac
+																</li>
+																<li>
+																	55 Lac
+																</li>
+																<li>
+																	60 Lac
+																</li>
+																<li>
+																	65 Lac
+																</li>
+																<li>
+																	70 Lac
+																</li>
+																<li>
+																	75 Lac
+																</li>
+																<li>
+																	80 Lac
+																</li>
+																<li>
+																	85 Lac
+																</li>
+																<li>
+																	90 Lac
+																</li>
+																<li>
+																	105 Lac
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-row bedroom-row increase-num-wrap slide-tg bed-row" default-text="0+ Beds">
+
+											<span class="dropdown-value" >0+ Beds <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form advance-box clearfix">
+												<ul>
+													<li>
+														<a href="#!" class="active">1+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">2+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">3+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">4+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">5+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">6+ Beds</a>
+													</li>
+												</ul>
+
+											</div>
+										</div>
+										<div class="dropdown-row lifestyle-row increase-num-wrap slide-tg" default-text="Lifestyle">
+											<input type="hidden" value="" />
+											<span class="dropdown-value">Lifestyle <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form clearfix">
+												<ul>
+													<li>
+														<label class="label_check">
+															<input type="checkbox" name="sample-checkbox-01" value="1">
+															1BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01" value="2">
+															2BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox" name="sample-checkbox-01" value="3">
+															3BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="4">
+															4BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="5">
+															5BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="6">
+															6BHK</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="dropdown-row post-row post-by slide-tg" default-text="Posted By">
+											<span class="dropdown-value">Posted By <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form clearfix">
+												<ul class="clearfix">
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01">
+															Owner</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01">
+															Builder</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01">
+															Dealer</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<span class="dropdown-row clear-row"><a href="#!" class="clear-btn">clear all</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-3 tab-col">
+								<div class="select-filter clearfix">
+									<div class="search-row-fields holidays clearfix">
+										<span class="select-row tab-row-select first">
+											<select class="select selectboxinit">
+												<option>Buy</option>
+												<option>Rent</option>
+												<option>Holidays</option>
+												<option>Projects</option>
+											</select> </span>
+										<span class="search-row-wrap search-field input_remove anywhere">
+											<input data-role="tagsinput" type="text" placeholder="Enter Landmark or Location" />
+										</span>
+										<div class="cross-btn-cal">
+											<span class="line-bar-01">&nbsp;</span>
+											<span class="line-bar-02">&nbsp;</span>
+										</div>
+										<div class="search-row-wrap anytime">
+											<span class="dateinput-start dateinput--with-caret">Check In<i>&nbsp;</i> </span>
+											<span class="daterangepickerinput__arrow"> - </span>
+											<span class="dateinput-end">Check Out<i>&nbsp;</i> </span>
+
+										</div>
+										<div class="dropdown-row search-row-wrap guests">
+											<span class="add-guest" default-text="1 Guests">1 Guests  &nbsp; </span>
+											<span class="add-infant">&nbsp;</span>
+											<div class="dropdown-box clearfix">
+												<div class="sp-quantity adults">
+													<div class="sp-row">
+														<strong class="adult">Adults</strong>
+													</div>
+													<div class="sp-minus disable">
+														<a class="ddd" href="javascript:void(0);">-</a>
+													</div>
+													<div class="sp-input">
+														<span class="quntity-input" default-text="1">1</span>
+													</div>
+													<div class="sp-plus fff">
+														<a class="ddd" href="javascript:void(0);">+</a>
+													</div>
+												</div>
+												<div class="sp-quantity children">
+													<div class="sp-row">
+														<strong>Children</strong>
+														<small>Ages 2-12</small>
+													</div>
+													<div class="sp-minus disable">
+														<a class="ddd" href="javascript:void(0);">-</a>
+													</div>
+													<div class="sp-input">
+														<span class="quntity-input" default-text="0">0</span>
+													</div>
+													<div class="sp-plus">
+														<a class="ddd" href="javascript:void(0);">+</a>
+													</div>
+												</div>
+												<div class="sp-quantity infants">
+													<div class="sp-row">
+														<strong>Infants</strong>
+														<small>under 2</small>
+													</div>
+													<div class="sp-minus disable">
+														<a class="ddd" href="javascript:void(0);">-</a>
+													</div>
+													<div class="sp-input">
+														<span class="quntity-input" default-text="0">0</span>
+													</div>
+													<div class="sp-plus">
+														<a class="ddd" href="javascript:void(0);">+</a>
+													</div>
+												</div>
+												<div class="clearfix quality-clear">
+													<a href="#!">clear all</a>
+												</div>
+											</div>
+										</div>
+										<span class="search-field">
+											<input type="submit" class="submit-search" value="&nbsp;" />
+										</span>
+										<span class="map-search"> <a href="#!" class="map-search-btn">Map Search</a> </span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-4 tab-col">
+								<div class="select-filter clearfix">
+									<div class="search-row clearfix">
+										<span class="select-row tab-row-select first">
+											<select class="select selectboxinit">
+												<option>Buy</option>
+												<option>Rent</option>
+												<option>Holidays</option>
+												<option>Projects</option>
+											</select> </span>
+										<div class="select-row residentialProject">
+											<div class="dropdown-row increase-num-wrap">
+												<span class="dropdown-value">Residential Project <em><b></b></em></span>
+												<div class="dropdown-box clearfix">
+													<select name="users_list" id="users_list03" multiple="multiple" size="15">
+														<optgroup label="Residential Project">
+															<option value="x1">Residential Project 000 </option>
+															<option value="x2">Residential Project 000 </option>
+															<option value="x3">Residential Project 000</option>
+															<option value="x5">Residential Project 000</option>
+															<option value="x6">Residential Project 000</option>
+															<option value="x7">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 01">
+															<option value="y1">Residential Project 000</option>
+															<option value="y2">Residential Project 000</option>
+															<option value="y3">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 02">
+															<option value="z1">Residential Project 000</option>
+															<option value="z2">Residential Project 000</option>
+														</optgroup>
+														<optgroup label="Residential Project 03">
+															<option  value="z4">Residential Project 000</option>
+															<option  value="z5">Residential Project 000</option>
+															<option  value="z6">Residential Project 000</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="search-field input_remove">
+											<div class="tags-default">
+												<input type="text"  data-role="tagsinput" placeholder="Enter Landmark,Location or Project" class="input" default-value="Enter Landmark,Location or Project"  set-value="Add places"  />
+												<button type="button" class="submit-search">
+													&nbsp;
+												</button>
+											</div>
+										</div>
+										<span class="map-search"> <a href="#!" class="map-search-btn">Map Search</a> </span>
+									</div>
+									<div class="search-row-fields clearfix">
+										<div class=" dropdown-row range-row slide-tg" default-text="Any price">
+											<span class="dropdown-value">Any price<em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box range-box min-max-range clearfix">
+												<strong class="min-max"><span class="Min">Min</span> - <span class="Max">Max</span></strong>
+												<div class="clearfix">
+													<span class="select_text">Select Minimum</span>
+													<span class="select_text">Select Maximum</span>
+												</div>
+												<div class="clearfix">
+													<div class="min-box">
+														<!-- <span class="price-range">&nbsp;</span> -->
+														<!-- <div class="input-box">
+														<input type="text" value="Min" />
+														</div> -->
+														<div class="clearfix price_list">
+															<!-- <h3>min</h3> -->
+															<ul>
+																<li>
+																	Min
+																</li>
+																<li>
+																	5 Lac
+																</li>
+																<li>
+																	10 Lac
+																</li>
+																<li>
+																	15 Lac
+																</li>
+																<li>
+																	20 Lac
+																</li>
+																<li>
+																	25 Lac
+																</li>
+																<li>
+																	30 Lac
+																</li>
+																<li>
+																	35 Lac
+																</li>
+																<li>
+																	40 Lac
+																</li>
+																<li>
+																	45 Lac
+																</li>
+																<li>
+																	50 Lac
+																</li>
+																<li>
+																	55 Lac
+																</li>
+																<li>
+																	60 Lac
+																</li>
+																<li>
+																	65 Lac
+																</li>
+																<li>
+																	70 Lac
+																</li>
+																<li>
+																	75 Lac
+																</li>
+																<li>
+																	80 Lac
+																</li>
+																<li>
+																	85 Lac
+																</li>
+																<li>
+																	90 Lac
+																</li>
+																<li>
+																	105 Lac
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="max-box">
+														<!-- <div class="input-box">
+														<input type="text" value="Max" />
+														</div> -->
+														<div class="clearfix price_list">
+															<!-- <h3>Max</h3> -->
+															<ul>
+																<li>
+																	Max
+																</li>
+																<li>
+																	5 Lac
+																</li>
+																<li>
+																	10 Lac
+																</li>
+																<li>
+																	15 Lac
+																</li>
+																<li>
+																	20 Lac
+																</li>
+																<li>
+																	25 Lac
+																</li>
+																<li>
+																	30 Lac
+																</li>
+																<li>
+																	35 Lac
+																</li>
+																<li>
+																	40 Lac
+																</li>
+																<li>
+																	45 Lac
+																</li>
+																<li>
+																	50 Lac
+																</li>
+																<li>
+																	55 Lac
+																</li>
+																<li>
+																	60 Lac
+																</li>
+																<li>
+																	65 Lac
+																</li>
+																<li>
+																	70 Lac
+																</li>
+																<li>
+																	75 Lac
+																</li>
+																<li>
+																	80 Lac
+																</li>
+																<li>
+																	85 Lac
+																</li>
+																<li>
+																	90 Lac
+																</li>
+																<li>
+																	105 Lac
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-row bedroom-row increase-num-wrap slide-tg bed-row" default-text="0+ Beds">
+
+											<span class="dropdown-value" >0+ Beds <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form advance-box clearfix">
+												<ul>
+													<li>
+														<a href="#!" class="active">1+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">2+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">3+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">4+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">5+ Beds</a>
+													</li>
+													<li>
+														<a href="#!">6+ Beds</a>
+													</li>
+												</ul>
+
+											</div>
+										</div>
+
+										<div class="dropdown-row lifestyle-row increase-num-wrap slide-tg" default-text="Lifestyle">
+											<input type="hidden" value="" />
+											<span class="dropdown-value">Lifestyle <em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form clearfix">
+												<ul>
+													<li>
+														<label class="label_check">
+															<input type="checkbox" name="sample-checkbox-01" value="1">
+															1BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"  name="sample-checkbox-01" value="2">
+															2BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox" name="sample-checkbox-01" value="3">
+															3BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="4">
+															4BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="5">
+															5BHK</label>
+													</li>
+													<li>
+														<label class="label_check">
+															<input type="checkbox"   name="sample-checkbox-01" value="6">
+															6BHK</label>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="dropdown-row drop-clear lifestyle-row increase-num-wrap slide-tg single-select constract-drop bed-row" default-text="Construction Status">
+											<input type="hidden" value="" />
+											<span class="dropdown-value">Construction Status<em><b>&nbsp;</b></em></span>
+											<div class="dropdown-box custom-form dropdown-number clearfix">
+												<ul>
+													<li>
+														<a href="#!" class="active">aaaa</a>
+													</li>
+													<li>
+														<a href="#!">bbbb</a>
+													</li>
+													<li>
+														<a href="#!">cccc</a>
+													</li>
+													<li>
+														<a href="#!">dddd</a>
+													</li>
+													<li>
+														<a href="#!">eeee</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<span class="dropdown-row clear-row"><a href="#!" class="clear-btn">clear all</a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="home-slider">
+					<div class="video-head">
+						<div class="video-player-wrapper is-fullscreen">
+							<video id="my-video" class="video-js vjs-fluid"  autoplay="true" preload="auto" poster="MY_VIDEO_POSTER.jpg" data-setup='{"children": {"loadingSpinner": false}}'>
+								<source src="assets/videos/lcle77454cac1vj_80a2eaaf_720p.mp4" type='video/mp4'>
+								<!-- <p class="vjs-no-js">
+								To view this video please enable JavaScript, and consider upgrading to a web browser that
+								<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+
+								</p> -->
+							</video>
+						</div>
+						
+					</div>
+					<ul class="bxslider">
+						<li>
+							<!-- <img src="assets/images/home-slider-1.jpg" alt="" /> -->
+							<div class="caption-box">
+								<div class="detail-row">
+									Mattydale NY, USA
+								</div>
+								<div class="detail-box">
+									<div class="top-row">
+										<span>Mattydale NY, USA</span>
+									</div>
+									<div class="middle-row clearfix">
+										<h2>Luxury Villa </h2>
+										<span class="wishlist">&nbsp;</span>
+										<div class="info-row clearfix">
+											<div class="inner-info-row">
+												<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+												<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+												<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+											</div>
+											<strong class="holiday"><i>&nbsp;</i> Holidays</strong>
+										</div>
+										<p>
+											This is Photoshop's version  of Lorem Ipsum. Proinasdadj nibh vel velit auctor aliquet. Aenean loremas sollicituinor lorem lor quis bibendum auctor, nisi elit con  um,ourmnc lorem sagittis sem nibh.
+										</p>
+										<ul class="clearfix">
+											<li>
+												<a href="#!" class="owner">Direct Owner</a>
+											</li>
+											<li>
+												<a href="#!" class="new">New</a>
+											</li>
+											<li>
+												<a href="#!" class="exclusiv">exclusivity</a>
+											</li>
+										</ul>
+									</div>
+									<div class="bottom-row clearfix">
+										<strong>$ 70,000</strong>
+										<a href="#!"><i class="plus">+</i> View Details</a>
+									</div>
+								</div>
+
+							</div>
+						</li>
+						<li>
+							<!-- <img src="assets/images/home-slider-2.jpg" alt="" /> -->
+							<div class="caption-box">
+								<div class="detail-row">
+									Mattydale NY, USA 02
+								</div>
+								<div class="detail-box">
+									<div class="top-row">
+										<span>Mattydale NY, USA 02</span>
+									</div>
+									<div class="middle-row clearfix">
+										<h2>Luxury Villa </h2>
+										<span class="wishlist">&nbsp;</span>
+										<div class="info-row clearfix">
+											<div class="inner-info-row">
+												<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+												<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+												<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+											</div>
+											<strong class="holiday"><i>&nbsp;</i> Holidays</strong>
+										</div>
+										<p>
+											This is Photoshop's version  of Lorem Ipsum. Proinasdadj nibh vel velit auctor aliquet. Aenean loremas sollicituinor lorem lor quis bibendum auctor, nisi elit con  um,ourmnc lorem sagittis sem nibh.
+										</p>
+										<ul class="">
+											<li>
+												<a href="#!" class="owner">Direct Owner</a>
+											</li>
+											<li>
+												<a href="#!" class="new">New</a>
+											</li>
+											<li>
+												<a href="#!" class="exclusiv">exclusivity</a>
+											</li>
+										</ul>
+									</div>
+									<div class="bottom-row clearfix">
+										<strong>$ 70,000</strong>
+										<a href="#!"><i class="plus">+</i> View Details</a>
+									</div>
+								</div>
+
+							</div>
+						</li>
+						<li>
+							<!-- <img src="assets/images/home-slider-3.jpg" alt="" /> -->
+							<div class="caption-box">
+								<div class="detail-row">
+									Mattydale NY, USA 03
+								</div>
+								<div class="detail-box">
+									<div class="top-row">
+										<span>Mattydale NY, USA 03</span>
+									</div>
+									<div class="middle-row clearfix">
+										<h2>Luxury Villa </h2>
+										<span class="wishlist">&nbsp;</span>
+										<div class="info-row clearfix">
+											<div class="inner-info-row">
+												<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+												<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+												<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+											</div>
+											<strong class="holiday"><i>&nbsp;</i> Holidays</strong>
+										</div>
+										<p>
+											This is Photoshop's version  of Lorem Ipsum. Proinasdadj nibh vel velit auctor aliquet. Aenean loremas sollicituinor lorem lor quis bibendum auctor, nisi elit con  um,ourmnc lorem sagittis sem nibh.
+										</p>
+										<ul class="">
+											<li>
+												<a href="#!" class="owner">Direct Owner</a>
+											</li>
+											<li>
+												<a href="#!" class="new">New</a>
+											</li>
+											<li>
+												<a href="#!" class="exclusiv">exclusivity</a>
+											</li>
+										</ul>
+									</div>
+									<div class="bottom-row clearfix">
+										<strong>$ 70,000</strong>
+										<a href="#!"><i class="plus">+</i> View Details</a>
+									</div>
+								</div>
+
+							</div>
+						</li>
+						
+										</ul>
+									</div>
+									<div class="bottom-row clearfix">
+										<strong>$ 70,000</strong>
+										<a href="#!"><i class="plus">+</i> View Details</a>
+									</div>
+								</div>
+
+							</div>
+						</li>
+						
+
+					</ul>
+				</div>
+				<a href="javascript:void(0);" class="go-next hvr-bob active">&nbsp;</a>
+			</div>
+			<div class="news-content">
+				<span class="tag"><a href="javascript:void(0);">Latest News</a></span>
+				<div class="marquee-parent">
+					<p class="marquee-child">
+						<strong>10,april 2017:-</strong><a href="#!"> Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio</a>
+					</p>
+				</div>
+			</div>
+			<div class="list-for-sale">
+				<div class="container">
+					<h2>Listing for Sale</h2>
+					<p class="prop-txt">
+						Aqenean lorem consequat ipsum nec sagittis sem nibhid amet.
+					</p>
+					<div class="sale-slider common-box">
+						<ul class="bxslider">
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type sale">for sale</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-2.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-3" href="#!">HOt Deal</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+											<li>
+												<a class="cta-4" href="#!">FORCLUSure</a>
+											</li>
+										</ul>
+										<span class="property-type holiday">Holidays</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<!-- <span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											<h3>Luxury Villa</h3>
+											<span>3 beds</span>  <span>2 baths </span>  <span>1,170 sqft</span> -->
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type rent">for rent</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type rent">for rent</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-2.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-3" href="#!">HOt Deal</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+											<li>
+												<a class="cta-4" href="#!">FORCLUSure</a>
+											</li>
+										</ul>
+										<span class="property-type holiday">Holidays</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<!-- <span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											<h3>Luxury Villa</h3>
+											<span>3 beds</span>  <span>2 baths </span>  <span>1,170 sqft</span> -->
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type rent">for rent</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="featured-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="featured-head"><span><strong>Featured</strong> Residential Projects</span></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-7 left-box">
+							<h3><span>Newly Launched</span> Residential Projects</h3>
+							<p>
+								Aqenean lorem consequat ipsum, nec sagittis sem nibh id elitit amet nibh vulputate cursus a sit amuris. morbi accu msan ipsum velit lorem. nmam nec tellua odio tinnare odio. Sed nonvit erat coquat auctorit lorme aoipe class aptent taciti sociosqu  litora torquent per conubia nostra, uaih per inceptos loe himenaos  nibh vulputate cursus a sit amet mauris. Morbi accu msansum velit lorem. nmamnec tellua odio tinare odio.
+							</p>
+							<div class="veiw-btn">
+								<a href="#!" class="btn">View More Projects</a>
+							</div>
+							<div class="gallary_wrapper sale-slider">
+								<ul  class="bx2slider clearfix">
+									<li>
+										<a href="#!"> <img src="assets/images/fe-1.png" alt="" /> <span>New Delhi, India </span> </a>
+										<div class="gallary_wrapper_inner">
+											<span class="plus"></span>
+										</div>
+									</li>
+									<li>
+										<a href="#!"> <img src="assets/images/fe-2.png" alt="" /> <span>New Delhi, India </span> </a>
+										<div class="gallary_wrapper_inner">
+
+											<span class="plus"></span>
+
+										</div>
+
+									</li>
+									<li>
+										<a href="#!"> <img src="assets/images/fe-3.png" alt="" /> <span>New Delhi, India </span> </a>
+
+										<div class="gallary_wrapper_inner">
+
+											<span class="plus"></span>
+
+										</div>
+									</li>
+									<li>
+										<a href="#!"> <img src="assets/images/fe-4.png" alt="" /> <span>New Delhi, India </span> </a>
+										<div class="gallary_wrapper_inner">
+
+											<span class="plus"></span>
+
+										</div>
+
+									</li>
+									<li>
+										<a href="#!"> <img src="assets/images/fe-1.png" alt="" /> <span>New Delhi, India </span> </a>
+
+										<div class="gallary_wrapper_inner">
+
+											<span class="plus"></span>
+
+										</div>
+									</li>
+									<li>
+										<a href="#!"> <img src="assets/images/fe-2.png" alt="" /> <span>New Delhi, India </span> </a>
+
+										<div class="gallary_wrapper_inner">
+
+											<span class="plus"></span>
+
+										</div>
+									</li>
+									<li>
+										<a href="#!"> <img src="assets/images/fe-3.png" alt="" /> <span>New Delhi, India </span> </a>
+										<div class="gallary_wrapper_inner">
+
+											<span class="plus"></span>
+
+										</div>
+
+									</li>
+									<li>
+										<a href="#!"> <img src="assets/images/fe-4.png" alt="" /> <span>New Delhi, India </span> </a>
+										<div class="gallary_wrapper_inner">
+
+											<span class="plus"></span>
+
+										</div>
+
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-5 right-box">
+							<div class="common-box">
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-3.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+											<li>
+												<a class="cta-3" href="#!">Direct Owner</a>
+											</li>
+											<li>
+												<a class="cta-4" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<p>
+													Prize Range:
+												</p>
+												<strong>$ 9 Cr - 15Cr</strong>
+												<span class="location post-date post-date-td">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-content">
+				<div class="right-box"></div>
+				<div class="container clearfix">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 left-box">
+							<h2>About AYO! </h2>
+							<h3>World Estate Finder</h3>
+							<p>
+								Aqenean lorem consequat ipsum, nec sagittis sem nibh id elitit amet nibh vulputate cursus a sit amuris. morbi accu msan ipsum velit lorem. nmam nec tellua odio tinnare odio. Sed nonvit erat coquat auctorit lorme aoipe class aptent taciti sociosqu  litora torquent per conubia nostra, uaih per inceptos loe himenaos  lorem ipsim.
+							</p>
+							<div class="veiw-btn">
+								<a href="#!" class="btn">Get connect with us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="lifestyle-content">
+				<div class="container">
+					<h2>Choose Your Lifestyle</h2>
+					<div class="row clearfix">
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-1.jpg" alt="lifestyle-1"/>
+								<figcaption>
+									<h3>Eco-friendly</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-2.jpg" alt="lifestyle-2"/>
+								<figcaption>
+									<h3>Beach</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-3.jpg" alt="lifestyle-3"/>
+								<figcaption>
+									<h3>Country living</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-4.jpg" alt="lifestyle-4"/>
+								<figcaption>
+									<h3>Desert</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-5.jpg" alt="lifestyle-5"/>
+								<figcaption>
+									<h3>Sky</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-6.jpg" alt="lifestyle-6"/>
+								<figcaption>
+									<h3>Metropolitan</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-7.jpg" alt="lifestyle-7"/>
+								<figcaption>
+									<h3>Historic</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-8.jpg" alt="lifestyle-8"/>
+								<figcaption>
+									<h3>Farm and ranch</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 grid">
+							<figure class="effect-bubba">
+								<img src="assets/images/lifestyle-9.jpg" alt="lifestyle-9"/>
+								<figcaption>
+									<h3>Lake front</h3>
+									<p>
+										View details <img src="assets/images/plus.png" alt="" />
+									</p>
+									<a href="#!">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="list-for-sale latest-added">
+				<div class="container">
+					<h2>Latest Added Properties</h2>
+					<p class="prop-txt">
+						Aqenean lorem consequat ipsum nec sagittis sem nibhid amet.
+					</p>
+					<div class="sale-slider common-box">
+						<ul class="bxslider">
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type sale">for sale</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-2.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-3" href="#!">HOt Deal</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+											<li>
+												<a class="cta-4" href="#!">FORCLUSure</a>
+											</li>
+										</ul>
+										<span class="property-type holiday">Holidays</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<!-- <span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											<h3>Luxury Villa</h3>
+											<span>3 beds</span>  <span>2 baths </span>  <span>1,170 sqft</span> -->
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type rent">for rent</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type rent">for rent</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-2.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-3" href="#!">HOt Deal</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+											<li>
+												<a class="cta-4" href="#!">FORCLUSure</a>
+											</li>
+										</ul>
+										<span class="property-type holiday">Holidays</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<!-- <span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											<h3>Luxury Villa</h3>
+											<span>3 beds</span>  <span>2 baths </span>  <span>1,170 sqft</span> -->
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-2.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="box">
+									<div class="img-box">
+										<img src="assets/images/slider-img-1.png" alt="" />
+										<span class="wishlist"></span>
+										<ul class="deal-list">
+											<li>
+												<a class="cta-1" href="#!">exclusivity</a>
+											</li>
+											<li>
+												<a class="cta-2" href="#!">Direct Owner</a>
+											</li>
+										</ul>
+										<span class="property-type rent">for rent</span>
+									</div>
+									<div class="detail-box">
+										<div class="top-detail clearfix">
+											<div class="clearfix">
+
+												<div class="top-detail-left">
+													<h3>Luxury Villa</h3>
+													<span><img src="assets/images/home.png" alt="abc"/> 1,170 sqft</span>
+													<span><img src="assets/images/bedroom.png" alt="abc"/> 3 BDS</span>
+													<span><img src="assets/images/room.png" alt="abc"/> 2 Rooms </span>
+												</div>
+												<span class="client-logo"><img src="assets/images/client-logo-1.png" alt="" /></span>
+											</div>
+										</div>
+										<div class="bottom-detail clearfix">
+											<span class="location">New York, United States</span>
+											<div class="price clearfix">
+												<strong>$ 9,000,000</strong>
+												<span>$ 10,000,000</span>
+												<span class="location post-date">Posted Today</span>
+											</div>
+										</div>
+										<div class="overlay">
+											<div class="view">
+												<span class="plus"></span>
+												<p>
+													View dEtails
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="map-content">
+				<figure><img src="assets/images/map.jpg" alt="" />
+				</figure>
+				<div class="location-popup">
+					<span class="cross"></span>
+					<strong>Lorem Ipsum!</strong>
+					<p>
+						Aqenean lorem consequat ipsum nec sagittis sem nibhid elitit amet nibh lorem aurt ipsim  dolore asm amet.
+					</p>
+				</div>
+			</div>
+
+			<div class="our-expert">
+				<div class="container">
+					<h2 class="featured-head"><span><strong>Featured</strong> Agents</span></h2>
+					<h3>Our Expert Agents</h3>
+					<ul class="row expert-list clearfix">
+						<li class="col-xs-12 col-sm-6">
+							<div class="box">
+								<figure class="img-box">
+									<img src="assets/images/expert-1.jpg" alt="" />
+								</figure>
+								<div class="middle-box">
+									<small class="dagisnation">Agent</small>
+									<strong class="name">James Benaudis </strong>
+									<span class="number">(857) 852-1524</span>
+									<span class="location">Location: Pune, India</span>
+									<ul class="rateing-star clearfix">
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<span>180 Reviews</span>
+										</li>
+									</ul>
+								</div>
+								<div class="member-box">
+									<p>
+										<span>Member Since:</span> March 31, 2017
+									</p>
+									<div class="more-box">
+										<span><img src="assets/images/plus.png" alt="" /> MORE</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-xs-12 col-sm-6">
+							<div class="box">
+								<figure class="img-box">
+									<img src="assets/images/expert-2.jpg" alt="" />
+								</figure>
+								<div class="middle-box">
+									<small class="dagisnation">Agent</small>
+									<strong class="name">James Benaudis </strong>
+									<span class="number">(857) 852-1524</span>
+									<span class="location">Location: Pune, India</span>
+									<ul class="rateing-star clearfix">
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<span>180 Reviews</span>
+										</li>
+									</ul>
+								</div>
+								<div class="member-box">
+									<p>
+										<span>Member Since:</span> March 31, 2017
+									</p>
+									<div class="more-box">
+										<span><img src="assets/images/plus.png" alt="" /> MORE</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-xs-12 col-sm-6">
+							<div class="box">
+								<figure class="img-box">
+									<img src="assets/images/expert-2.jpg" alt="" />
+								</figure>
+								<div class="middle-box">
+									<small class="dagisnation">Agent</small>
+									<strong class="name">James Benaudis </strong>
+									<span class="number">(857) 852-1524</span>
+									<span class="location">Location: Pune, India</span>
+									<ul class="rateing-star clearfix">
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<span>180 Reviews</span>
+										</li>
+									</ul>
+								</div>
+								<div class="member-box">
+									<p>
+										<span>Member Since:</span> March 31, 2017
+									</p>
+									<div class="more-box">
+										<span><img src="assets/images/plus.png" alt="" /> MORE</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="col-xs-12 col-sm-6">
+							<div class="box">
+								<figure class="img-box">
+									<img src="assets/images/expert-1.jpg" alt="" />
+								</figure>
+								<div class="middle-box">
+									<small class="dagisnation">Agent</small>
+									<strong class="name">James Benaudis </strong>
+									<span class="number">(857) 852-1524</span>
+									<span class="location">Location: Pune, India</span>
+									<ul class="rateing-star clearfix">
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li class="active">
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<i class="fa fa-star"></i>
+										</li>
+										<li>
+											<span>180 Reviews</span>
+										</li>
+									</ul>
+								</div>
+								<div class="member-box">
+									<p>
+										<span>Member Since:</span> March 31, 2017
+									</p>
+									<div class="more-box">
+										<span><img src="assets/images/plus.png" alt="" /> MORE</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="promo-content">
+				<div class="parallex-box"></div>
+				<div class="container">
+					<h2>Our Promo Content</h2>
+					<div class="slider-content">
+						<ul class="slider clearfix">
+							<li>
+								<figure>
+									<img src="assets/images/slider-01.jpg" alt="" />
+									<figcaption>
+										Search multiple real estate listings of residential, commercial and vacation getaway properties, find homes for sale & apartmentsfor
+										rent. Add a property for sale or lease. Thousands of buyers and tenants are matched with sellers and landlords daily.
+
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="assets/images/slider-02.jpg" alt="" />
+									<figcaption>
+										Search multiple real estate listings of residential, commercial and vacation getaway properties, find homes for sale & apartmentsfor
+										rent. Add a property for sale or lease. Thousands of buyers and tenants are matched with sellers and landlords daily.
+
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="assets/images/slider-03.jpg" alt="" />
+									<figcaption>
+										Search multiple real estate listings of residential, commercial and vacation getaway properties, find homes for sale & apartmentsfor
+										rent. Add a property for sale or lease. Thousands of buyers and tenants are matched with sellers and landlords daily.
+
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="assets/images/slider-04.jpg" alt="" />
+									<figcaption>
+										Search multiple real estate listings of residential, commercial and vacation getaway properties, find homes for sale & apartmentsfor
+										rent. Add a property for sale or lease. Thousands of buyers and tenants are matched with sellers and landlords daily.
+
+									</figcaption>
+								</figure>
+							</li>
+							<li>
+								<figure>
+									<img src="assets/images/slider-05.jpg" alt="" />
+									<figcaption>
+										Search multiple real estate listings of residential, commercial and vacation getaway properties, find homes for sale & apartmentsfor
+										rent. Add a property for sale or lease. Thousands of buyers and tenants are matched with sellers and landlords daily.
+									</figcaption>
+								</figure>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="category-content">
+				<div class="container">
+					<h2>Properties Listing by Categoies :</h2>
+					<div class="row box-content clearfix">
+						<div class="col-xs-12 col-sm-4 box">
+							<h3>Apartments For Rent</h3>
+							<ul class="clearfix">
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> 1 BHK Flats in Delhi / NCR</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> New York City Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Los Angeles Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Chicago Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Houston Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Philadelphia Apartments</a>
+								</li>
+							</ul>
+							<a href="#!" class="more">More</a>
+						</div>
+						<div class="col-xs-12 col-sm-4 box">
+							<h3>Request For Buy</h3>
+							<ul>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Property in Bangalore</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Property in Mohali</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Property in Navi Mumbai</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Property in Nashik</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Property in Chennai</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Property in Pune</a>
+								</li>
+							</ul>
+							<a href="#!" class="more">More</a>
+						</div>
+						<div class="col-xs-12 col-sm-4 box">
+							<h3>For Rent/ lease</h3>
+							<ul>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> New York City Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Los Angeles Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Chicago Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Houston Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Philadelphia Apartments</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> 2 BHK House in Delhi</a>
+								</li>
+							</ul>
+							<a href="#!" class="more">More</a>
+						</div>
+						<div class="col-xs-12 col-sm-4 box">
+							<h3>For Sale</h3>
+							<ul>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> New York City Houses for Rent</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Los Angeles Houses for Rent</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Chicago Houses for Rent</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Houston Houses for Rent</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> Philadelphia Houses for RentR</a>
+								</li>
+								<li>
+									<a href="#!"><i class="fa fa-angle-right"></i> 1 BHK Builder Floor in Delhi </a>
+								</li>
+							</ul>
+							<a href="#!" class="more">More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer id="footer">
+				<!-- <span class="go-top"></span> -->
+				<a href="#!" id="back-to-top" title="Back to top">&nbsp;</a>
+				<div class="primary-footer">
+					<div class="container">
+						<div class="row clearfix">
+							<div class="col-xs-12 col-sm-12 col-md-4 box box-1">
+								<a class="footer-logo" href="index.html"><img src="assets/images/footer-logo.png" alt="" /></a>
+								<p>
+									Aqenean lorem consequat ipsum nec amet sagittis semnibhid elitit amet nibh loremed aurt ipsim dolore asm amet. enean onsequat ipsum nec sagittis semnibhid elitit amet nibh.
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1 box box-2">
+								<h3>Company</h3>
+								<ul>
+									<li>
+										<a href="#!">About Us</a>
+									</li>
+									<li>
+										<a href="#!">Terms of Use</a>
+									</li>
+									<li>
+										<a href="#!">News</a>
+									</li>
+									<li>
+										<a href="#!">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-4 box box-3">
+								<h3>Ayo Links</h3>
+								<ul class="clearfix">
+									<li>
+										<a href="#!">Mobile Apps</a>
+									</li>
+									<li>
+										<a href="#!">Commercial Property</a>
+									</li>
+									<li>
+										<a href="#!">Buy Our Services</a>
+									</li>
+									<li>
+										<a href="#!">Services in India</a>
+									</li>
+									<li>
+										<a href="#!">Residential Property</a>
+									</li>
+									<li>
+										<a href="#!">New Projects</a>
+									</li>
+									<li>
+										<a href="#!">Search Dealers</a>
+									</li>
+									<li>
+										<a href="#!">Sitemap</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="secondry-footer">
+					<div class="container clearfix">
+						<ul class="social-list clearfix">
+							<li>
+								Follow  Us
+							</li>
+							<li>
+								<a href="#!"><img src="assets/images/social-icon-1.png" alt="" /></a>
+							</li>
+							<li>
+								<a href="#!"><img src="assets/images/social-icon-2.png" alt="" /></a>
+							</li>
+							<li>
+								<a href="#!"><img src="assets/images/social-icon-3.png" alt="" /></a>
+							</li>
+							<li>
+								<a href="#!"><img src="assets/images/social-icon-4.png" alt="" /></a>
+							</li>
+						</ul>
+						<div class="chat-us">
+							<span class="click">&nbsp;</span>
+							<div class="chat-box">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright-content">
+					<div class="container">
+						<p>
+							&copy; 2006-2017 ayo.world.com
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div class="signin-popup">
+			<span class="close">&nbsp;</span>
+			<div class="signin-dropdown language-CustomScrollbar">
+				<div class="head-row">
+					<ul class="clearfix">
+						<li>
+							<a class="signin-btn active" href="#!">Sign In</a>
+						</li>
+						<li>
+							<a class="newacc-btn" href="#!">New Account</a>
+						</li>
+					</ul>
+				</div>
+				<div class="signin-wrap">
+					<div class="signin-detail">
+						<form action="#">
+							<fieldset>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Email*</label>
+								</div>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Password*</label>
+								</div>
+
+								<p class="forgetpw">
+									<a href="#!">Forget password? </a>
+								</p>
+								<button class="btn">
+									Sign In
+								</button>
+							</fieldset>
+						</form>
+					</div>
+					<div class="social-connect">
+						<ul>
+							<li>
+								Or connect with:
+							</li>
+							<li>
+								<a class="facebook" href="#!"><i class="fa fa-facebook-square">&nbsp;</i> </a>
+							</li>
+							<li>
+								<a class="google-plus" href="#!"><i class="fa fa-google-plus-square">&nbsp;</i> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="newaccount-wrap">
+					<div class="signin-detail">
+						<form action="#" class="custom-form">
+							<fieldset>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Email*</label>
+								</div>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label>Create Password*</label>
+								</div>
+
+								<label class="label_check">
+									<input type="checkbox" name="sample">
+									I am a landlord or industry professional</label>
+								<div class="register-as">
+									<h4>Register as:</h4>
+									<ul>
+										<li class="active">
+											<a href="#!">Agent</a>
+										</li>
+										<li>
+											<a href="#!">Agency</a>
+										</li>
+										<li>
+											<a href="#!">Private Person</a>
+										</li>
+										<li>
+											<a href="#!">Developer</a>
+										</li>
+										<li>
+											<a href="#!">Professional</a>
+										</li>
+									</ul>
+								</div>
+								<p class="text-msg">
+									I accept Ayo's
+									<a href="#!">Terms of Use</a>
+								</p>
+								<button class="btn">
+									Submit
+								</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lightbox">
+			&nbsp;
+		</div>
+
+		<!--Page Wrapper End-->
+		<!-- <script src="http://vjs.zencdn.net/6.2.8/video.js"></script> -->
+		<script src="assets/js/video.js"></script>
+		<script>
+		$(".vjs-waiting").css({"visibility":"hidden","background":"transparent"});
+		$(".vjs-loading-spinner").css("display","none !important");
+		
+
+		var i=0;
+		var	len;
+		var thiss;
+		var videosHref;
+			//$(window).load(function() {
+			videojs.registerPlugin('examplePlugin', examplePlugin);
+			function examplePlugin(options) {
+				thiss = this;
+				
+
+				if (options.customClass) {
+					this.addClass(options.customClass);
+				}
+				// this.on("loadstart", function () {
+				//
+				// this.play();
+				// delete(this);
+				//
+				// });
+				 videosHref = ['assets/videos/lcle77454cac1vj_80a2eaaf_720p.mp4','assets/videos/dock.mp4','http://techslides.com/demos/sample-videos/small.mp4'];
+				len = videosHref.length;
+				this.src(videosHref[i]);				
+				console.log(i)
+				
+				
+				
+				this.on('ended', function() {
+					
+					i++;
+					console.log(i)
+					console.log(len)
+					if(len == i){
+						
+      	i=0;
+      }
+					myslider.goToNextSlide();
+					this.src(videosHref[i]);
+					this.play();
+					
+					
+					
+					// console.log(111)
+				});
+			}
+			
+
+			videojs('my-video', {
+				
+				plugins : {
+					
+					examplePlugin : {
+						customClass : 'example-class',
+						
+					}
+					
+				}
+			});
+
+
+
+
+			//})
+			// var player1 = videojs('my-video', {
+			// examplePlugin : {
+			// text : 'Custom text!'
+			// }
+			// });
+			//function abc() {
+
+			//}
+		</script>
+	</body>
+</html>

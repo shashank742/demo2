@@ -1,0 +1,110 @@
+<html>
+	
+	<style>
+	.error1,.error2{
+		color:red;
+	}
+	table::selection{
+		color:red;
+		background-color:yellow;
+	}
+		table{
+			/*border:2px solid ;*/
+			border-collapse:collapse;
+		}
+		
+		td{  padding: 5px;
+			border:2px solid blue;
+			text-align:center;
+		}
+		tr{  padding: 15px;
+			border:2px solid green;
+		}
+	</style>
+	<body>
+		<form>
+		<input type="text"  id="input1" class="input"/>	<span class = "error1"></span><br>
+	
+		<input type="text"  id="input2" class="input"/>	<span class = "error1"></span><br>
+		
+		<button type="submit" onclick="printMatrix(event)">print matrix</button>
+		
+		<table id="showmatrix">
+			
+		</table>
+		</form>
+		<script>
+		var i=0;
+		var validstatus=true;
+		
+		
+			      function validate(a,b)
+  {                 
+  	validstatus=true;
+  
+  	
+  	
+
+  	           if(isNaN(a)){
+  	           
+  	           	 	
+  	           	document.getElementsByClassName("error1")[i].innerHTML="*accept only numbers";
+  	           	
+  	           		
+  	           		validstatus=false;
+  	           }
+  	           else{
+  	           	document.getElementsByClassName("error1")[i].innerHTML="";
+  	           }
+  	            
+  	         if(isNaN(b)){
+  	         	
+  	           	document.getElementsByClassName("error1")[1].innerHTML="*accept only numbers";
+  	           	validstatus=false;
+  	           }
+  	            else{
+  	           	document.getElementsByClassName("error1")[1].innerHTML="";
+  	           }	      }
+	      	function printMatrix(e){
+	  var a = document.getElementById("input1").value;
+		var b = document.getElementById("input2").value;
+		 a=parseInt(a);
+				
+		b=parseInt(b);
+		// alert(typeof(b));
+	validate(a,b);
+	e.preventDefault();
+	// alert(validstatus);document.getElementById("showmatrix").innerHTML="";         if(validstatus==true)
+           {			
+var i,j;	   				 
+var table=document.createElement("table");
+
+
+				 for(i=0;i<a;i++)
+				 { 
+				 	var tr=document.createElement("tr");
+				 	
+				 	for(j=0;j<b;j++){
+				 	
+				 	var c = i+""+j;
+				
+				 	
+				 	var td=document.createElement("td");
+				 	var t=document.createTextNode(i+""+j);
+				 	td.appendChild(t);
+				 	tr.appendChild(td);
+				 	table.appendChild(tr);
+				 	document.getElementById("showmatrix").appendChild(table);
+				 	
+				 	// alert(i+""+j);
+
+				 }
+				 }
+					
+				// document.getElementById("input1").value="";
+				// document.getElementById("input2").value="";
+			}
+			}
+		</script>
+	</body>
+</html>

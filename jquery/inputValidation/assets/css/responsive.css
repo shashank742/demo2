@@ -1,0 +1,2009 @@
+/*=============================================Media Query for max-width 1025px=====================================*/
+@media only screen and (max-width:1025px) {
+.container-one,.container-two{
+		padding:0 15px;
+}
+.threepin {
+	display: inline-block;
+    float: right;
+    margin: 6px 0 5px;
+}
+.dashboard .left-data.enable_div {
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow-y: auto;
+    transition-duration: 1s;
+}
+.threepin a {
+	width: 30px;
+	height: 30px;
+	display: block;
+}
+a.menu-dashboard span {
+	margin-top: 13px;
+	margin-right: 10px;
+	position: relative;
+	width: 30px;
+	height: 4px;
+	display: block;
+	float: left;
+}
+a.menu-dashboard span:before, a.menu-dashboard span:after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 4px;
+}
+a.menu-dashboard span,a.menu-dashboard span:before, a.menu-dashboard span:after{
+	background:#6f507e;
+}
+a.menu-dashboard span:before {
+	top: -9px;
+}
+a.menu-dashboard span:after {
+	top: 9px;
+}
+.dashboard .left-data {
+	border-bottom: solid 1px #dedddd;
+	opacity: 0;
+	top: 0px;
+	position: fixed;
+	left: -200px;
+	background: #fff;
+	z-index: 100000;
+	-webkit-transition: 1s;
+	transition: 1s;
+	height: 0;
+	padding-left: 0px;
+	display: block;
+}
+.dashboard {
+	display: block;
+	width: auto;
+}
+.dashboard .data-side {
+	display: block;
+	width: auto;
+border: solid 1px #afbbfc;
+	border-top: none;
+	padding-bottom: 0px;
+}
+.box .siteForm .enter-amount{
+	width: 166px;
+	border-radius:0px;
+}
+}
+/*=============================================Media Query for mobile=====================================*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+/*============about.html=======================*/
+.about-store-intro {
+}
+.about-store-intro p {
+    width: 100%;
+}
+.about-store-intro {
+    padding: 20px 10px 208px;
+}
+.why-online,.why-online .left-section,.why-online .right-section,.why-online-content-left, .why-online-content-right,.business-growth {
+    width: 100%;
+}
+.why-online{
+	left: 0;
+	padding: 12px 0;
+}
+.why-online .left-section,.why-online .right-section{
+padding: 20px 10px 0;
+}
+.about-store-intro p, .business-growth p, .sell-online span {
+    font-size: 14px;
+}
+.why-online-content-left, .why-online-content-right{
+	padding-bottom: 20px;
+}
+.why-online-content.first {
+    padding-bottom:0;
+}  
+.head-two {
+    font-size: 25px;
+    margin: 10px 0;
+}
+.start-business h2 {
+	margin-bottom: 20px;
+}
+.business-increase{
+	padding: 104px 0 0;
+}
+.business-growth h3, .sell-online h3 {
+    font-size: 22px
+}
+.business-growth {
+    padding:20px 0;
+}
+.business-growth br{
+	display: none;
+}
+.sell-online {
+    padding: 20px 0;
+}
+.sell-online ul {
+    padding: 60px 0px;
+    width: 300px;
+margin: 0 auto;
+}
+.sell-online ul li {
+	margin-right: 19px;
+    float: left;
+}
+.sell-online li span {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 8px;
+}
+.sell-online li:after {
+    top: 17%;
+    right: -52px;
+}
+.sell-online li p {
+    font-size: 12px;
+    padding: 0;
+}
+/*============price.html,benefit.html=======================*/
+.pricing-banner-section,.benefit-banner-section {
+    padding:80px 0;
+}
+.pricing-banner-content,.shipping-fee,.shipping-content,.benefit-content-head p,.sell-btn,.important-points,.two-content-left,
+.two-content-right,.content-image-section.opposite-design .important-points  {
+    width: 100%;
+}
+.payment-section,.payment-content,.benefit-content-body {
+    padding: 50px 0 0;
+}
+.tabular-data {
+    overflow-x: scroll;
+}
+.tabular-data table {
+    width: 822px;
+}
+.start-business.pricing-page {
+    padding: 50px 0 ;
+}
+.payment-structure {
+    width: 100%;
+    margin-right:0;
+    margin-bottom: 30px;
+}
+.shipping-section {
+    padding: 50px 0 0;
+}
+.shipping-fee{
+    padding: 20px 0;
+}
+.head-three{
+	font-size:22px ;
+	text-align: center;
+}
+.head-four{
+	font-size: 20px;
+}
+.noto-seventeen{
+	font-size: 15px;
+}
+.noto-fifteen{
+	font-size: 14px;
+}
+.two-content-left{
+	margin-bottom:20px;
+	margin-right: 0;
+}
+.two-content-right{
+	margin-right: 0;
+}
+.important-points span{
+	text-align: center;
+	display: block;
+	padding-bottom: 20px;
+}
+.important-image,.content-image-section.opposite-design .important-image{
+	box-shadow:none;
+	text-align: center;
+	padding-left: 0;
+	padding-bottom: 37px;
+}
+.benefit-content-head p{ 
+font-size: 17px;
+padding-bottom: 20px;
+}
+.sell-btn {
+	text-align: center;
+}
+.two-content {
+    padding-bottom: 40px;
+}
+.content-image-section {
+    min-height:0;
+    margin-bottom:20px;
+}
+.content-image-section.opposite-design{
+	margin-bottom: 0;
+}
+.two-content ul{
+	padding-bottom: 0;
+}
+.start-business.benifit-page a {
+    margin-bottom:50px;
+}
+/*============faq.html=======================*/
+.faq-section {
+    padding: 50px 0;
+}
+.faq-head h2 span{
+	display: block;
+	margin: 0;
+}
+.faq-section-left{
+	margin-right: 0;
+	width: 100%;
+	padding: 0 10px;
+	margin-bottom: 50px;
+}
+.faq-title span:first-child{
+	width: 85%;
+	display: inline-block;
+}
+.faq-section-right {
+	width: 100%;
+}
+.faq-page{
+	margin-bottom: 50px;
+	padding:0 10px;
+	
+}
+/*============add-list.html=======================*/
+.details-section {
+    padding: 40px 0 30px;
+}
+.process-section {
+    width: 100%;
+    margin: 0 0 45px;
+    float: none;
+}
+.cases,.cases-btn {
+    margin-right: 0;
+     float: none;
+    width: 100%;
+}
+.cases-btn {
+	padding: 0;
+}
+.cases-btn a{
+	 width: 100%;
+}
+.cases-details:after{
+	display: none;
+}
+.register-section.opposite .register-image.chat-shadow,.register-image.chat-shadow {
+    float:none;
+    width: 100%;
+    margin-left:0;
+    margin-right: 0;
+    padding: 10px 7px;
+}
+.converse-section .register-section {
+    min-height: 10px;
+}
+.register-section .register-image.chat-shadow{
+	width: 100%;
+}
+.tabz li{
+margin-bottom: 10px;
+margin-right: 0;
+text-align: center;
+width: 100%;
+}
+.file-preview-table {
+    float: none;
+    width: 100%;
+}
+.file-preview-button {
+    margin: 15px 0;
+}
+.check-available {
+    top: 46px;
+    padding: 6px 2px;
+    font-size: 9px; 
+}
+.gst-address, .gst-text p {
+    padding: 10px 0px;
+}
+.gst-text {
+    padding: 0;
+}
+.business-details.kyc-form-warp {
+    padding: 15px 0 0;
+}
+.siteForm.sales-data table td {
+    padding-right: 0px;
+}
+.data-side.account .ui-tabs .ui-tabs-nav li {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.field4{
+	padding-bottom: 20px;
+	display: block;
+}
+.siteForm table .label-top{
+	padding-bottom: 10px;
+	display: block;
+}
+.tbl-listing.sales-form {
+    margin: 0 10px;
+}
+/*.company-logo.main-page {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 1px;
+}*/
+	.company-logo {
+   left: 0;
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    right: 0;
+}
+.body {
+	min-height: auto;
+}
+.fl, .fr, .pull-right {
+	float: none;
+}
+.space-lft-right {
+	padding: 0;
+}
+.about-me .avatar, .avatar {
+	float: none;
+	margin: 0;
+}
+.about-me {
+    padding: 0 ;
+}
+.profile-head .about-me .avatar {
+	float: left;
+	margin-right: 15px;
+}
+.fixed-container {
+	max-width: none;
+	width: auto;
+	padding: 0 10px;
+}
+.pull-right {
+	float: none;
+}
+
+.desktop-footer {
+}
+/***footer***/
+
+footer.footer {
+	margin: 0;
+	padding: 10px 0 0 0;
+}
+.ft-bttm-right {
+	float: none;
+	width: auto;
+}
+.footer-info {
+    padding: 0;
+}
+.contact-here .contact {
+	width: auto;
+	min-width: inherit;
+	margin: 0 auto;
+	font-size: 18px;
+	border: medium none;
+	display: block;
+	margin: 10px 0;
+	padding: 0;
+}
+.contact-here .contact span.under-txt {
+	font-size: 15px;
+	padding-left:0px;
+}
+.contact-here .contact > img {
+	width: 28px;
+	margin-right: 5px;
+	padding-top: 5px;
+	height: 28px;
+	vertical-align: top;
+}
+.app-style {
+	margin: 10px auto 5px auto;
+	float: right;
+	position: relative;
+}
+
+/**/
+.dashboard .data-side {
+	border: none;
+}
+.dashboard .left-data.enable_div {
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    overflow-y: auto;
+    transition-duration: 1s;
+}
+.dashboard .data-side h3 {
+	font-size: 15px;
+	text-align: left;
+	padding: 10px 0;
+}
+.uploadedphoto {
+    margin: 0 auto;
+}
+.choose_file {
+    margin-top: 10px;
+   }
+.wrapform {
+    padding: 20px 8px 40px;
+ }
+ a.btn.mini {
+    margin-top:11px;
+    float: none;
+}
+.arrowTabs {
+    display: block;
+    margin: 0;
+}
+.arrowTabs li {
+    float: none;
+    margin: 0 0 10px;
+    text-align: center;
+    width: 100%;
+}
+.arrowTabs li a {
+	padding: 0;
+}
+.dashboard .data-side h4 {
+	padding: 10px 0;
+}
+.orders-list {
+	padding: 0;
+	text-align: center;
+}
+.orders-list li {
+	margin: 10px 0;
+	width: auto;
+	display: block;
+}
+.orders-list li:last-child {
+	margin-right: 0px;
+	float: none;
+}
+.tbl-dashboard {
+	display: block;
+	width: auto;
+}
+.tbl-dashboard .tbl-left {
+	border-right: none;
+	display: block;
+	vertical-align: top;
+	width: auto;
+}
+.tbl-dashboard .tbl-right {
+	background: #f5f3f3;
+	display: block;
+	vertical-align: top;
+	width: auto;
+	padding: 0 10px;
+}
+.tbl-dashboard.request .tbl-right {
+	margin: 22px 0;
+	width: 100%;
+}
+.message-list {
+	text-align: left;
+}
+.message-list li {
+	padding: 5px 0 30px 0;
+}
+.total-stat {
+	padding: 10px 0px;
+}
+.profile-head {
+	border-top: none;
+	padding: 10px 10px 7px;
+}
+
+.items-list {
+	display: none;
+	text-align: center;
+}
+.items-list li {
+	padding: 2px 0;
+	font-size: 12px;
+}
+.items-list li a {
+	display: block;
+	padding: 6px;
+}
+.items-list li a span {
+	margin-right: 5px;
+}
+	/**Checkout**/
+.cart-tbl .pro-image {
+	display: block;
+	margin: 0 auto;
+}
+.btn-view {
+	padding: 10px 10px;
+	float: right;
+}
+
+a.view-more {
+	float: none;
+}
+.message-list li .text a.readmore {
+    position: absolute;
+    right: 27px;
+    top: 0;
+}
+a.actions {
+	line-height: 34px;
+	width: 34px;
+	height: 34px;
+	padding-top: 0;
+	margin: 5px 8px;
+}
+a.actions img {
+	height: 15px;
+	width: 15px;
+}
+.box-head {
+	padding: 0 10px;
+}
+.graph {
+	margin: 10px 0;
+}
+.option .siteForm table td {
+	padding: 7px 0;
+}
+/*--------------------Message.html-------------------------------------------*/
+.darkgray-form
+{  padding:10px;
+}
+.search-dashboard
+{  float:none;
+   width:auto;
+}
+.search-dashboard input[type="text"]
+{
+	width:calc(100% - 35px);
+}
+.tbl-email td{
+	display:block;
+	padding:10px 30px;
+	width:auto;
+}
+.tbl-email td{ 
+	 border-bottom:none;
+}
+.tbl-email tr{
+	border-bottom:solid 1px #e1e2e3;display:block;}
+/*--------------------Wallet.html-------------------------------------------*/
+.mycredits {
+    display: block;
+    margin: 0;
+}
+.box .siteForm .enter-amount {
+    width:100%;
+}
+.content-list {
+    margin: 0;
+}
+.lightblue-form {
+    padding: 10px 10px;
+}
+.mycredits .box, .mycredits .box.last {
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+}
+.mycredits .box a {
+    display: block;
+    margin-bottom: 20px;
+}
+.mycredits .crr-blnc, .siteForm.wallet input[type="text"] {
+    padding: 10px 24px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.btn, a.btn {
+    padding: 10px 0;
+    text-align: center;
+}
+.left-txt {
+    margin-bottom: 5px;
+    padding: 0 24px;
+}
+.tbl-listing table {
+    border-top: 1px solid #AFBBFC;
+}
+.tbl-listing table tr:first-child {
+    display: none;
+}
+.tbl-listing table tr {
+    border-bottom: 1px solid #AFBBFC;
+    display: block;
+}
+.tbl-listing table td {
+    border: medium none;
+    display: block;
+    padding: 5px 10px;
+}
+.tbl-listing .cellcaption::after, .cellcaption::after, .mobile-caption::after {
+    content: ":";
+}
+.tbl-listing .cellcaption, .cellcaption {
+    display: inline;
+    font-weight: 600;
+    padding-right: 8px;
+    position: relative;
+    vertical-align: top;
+}
+.tbl-listing.sales-form .cellcaption, .cellcaption {
+    display: block;
+    margin-bottom: 10px;
+}
+.dashboard .data-side{
+	padding: 0;
+}
+.darkgray-form{
+	padding:10px;
+}
+.tbl-listing.sales-form table td {
+    width: 100%;
+}
+.tbl-listing{
+	padding:0px;
+}
+.tbl-listing table tr:hover {
+	background: #f4f4f4;
+}
+.tabz-dashboard .tabz-ul li.active {
+        position: relative;
+        bottom: -1px;
+}
+.tbl-listing.sales-data {
+        padding: 0px;
+}
+.tbl-listing.sales-data table tr:first-child {
+        display: none;
+}
+.tbl-listing.sales-data table tr {
+        display: block;
+}
+.tbl-listing.sales-data table td {
+        display: block;
+        border: none;
+        padding: 5px 0px;
+}
+.siteForm.ondark input[type="text"] {
+        width: 100%;
+        margin-bottom: 15px;
+}
+.siteForm.ondark input,.siteForm.ondark select,.siteForm.ondark .btn {
+        display: block;
+        width: 100%;
+        margin: 3px 0 25px;
+}
+.siteForm input[type="submit"] {
+        width: 100%;
+        padding: 10px 24px;
+        height: auto;
+ }
+.siteForm.ondark input[type="submit"] {
+        width: 100%;
+}
+/*--------------------Share.html-------------------------------------------*/
+.referral .threecols li:first-child {
+	margin-left: 0;
+}
+.referral p{
+	width: 100%;
+}
+.referral .threecols li {
+	display: block;
+	margin: 5px 0 20px;
+	width: auto;
+}
+/*--------------------index.html-------------------------------------------*/
+.top-header {
+    padding: 25px 15px;
+}
+.main-navigation{
+    display: none;
+    left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top:65px;
+    width: 100%;
+    z-index: 1;
+    border-top:2px solid  #6f507e;
+}
+.toggle-menu {
+    cursor: pointer;
+    display: block;
+    left: 16px;
+    position: absolute;
+    top: 19px;
+}
+.toggle-menu span {
+    border-radius: 50%;
+    display: block;
+    height: 7px;
+    margin-top: 2px;
+    width: 7px;
+}
+.main-navigation li{
+	 float:none;
+}
+.main-navigation li a {
+     padding: 10px 17px;
+    display: block;
+}
+.main-navigation li:hover,.toggle-menu span {
+	background-color: #1bac18;	
+}
+.main-navigation li:hover:after, .main-navigation li.active a:after{
+	display: none;
+}
+.main-navigation li:hover a{
+	color:white;
+}
+.login-form input {
+    margin-bottom: 13px;
+    margin-left:0;
+    width: 100%;
+} 
+.login {
+    margin: 0 0 11px 0px;
+    width: 100%;
+} 
+.login-form {
+    float: none;
+     width: 100%;
+}
+.grow {
+    letter-spacing:0;
+}
+.banner-left {
+    float: left;
+    width: 100%;
+}
+.banner-head {
+    float:none;
+    padding: 30px 0 20px 0;
+    width: 100%;
+}
+
+.banner-head h1 {
+    font-size: 30px;
+}
+.banner-head h1 br{
+	display: none;
+}
+.business {
+    font-size: 35px;
+}
+.banner-head strong {
+    font-size: 40px;
+} 
+.features {
+    float:none;
+    padding: 0;
+}
+.icon-right {
+    top: -5px;
+}
+.features li,.features li:nth-child(2),.features li:last-child  {
+    float: none;
+    width:auto;
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+.features li br{
+	display: none;
+}
+.register {
+   padding: 0 10px 20px;
+    position: relative;
+    width: 100%;
+}
+.register h2 {
+    font-size: 18px;
+    padding-bottom:0;
+   }
+.register input {
+    font-size: 15px;
+    margin-bottom:0px;
+    width: 100%;
+}
+.register .btn-sell{
+	width: 100%;
+}
+.check-condition{
+	 margin-bottom: 10px;
+}
+.grow-business {
+    padding: 31px 0 0;
+}
+.icons-section-content {
+    padding-left: 0;
+}
+.grow-business .sub-heading, .steps .sub-heading {
+    padding: 0 0 80px 0;
+    font-size: 15px;
+   }
+.steps .sub-heading{
+    	  padding: 0;
+    font-size: 15px;
+    }
+ .register-image svg {
+    height: 268px;
+    margin-top:0;
+   }
+.mini-info {
+   background-color: #3b5998;;
+    float: none;
+    margin-bottom: 131px;
+    margin-right: 0;
+    padding-bottom: 43px;
+     width: 100%;
+}
+ .mini-info:nth-child(2) {
+    margin-right:0;
+}
+.mini-info:last-child {
+	margin: 0;
+}
+.icons-section {
+    background-color:transparent;
+    padding: 50px 0 45px;
+}
+.circle-block {
+    top: -100px;
+}
+.mini-info h3 {
+    font-family: "mullerbold";
+    font-size: 24px;
+    padding-bottom: 15px;
+    padding-top: 69px;
+}
+.steps {
+    padding:0;
+}
+.grow-business h2, .steps h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0;
+}
+.register-icon {
+    display: none;
+}
+.register-section{
+	padding: 0 0 40px;
+	text-align: center;
+}
+.register-section br{
+	display: none;
+}
+.register-image,.register-content,.register-section.opposite .register-content,.register-section.opposite .register-image {
+    float: none;
+    padding:0;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.register-section.opposite .register-content h4 {
+    text-align:center;
+}
+.top-footer #smallfooter .ft-bttm-right {
+    padding:0;
+}
+.main-bottom-footer {
+    background-color: #d3d3d3;
+    padding: 31px 0 31px;
+}
+.links, .develop {
+    float: none;
+    width:100%;
+    padding-left: 0;
+    padding-bottom: 25px;
+}
+.develop span {
+    display: block;
+    padding-bottom: 13px;
+}
+.social-anchors {
+    width:100%;
+}
+.desktop-footer {
+    padding: 0 0 0 48px;
+}
+.contact-here .contact {
+ margin: 19px 0;
+}
+.top-footer .contact-here .contact span.under-txt a, .top-footer .contact-here .contact span.under-txt {
+    font-size: 13px;
+}
+.contact-here .contact svg {
+    left: -64px;
+    top: -19px;
+}
+/*--------------------welcome.html-------------------------------------------*/
+.your-details {
+   display: block;
+    float: left;
+    padding: 0 34px;
+    width: 100%;
+    margin-top: 15px;
+}
+.your-details li {
+    float:none;
+}
+.your-details .arrow-down {
+     left: 44px;
+}
+.dashboard-page .main-navigation {
+    top:65px;
+}
+.dashboard-page .main-navigation li {
+   padding: 7px 0;
+}
+.banner-header .welcome-left {
+    float: none;
+    text-align: center;
+}
+.progress {
+    float: none;
+    text-align: center;
+}
+.progress-bar {
+    margin: 0 auto 15px;
+    width: 100%;
+}
+.progress span {
+    float: none;
+    left: 0;
+    width: 60%;
+}
+.business-details {
+    display: none;
+    padding: 35px 0;
+}
+.all-details {
+    float: none;
+    margin-right:0;
+    padding: 62px 0 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.business-form {
+    padding: 0;
+}
+.questions-list {
+    padding: 0 0 15px;
+}
+.questions {
+    padding: 29px 0 0;
+}
+.tick label{
+	min-width: 207px;
+	 }
+.save-data {
+    padding: 0 ;
+}
+.save-data button {
+    margin-bottom: 23px;
+    margin-right:0;
+    width: 100%;
+}
+.save-data .save{
+	margin-bottom: 0;
+}
+.drop-list {
+    left: -26px;
+}
+.forget-popup{
+	width: 90%;
+}
+.business-details {
+    display: block;
+    padding: 35px 0 0;
+}
+.accept-format a, .list-link{
+	font-size: 12px;
+}
+.payment-mode li {
+    float: left;
+    margin-right: 0;
+    padding-bottom: 7px;
+    width: 39%;
+}
+.md-pos {
+    right: 87px;
+    top: 23px;
+}
+.md-pos-2 {
+    right: 33px;
+    top: 23px;
+}
+.accept-format {
+    font-family: "Noto Serif",serif;
+    font-size: 13px;
+   }
+   .cancel-cheque {
+    float: none;
+    margin-bottom: 20px;
+}
+.upload-file {
+    float: none;
+}
+.save-data .continue{
+	width: 100%;
+	padding: 15px 31px;
+}
+.store-detail-wrap .language{
+	padding: 0;
+}
+.cart-tbl{
+	 display: block;
+	 text-align: center;
+}
+.cart-tbl tr{ 
+	 display: block;
+}
+.cart-tbl td {
+    display: block;
+    width: 100%;
+}
+.cart-tbl .product-desc li {
+    float: none;
+    margin: 0;
+}
+.message-list a.actions img {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.message-list .actions{
+	top: 0;
+	right: 0;
+}
+.dashboard-page .top-header {
+    padding: 25px 15px;
+}
+.threepin {
+    margin: 0;
+}
+.company-logo {
+    margin: 0 auto;
+    width: 100px;
+}
+a.btn.fb,a.btn.tw,a.btn.email{
+	width: 100%;
+	
+}
+.pager ul li.active a {
+    font-size: 16px;
+    height: 23px;
+    padding: 0 7px 0 0;
+    width: 23px;
+}
+.pager ul li a{
+	font-size: 16px;
+}
+.right-elemnts{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.right-elemnts .blue {
+    padding: 12px 0 13px;
+    width: 100%;
+}
+.client-details{
+	padding:30px 34px 0;
+}
+.fourCols li {
+    float: none;
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 251px;
+}
+.notice {
+    padding: 20px 0 0;
+}
+.padding20.fr{
+	float: none;
+}
+ .dashboard .data-side h4 {
+        padding: 10px 0;
+    }
+    .tabz-setup li {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .tabz-setup li.active {
+        border-bottom: 1px solid #dedddd;
+        margin-bottom: auto;
+    }
+    .siteForm label {
+        margin: 10px 0;
+        text-align: left;
+        display: inline-block;
+    }
+    .border_cover {
+        padding: 10px 0;
+    }
+.siteForm table td {
+        display: block;
+        width:100%;
+        padding: 0;
+}
+.file-preview-row{
+	width: 100%;
+}
+.siteForm table .file-preview-row td:first-child{
+display: inline-block;
+width: auto;
+}
+.siteForm table .remove-file{
+display: inline-block;
+width: auto;
+}
+.remove-file .btn {
+    margin: 25px 5px 0 5px;
+ }
+#frmProducts {
+        margin-bottom: 10px;
+}
+    .product_btn_submit.border_cover {
+        text-align: left;
+    }
+    .tbl-responsive tr th {
+        display: none!important;
+    }
+    .pro-options-content .step-1,
+    .pro-options-content .step-2 {
+        float: none;
+        width: auto;
+        padding: 0;
+    }
+    .tabz-setup li:nth-child(2n) {
+        border-right: none;
+    }
+    .tabz-setup ul {
+        background-color: #f1f0f0;
+        border: 1px solid #dedddd;
+    }
+    .tabz-setup li:last-child {
+        border-bottom: none;
+    }
+    .box-head {
+        padding: 0 10px;
+    }
+a.btn.small {
+        margin: 5px 0;
+        width: 100%;
+}
+.row {
+        margin-left: -10px;
+        margin-right: -10px;
+}
+.col-sm-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+}
+table#download td {
+        display: block;
+}
+table#attribute th {
+        padding: 10px;
+    }
+table#attribute td {
+        display: table-cell;
+        padding: 10px;
+    }
+    .product_btn_submit {
+        padding: 10px;
+    }
+    #frmProducts {
+        margin-bottom: 0;
+    }
+    table#shipping td,
+    table#shipping th,
+    table#discount td,
+    table#discount th,
+    table#special td,
+    table#special th,
+    table#tab_shipping th,
+    table#tab_shipping td {
+        display: block;
+        width: auto;
+        padding: 10px;
+    }
+    .product_btn_submit.border_cover {
+        padding: 10px;
+    }
+    table#attribute td {
+        display: block;
+    }
+    
+.questions-list .tick label::before,.tick label::before {
+    left: -3px;
+    width: 37px;
+}
+.tick label {
+    padding-left: 42px;
+}
+.ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
+.ui-tabs .ui-tabs-nav li{
+	  width: 100%;
+}
+.ui-tabs .ui-tabs-nav.main-tab li {
+    width: 100%;
+}
+.ui-tabs .ui-tabs-nav.main-tab,.ui-tabs .ui-tabs-nav{
+	margin-bottom: 30px;
+}
+.ui-tabs .ui-tabs-nav.language {
+    width: 100%;
+}
+/*--------------------fav-shop.html-------------------------------------------*/
+.grid_3 {
+        float: none;
+        display: block;
+}
+.repeatedRow .nameshop {
+        margin-bottom: 10px;
+}
+.repeatedRow .grid_1 .grid_4, .repeatedRow .grid_1, .repeatedRow .grid_1 .grid_3 {
+    width: 100%;
+    display: block;
+}
+.repeatedRow .grid_2 {
+    clear: left;
+    display: block;
+    float: none;
+    width: auto;
+}
+.repeatedRow .nameshop {
+    margin-bottom: 10px;
+}
+.repeatedRow .grid_2 {
+    float: none;
+    width: auto;
+}
+.repeatedRow .grid_2 .squareBoxes {
+    float: none;
+    padding: 15px 0 0 0;
+}
+.squareBoxes li {
+    display: inline-block;
+    padding: 5px 0;
+    vertical-align: top;
+}
+}
+/*=============================================Media Query for Tab=====================================*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.siteForm table .file-upload {
+    padding: 10px 10px;
+    margin: 15px 0;
+}
+.file-preview-table {
+    width: 185px;
+}
+.btn.btn-primary.file-preview-shadow{
+	font-size: 13px;
+}
+.siteForm table .file-preview-row td:first-child{
+display: inline-block;
+width: auto;
+}
+.siteForm table .remove-file{
+display: inline-block;
+width: auto;
+}
+.remove-file .btn {
+    margin: 25px 5px 0 5px;
+ }
+.gst-address, .gst-text p {
+    padding: 10px 0px;
+}
+.detailList {
+    margin: 20px 0 40px;
+}
+.business-form {
+	padding: 0;
+}
+.save-data {
+padding: 0 0px 29px 0px;
+}
+.save-data.product{
+padding: 0 0px 29px 30px;
+}
+.payment-mode-wrap {
+    padding: 12px 0px 0;
+}
+.keep-it {
+    padding-left: 0px;
+}
+.payment-mode {
+    padding: 0 0px 0;
+}
+.notice {
+    padding: 20px 0 0 0px;
+}
+.siteForm.sales-data table td {
+    padding-right: 0px;
+}
+.data-side.account .ui-tabs .ui-tabs-nav li {
+    width: 25%;
+}
+.data-side.account .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: 0 12px;
+    font-size: 12px;
+}
+.questions-list .tick label, .tick label {
+    padding-left: 48px;
+}
+.fixed-container {
+	max-width: none;
+	width: auto;
+	padding: 0 10px;
+}
+.about-me {
+    padding: 0 ;
+}
+a.btn.small {
+    
+    line-height: 2;
+   }
+.contact-here .contact span.under-txt {
+	font-size: 13px;
+}
+.ft-bttm-right {
+	float: none;
+	width: auto;
+}
+.dashboard .left-data {
+	width: auto;
+}
+.dash-nav li {
+	padding: 0 20px 0 10px;
+}
+.orders-list {
+	padding: 0 20px;
+}
+.arrowTabs li a {
+    font-size: 13px;
+    padding: 0 16px;
+}
+.orders-list li {
+	margin: 0;
+	width: 49%;
+	float: left;
+	margin-bottom: 15px;
+}
+.orders-list li:nth-child(2) {
+	float: right;
+}
+.orders-list li:last-child {
+	float: right;
+}
+.total-stat .small-box .caption {
+}
+.items-list {
+	display: none;
+}
+.tbl-dashboard .tbl-left {
+	display: block;
+	border-right: none;
+	border-bottom: 1px solid #dedddd;
+	width: auto;
+}
+.tbl-dashboard .tbl-right {
+	width: auto;
+	display: block;
+}
+.siteForm table td {
+    width: auto;
+}
+.siteForm table td {
+    display: block;
+    padding: 5px 0;
+    width: 100%;
+}
+.mycredits .crr-blnc {
+    margin-bottom: 9px;
+}
+.mycredits .highlighted_text, .mycredits a {
+    padding: 7px 10px;
+}
+#frmCreditsWalletForm td {
+    display: inline-block;
+    padding: 0;
+    width: auto;
+}
+/*--------------------index.html-------------------------------------------*/
+.features {
+    padding: 0;
+}
+.features li {
+    font-size: 14px;
+    margin-right:0px;
+   width: 27%;
+}
+.features li:nth-child(2) {
+    width: 35%;
+}
+.features li:last-child {
+   width: 38%;
+}
+.register {
+    width: 38%;
+    padding: 19px 20px;
+}
+.register input {
+    padding: 0 20px 11px 0;
+}
+.register .btn-sell {
+    width: 245px;
+}
+.links {
+    width:34%
+}
+.develop {
+	width: 40%;
+	padding: 5px 0;
+}
+/*--------------------wallet.html-------------------------------------------*/
+.btn, a.btn {
+    font-size: 10px;
+}
+.total-stat a.btn{
+	width: 40%;
+display: inline-block;
+margin-right: 5%;
+}
+.mycredits .crr-blnc, .box .siteForm.wallet .enter-amount {
+    padding: 16px 5px;
+    font-size:12px;
+}
+.mycredits .box {
+    width: 51%;
+}
+.mycredits .box.last {
+    width: 49%;
+    text-align:right;
+}
+.mycredits .box .request-withdraw {
+    line-height: 49px;
+   }
+.box .siteForm .enter-amount {
+width: 191px;
+border-radius: 0;
+}
+.siteForm input[type="text"], .siteForm input[type="password"], .siteForm select, .siteForm textarea {
+    padding: 0px 10px;
+}
+.siteForm input[type="file"]{
+ 	 font-size: 12px;
+ }
+.siteForm.sales-data input[type="text"], .siteForm.sales-data input[type="file"], .siteForm.sales-data input[type="password"], .siteForm.sales-data select, .siteForm.sales-data textarea {
+    font-size: 15px;
+}
+.siteForm input[type="submit"], .siteForm input[type="reset"], .siteForm input[type="button"], .siteForm button[type="button"], .siteForm button[type="file"], .btn-submit {
+    font-size: 10px;
+    padding: 0 6px;
+}
+#tabs-4 .siteForm button[type="button"], #tabs-5 .siteForm button[type="button"], #tabs-6 .siteForm button[type="button"] {
+    left: -3px;
+    top:-5px;
+    height:30px;
+}
+a.btn.fb,a.btn.tw,a.btn.email{
+	line-height: 1;
+	min-height: 0px;
+	
+}
+.sharesection p{
+	min-height: 65px;
+}
+.sales-form .actions{
+	margin-right: 22px;
+}
+.fourCols li {
+        margin: 2%;
+        width: 46%;
+}
+.fourthumbs {
+        height: auto;
+ }
+.fourthumbs .thumbsquare {
+        display: inline-block;
+        text-align: center;
+        float: none;
+}
+}
+/*=============================================Media Query for tab and <1200px=====================================*/
+@media only screen and (min-width: 768px) and (max-width:1199px) {
+/*--------------------about.html-------------------------------------------*/
+.why-online .right-section {
+    padding: 51px 20px 25px;
+}
+.why-online .left-section {
+    width: 28%;
+    padding: 128px 10px 128px;
+}
+.why-online-content h3 {
+    font-size: 17px;
+}
+.why-online-content p {
+    font-size: 13px;
+}
+.why-online-content.first {
+    padding-bottom: 42px;
+}
+.why-online .right-section {
+    padding: 28px 20px 25px;
+}
+.about-store-content {
+    padding: 393px 0 0;
+}
+.about-store-intro h2, .left-section h2, .start-business h2 {
+    font-size: 24px;
+}
+.about-store-intro {
+    padding: 100px 10px 267px;
+}
+.business-image{
+	width: 49%;
+	margin-right:30px;
+	padding: 71px 0;
+}
+.business-growth {
+	padding: 0;
+	width: 45%;
+}
+.about-store-intro p, .business-growth p, .sell-online span {
+    font-size: 14px;
+}
+.business-growth br,.about-store-intro br{
+	display: none;
+}
+.sell-online {
+    padding:50px 0;
+}
+.sell-online ul {
+    padding: 60px 0px;
+    width: 722px;
+    margin: 0 auto;
+}
+.sell-online ul li {
+    width: 20%;
+    margin-right:36px;
+}
+.sell-online li::after {
+    right: -118px;
+}
+/*--------------------price.html,.benefit.html-------------------------------------------*/
+.benefit-banner-section,.pricing-banner-section{
+	padding: 100px 0;
+}
+.head-two {
+    font-size: 32px;
+}
+.payment-section {
+    padding: 50px 0;
+}
+.shipping-section,.payment-section.violet-bg{
+	padding: 50px 0 0;
+}
+.payment-content {
+    padding:50px 0px 0;
+    width: 731px;
+    margin: 0 auto;
+}
+.payment-structure h4 {
+    font-size: 21px
+}
+.noto-fifteen {
+    font-size: 14px;
+}
+.payment-structure {
+    margin-right: 36px;
+}
+.payment-structure span {
+    width: 100px;
+    height: 100px;
+}
+.payment-structure span svg {
+    height: 50px;
+    width: 50px;
+}
+.tabular-data {
+    width: 563px;
+    margin: 0 auto;
+}
+.tabular-data table th:first-child, .tabular-data table td:first-child {
+    width: 47%;
+    margin-right: 13px;
+}
+.tabular-data table td,.tabular-data table th  {
+    width: 15.8%;
+    font-size: 14px;
+}
+.start-business.pricing-page,.start-business.benifit-page{
+	padding:33px 0;
+}
+.start-business.benifit-page a {
+    margin-bottom: 0px;
+}
+.start-business.pricing-page span,.start-business.benifit-page span {
+    margin-bottom:20px;
+    padding: 0;
+ }
+ .content-image-section,.content-image-section.opposite-design {
+    margin-bottom: 50px;
+}
+.two-content ul{
+	padding-bottom: 0;
+}
+.content-image-section.opposite-design .important-points{
+	margin-right: 0;
+}
+.important-image{
+	width: 40%;
+}
+.important-points {
+    margin-right: 32px;
+}
+.head-three {
+    font-size: 28px;
+}
+.important-points span {
+	padding-bottom: 20px;
+}
+.head-four {
+    font-size: 20px;
+}
+.two-content-left,.two-content-right{
+	width: 43%;
+	margin-right: 25px;
+}
+/*--------------------faq.html-------------------------------------------*/
+.faq-section {
+    padding: 50px 0;
+}
+.faq-page {
+    margin-bottom: 50px;
+}
+.faq-section-left {
+    width: 62%;
+}
+.faq-section-right {
+    width: 34%;
+}
+.faq-title span:first-child{
+	width: 85%;
+	display: inline-block;
+}
+.start-business.benifit-page.faq-page{
+	padding: 50px 0;
+}
+.tbl-dashboard.request .tbl-right {
+    margin: 22px 1.16%;
+    width: 31%;
+}
+.login-form{
+	width: 454px;
+}
+.register-section .register-icon.chat span {
+    height: 50px;
+    width: 50px;
+}
+.register-section .register-image.chat-shadow::after {
+    top: 49px;
+}
+.register-icon.chat i {
+    top: 11px;
+    font-size: 20px;
+    width: 49px;
+}
+/*--------------------fav-shop.html-------------------------------------------*/
+.repeatedRow .grid_1 .grid_3 {
+        float: none;
+        width: auto;
+        margin: 10px 0;
+        display: block;
+ }
+ .repeatedRow .squareBoxes li .boxblue {
+    padding: 0 25px;
+}
+/*--------------------index.html-------------------------------------------*/
+.container-one,.container-two{
+	padding:0 15px;
+}
+.login-form input {
+    width: 157px;
+}	
+.business {
+    font-size: 46px;
+}
+.banner-head {
+    padding: 30px 29px 159px;
+}
+.icon-right {
+    top: 0;
+}
+.banner-left {
+    width: 62%;
+}	
+.banner-head strong {
+    font-size: 60px;
+}	
+.banner-head h1 {
+    font-size: 48px;
+}
+.register {
+    width: 38%;
+    padding: 19px 10px;
+}
+.register h2{
+    padding-bottom:0px;
+}
+.register input {
+    padding: 0 20px 0px 0;
+     width: 100%;
+}
+.register .btn-sell {
+    width: 245px;
+}
+.mini-info {
+    margin-right:0; 
+    width: 33.3%;
+    margin: 0 auto; 
+}
+.circle-block{
+    height: 150px;
+    left: 0;
+    margin: 0 auto;
+    padding:0;
+    right: 0;
+    width: 150px;
+}
+.icons-section-content {
+    padding-left:0px;
+}
+.register-section {
+    padding: 0 2.7%;
+}
+.register-content br{
+	display: none;
+}
+.footer-info {
+    padding: 0;
+}
+.top-footer .contact-here .contact .try-app {
+    font-size: 16px;
+}	
+.top-footer .contact-here .contact span.under-txt a, .top-footer .contact-here .contact span.under-txt {
+    font-size: 11px;
+}
+.icons-section-content{
+	 margin: 0 auto;
+}
+.contact-here .contact {
+    font-size: 15px;
+    padding: 10px 0 10px 41px;
+}
+.contact-here .contact svg {
+    left: -18px;
+    top: -11px;
+}
+.develop {
+	padding: 5px 0;
+}
+/*--------------------welcome.html-------------------------------------------*/
+.all-details h2 {
+    font-size: 17px;
+}
+.all-details .data {
+    font-size: 13px;
+   }
+.all-details a {
+    font-size: 14px;
+}
+/*--------------------wallet.html-------------------------------------------*/
+.lightblue-form {
+    padding: 20px 10px;
+}
+.content-list {
+    margin: 0;
+}
+.tbl-listing {
+    margin: 0;
+    padding: 0;
+}
+.tbl-listing table td {
+    padding: 15px 10px;
+}
+.space-lft-right {
+    padding: 0 10px;
+}
+.dashboard .request h3{
+	font-size: 18px;
+}
+.tbl-right ul {
+    padding: 0 13px 0 0 ;
+}
+.message-list .actions{
+	top: 4px;
+	right: 0;
+}
+/*.company-logo.main-page {
+    left: 12px;
+    width: 143px;
+}*/
+.form-elements li{
+    text-align: center;
+}
+.company-logo {
+    left: 10px;
+    width: 143px;
+} 
+.siteForm.sales-data table td {
+  
+}
+.siteForm.ondark input[type="submit"],.btn.clears {
+    line-height: 38px;
+    min-height: 38px;
+    padding: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+.tbl-listing.sales-form table th{
+    font-size: 12px;
+}
+.tabs-form{
+    margin-bottom: 15px;
+}
+.tabs-form #btn_submit,.tabs-form .btn.clears{
+    padding:12px 12px;
+    line-height: 1;
+}
+.right-elemnts .blue {
+    min-height: 0;
+    padding: 18px 47px 18px 53px;
+    line-height: 1;
+}
+.dashboard .data-side {
+	padding: 0 10px;
+}
+.fourCols {
+    margin: 0 auto 10px;
+    width: 699px;
+}
+.fourCols li {
+    margin: 0;
+    width: 50%;
+}
+.fourthumbs .thumbsquare {
+    margin: 18px 0 0 36px;
+    width: 110px;
+}
+.collectionbox .bottom {
+    text-align: center;
+}
+.fourthumbs {
+    margin-bottom: 10px;
+}
+.siteForm .tabs_content.border_cover select {
+    padding: 10px 0;
+}
+}
+@media only screen and (min-width: 1025px) and (max-width:1300px) {
+.mycredits .box {
+    width: 49%;
+}
+.btn, a.btn {
+    padding: 20px 10px;
+ }
+ .siteForm input[type="submit"], .siteForm input[type="reset"], .siteForm input[type="button"], .siteForm button[type="button"], .siteForm button[type="file"], .btn-submit {
+    padding: 0 10px;
+}
+.mycredits .crr-blnc, .mycredits .enter-amount {
+    padding: 16px 6px;
+}
+.orders-list{
+		padding: 0;
+	}
+	.orders-list li {
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 24%;
+}
+.orders-list li a {
+    padding: 19px 11px 25px;
+}
+.orders-list li span.txt-big {
+    font-size: 21px;
+}
+.orders-list li p {
+    font-size: 14px;
+   }
+   .orders-list svg{
+   	right: 1px;
+   }
+   .mycredits .box a,.siteForm input[type="submit"]{
+   	font-size: 13px;
+   	padding: 21.3px 8px;
+   }
+.siteForm.sales-data input[type="submit"] {
+    font-size: 13px;
+    padding: 0;
+}
+.box .siteForm .enter-amount{
+   	width: 100%;
+    font-size: 13px;
+   }
+.tabs-form #btn_submit{
+       margin-left: 10px;
+   }
+.tabs-form #btn_submit,.tabs-form .btn{
+       height: 40px;
+       line-height: 1;
+       min-height: 0px;
+       width: auto;
+       padding: 12px 20px;
+}
+.sales-form a.actions {
+    height: 34px;
+    margin: 2px 7px 2px auto;
+    padding-top: 6px;
+    width: 31px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width:1366px) {
+/*--------------------add-list.html-------------------------------------------*/
+.process-section {
+    margin: 0 5%;
+    width: 40%;
+}
+.process-info p{
+	font-size: 15px;
+}
+.cases {
+    margin-right:5%;
+    width: 30%;
+}
+.cases-btn {
+    width:10%;
+}
+.cases-btn a{
+	width:auto;
+}
+}

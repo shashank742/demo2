@@ -1,0 +1,81 @@
+{
+	"cars": [
+		{
+			"carName": "Audi",
+			"features": [
+				{
+					"model": "Q3",
+			"pricelist":[{
+					"year": "2016",
+					"price": "60lac",
+					"functionality":"gmap"
+					    }]
+				}, {
+					"model": "Q2",
+		   "pricelist":[{
+					"year": "2015",
+					"price": "50lac"
+					}]
+				}, {
+					"model": "Q1",
+		  "pricelist":[{
+					"year": "2014",
+					"price": "40lac"
+					}]
+				}
+			]
+		},{
+			"carName": "Ford",
+			"features": [
+				{
+					"model": "ford1",
+					"pricelist":[{
+					"year": "2013",
+					"price": "30lac",
+					"functionality":"gmap"
+					    }]
+				}, {
+					"model": "ford2",
+					"pricelist":[{
+					"year": "2012",
+					"price": "20lac",
+					"functionality":"gmap"
+					    }]
+				}, {
+					"model": "ford3",
+					"pricelist":[{
+					"year": "2011",
+					"price": "10lac",
+					"functionality":"gmap"
+					    }]
+				}
+			]
+		}, {
+			"carName": "Jaguar",
+			"features": [
+				{
+					"model": "jaguar f pace",
+					"pricelist":[{
+					"year": "2010",
+					"price": "80lac",
+					"functionality":"gmap"
+					    }]
+				}, {
+					"model": "jaguar range",
+					"pricelist":[{
+					"year": "2009",
+					"price": "90lac",
+					"functionality":"gmap"
+					    }]
+				}, {
+					"model": "jaguar sj",
+					"pricelist":[{
+					"year": "2008",
+					"price": "70lac",
+					"functionality":"gmap"
+					    }]
+				}
+			]
+		}
+	]
+}

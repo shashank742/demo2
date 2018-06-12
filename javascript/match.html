@@ -1,0 +1,141 @@
+
+<html>
+    <head>
+        <style>
+        ul{ text-align:center; display:inline-block; }    
+        li{  width:100px; height:100px;  position:relative; border:1px solid #000000; color:#000000;  }          
+        </style>
+    </head>
+    <body>        
+         <ul id="first-ul">   <li class="cat">cat </li> <li class="dog"> dog</li> <li class="monkey">monkey </li>  <li class="lion">lion </li> <li class="tiger"> tiger</li> <li class="elephant"> elephant</li> <li class="rat">rat </li> <li class="rabbit"> rabbit</li> <li class="cow"> cow</li> </ul>  
+         <ul id="second-ul">   <li class="dog"> dog</li> <li class="rabbit"> rabbit</li> <li class="cat">cat </li>  <li class="elephant">elephant </li> <li class="rat">rat  </li> <li class="cow"> cow</li> <li class="tiger"> tiger</li> <li class="monkey"> monkey</li> <li class="lion">lion </li> </ul> 
+       <button onclick="result()">result</button>
+        <script>
+        var x=0;
+        var z=0;
+        var bool;
+        var d=0;
+       var s=0;
+       var answers=[];
+        var targetcolor;
+        var matchcolor;
+       var targetclass;
+       var matchingclass;
+        var bool=true;
+        var  matchedTarget=false;
+        var  fireTarget=true;
+         	var ul1=document.getElementById("first-ul").children.length;
+         	var ul2=document.getElementById("second-ul").children.length;
+    
+        var answers =   ["3","1","8","9","7","4","5","2","6"];
+    var a=1;
+       for(var i=0; i<ul1;i++){        	   
+       document.getElementById("first-ul").children[i].addEventListener("click",target); 
+       document.getElementById("second-ul").children[i].addEventListener("click",matching);   
+     document.getElementById("first-ul").children[i].setAttribute("data-target","data-"+a);
+      document.getElementById("second-ul").children[i].setAttribute("data-target","data-"+a);
+   a++;      
+       }
+        var classes = ['#000000','#595b58','#103c6b','#f68d04','#ff0000','#4f4b43','#7bebd1','#00ff00','#0000ff','#405060'];
+     var c=0;
+       var index=0;
+       var correctans=[];
+     
+  function target(event){
+       	if(fireTarget){
+         matchedTarget=true;
+         fireTarget=false;
+        index++;
+      event.target.style.backgroundColor=classes[index];          
+      event.target.removeEventListener("click",target); 
+      targetclass = event.target.getAttribute("class");
+      targetcolor=event.target;
+      
+       
+     // for(var i=0; i<ul1;i++){       
+       // document.getElementById("first-ul").children[i].removeEventListener("click",target); 
+       // document.getElementById("second-ul").children[i].addEventListener("click",matching);       
+       // }
+       }
+       }
+  function matching(event){
+        	if(matchedTarget){
+        	 matchedTarget=false;
+         fireTarget=true;
+       event.target.style.backgroundColor=classes[index]; 
+        event.target.removeEventListener("click",matching); 
+        matchingclass= event.target.getAttribute("class");
+        matchcolor=event.target;
+        answers[x]=matchingclass;
+        x++;
+        if(matchingclass==targetclass){
+        	// bool=true;
+        		
+       	 correctans[s]=matchingclass;
+       	
+       	 s++;       
+       	c++;
+       	z++;
+       	bool=true;
+       }
+        else{
+       	// bool=false;
+     z++;
+       d++;
+        // bool=false;
+       }
+       // for(var i=0; i<ul1;i++){       
+       // document.getElementById("first-ul").children[i].addEventListener("click",target); 
+       // document.getElementById("second-ul").children[i].removeEventListener("click",matching);       
+       // }
+       }
+       }
+    
+     
+       function result(event){
+      
+      var length=document.getElementsByTagName("li").length;
+     
+     
+      if(z==(length/2))
+      {
+       	if(bool){	
+       		
+       		
+       	for(i=0;i<length;i++){ document.getElementsByTagName("li")[i].style.border="2px solid #0000ff";
+       		if(document.getElementsByTagName("li")[i].style.backgroundColor){ document.getElementsByTagName("li")[i].style.border="2px solid #ff0000";}
+       	// else{alert()} 
+     
+       		}	
+       			for(i=0;i<c; i++){
+       		 document.getElementsByClassName(correctans[i])[0].style.border="2px solid #00ff00";
+       		 document.getElementsByClassName(correctans[i])[1].style.border="2px solid #00ff00";
+       		 bool=false;
+       	  // matchcolor.style.border="2px solid #00ff00";
+       	  }
+       
+       	}
+       }
+       else{
+       	alert("you need to fill all the answers")
+       }
+       	// if(bool==false){ alert(d);
+       			// targetcolor.style.border="2px solid #ff0000";
+       	  // matchcolor.style.border="2px solid #ff0000";
+       	 // bool=true;
+       	// }
+        // for(var i=0; i<ul1;i++){       
+       // if(document.getElementById("second-ul").children[i].getAttribute("style")!=("backgroundColor"))){
+       	// bool=true;
+//        
+       // }
+//       
+       // }
+       // if(bool){
+      		// alert("necessary to give all the answers");
+      // }
+       }
+        
+        </script>
+    </body>
+</html>

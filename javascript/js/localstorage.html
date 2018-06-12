@@ -1,0 +1,50 @@
+<html>
+<body>
+<input id="de" type="text" placeholder="first Name">
+<input id="dem" type="text" placeholder="last Name">
+<input type="submit" onclick="myFun()">
+<div id="demo"></div>
+
+<script>
+
+function myFun(){
+	//localStorage.removeItem("testJSON")
+	document.getElementById("de").value=" ";
+	document.getElementById("dem").value=" ";
+var arr=[];
+var myObj={}, myJSON, text, obj;
+var a= document.getElementById("de").value;
+var b= document.getElementById("dem").value;
+//Storing data:
+myObj = {"firstName":a,"lastName":b};
+
+ 
+if(localStorage.getItem("testJSON")==null || localStorage.getItem("testJSON")==undefined){
+	arr.push(myObj);	
+localStorage.setItem("testJSON",JSON.stringify(arr));
+}
+else{ 
+	
+
+    arr=JSON.parse(localStorage.getItem("testJSON"));
+	console.log(arr)
+	arr.push(myObj);	
+	localStorage.setItem("testJSON",JSON.stringify(arr));
+}
+var data=localStorage.getItem("testJSON");
+obj = JSON.parse(data);
+for(i in obj){
+document.getElementById("demo").innerHTML=obj[i].firstName + " "+;
+}
+//Retrieving data:
+// text = localStorage.getItem("testJSON");
+// obj = JSON.parse(text);
+// console.log(text);
+//document.getElementById("demo").innerHTML = obj.firstName + " " + obj.lastName;
+
+}
+
+</script>
+
+</body>
+</html>

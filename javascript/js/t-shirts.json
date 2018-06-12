@@ -1,0 +1,48 @@
+{
+      "category":[{
+                   "man":[{
+                            "t-shirt":"rounded"
+                            
+                            },
+                            {
+                            "t-shirt":"v-shape"
+                            
+                            },
+                            {
+                            "t-shirt":"squar-shape"
+                            
+                            },
+                            {
+                            "t-shirt":"triangle-shape"
+                            
+                            },
+                            {
+                            "t-shirt":"colar"
+                            
+                            }
+                            ]
+                   },
+                   {
+                     "women":[{
+                            "t-shirt":"rounded"
+                            
+                            },
+                            {
+                            "t-shirt":"v-shape"
+                            
+                            },
+                            {
+                            "t-shirt":"squar-shape"
+                            
+                            },
+                            {
+                            "t-shirt":"triangle-shape"
+                            
+                            },
+                            {
+                            "t-shirt":"colar"
+                            
+                            }]
+                   }]
+                 
+}

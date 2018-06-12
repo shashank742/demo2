@@ -1,0 +1,25 @@
+<html>
+	<head>		
+	</head>
+	<body>
+		<img style="-webkit-user-select: none; cursor: zoom-in;" src="https://lh6.googleusercontent.com/PqJdiGctFILEiVo3RVbTVIk0hwsOj92jOjvpEAt_godowgLpWL_Q8ZJ9S2dLc_wZlfTRslK1Nw=w1887" width="1600" height="401">
+	select date	<input type="number" value="11" id="date" onchange="fun()"/>
+	select month<input type="number" value="07" id="month" onchange="fun()"/>
+	select year<input type="number" value="2017" id="year" onchange="fun()"/>
+	<p id="day"></p>	
+	<script>	
+	function fun(){
+	  	getDays();
+	}
+	var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+		function getDays(){
+			var date = parseInt(document.getElementById("date").value);
+		var month = parseInt(document.getElementById("month").value-1);
+		var year= parseInt(document.getElementById("year").value);		
+		var d = new Date(year,month,date);		
+document.getElementById("day").innerHTML = days[d.getDay()];
+		}
+		getDays();
+	</script>
+	</body>
+</html>

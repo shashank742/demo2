@@ -1,0 +1,53 @@
+<html>
+	<title>Form</title>
+	<head>
+		<style>
+			div {
+				margin: 8px 0px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="required.js"></script>
+	</head>
+	<body>
+		<div id="id"></div>
+		<form>
+			<div >
+				Name
+				<input class="inputField onlyString" type="text">
+			</div>
+			<div  >
+				Age
+				<input class="inputField age onlyNum" type="text">
+			</div>
+			<div>
+				Gender
+				<select class="select">
+					<option style="display:none;" selected="selected">Select</option>
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+
+			</div>
+			<div >
+				Number
+				<input class="inputField phoneNum onlyNum" type="text" >
+			</div>
+			<div >
+				Email
+				<input class="inputField email" type="email">
+			</div>
+			<input class="submitButton" type="submit" value="submit">
+
+		</form>
+		<script>
+			$(document).ready(function() {
+
+				$("form").requiredFields();
+
+			})
+
+		</script>
+	</body>
+
+</html>

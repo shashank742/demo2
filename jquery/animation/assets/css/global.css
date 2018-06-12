@@ -1,0 +1,340 @@
+/*=============================================
+ Table Of Contents
+ 1.) Eric Meyer's Reset
+ 2.) Global Typography
+	 2.0.1) Font Face
+	 2.0.2) Global Headings
+	 2.0.3) General Text Formatting
+	 2.0.4) Global Link style
+	 2.0.5) Global Button Styles
+	 2.0.6) Global Sprite Icons and Clearfix style
+ 3.) Global Site Wide Content
+ 4.) Header Style
+ 5.) Footer Style
+ ===============================================*/
+/* 1.) Eric Meyer's Reset ---------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 2.) Global Typography ---------------------------------------------*/
+*, :before, :after{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+}
+body {
+	font-size: 62.5%;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+/* 2.0.1) Font Face ---------------------------------------------*/
+/* Put Your font face Styles here---------------------------------------------*/
+
+
+/* 2.0.2) Global Headings ---------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #161e21;
+}
+h1 {font-family: 'Source Code Pro' ;
+	
+	
+	
+}
+h2 {
+	
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+
+}
+/* 2.0.3) General Text Formatting ---------------------------------------------*/
+p {
+	
+}
+blockquote, cite, q, var, dfn {
+	font-style: italic;
+}
+small {
+	font-size: 85.71429%;
+	line-height: 1.75;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* 2.0.4) Global Link style ---------------------------------------------*/
+a {
+	
+	/*font-weight: 700;*/
+}
+a:hover, a:focus {
+	color:#7b83d1;
+}
+/* 2.0.5) Global Button Styles ---------------------------------------------*/
+.button {
+}
+
+.button:hover, .button:focus{
+	
+}
+/* 2.0.6) Global Sprite Icons and Clearfix style ---------------------------------------------*/
+[class^="icon-"], [class*="icon-"] {
+	background-image: url(../images/sprite.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 15px;
+	vertical-align: text-top;
+	width: 15px;
+}
+/* Clear Floated Elements by use Clearfix class---------------------------------------------*/
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* 3.) Global Site Wide Content ---------------------------------------------*/
+.wrapper{
+	background-color:#d7423c;
+}
+.animationWrapper{
+			
+			height:450px;
+			width:600px;
+		float:left;
+			overflow: hidden;			
+		}
+		
+		.animationPart{
+			position:relative;
+		top:-50%;
+		left:-260px;		
+		}
+		.div{
+		         position:absolute;						
+                 transform:rotate(55deg);*/
+			  	-webkit-transform:rotate(55deg);
+			  	-ms-transform:rotate(55deg);
+			  	
+		}
+			  .textBox {			  			  
+			  	background-color:#d7423c;
+			  	color:black;
+			  	height:1000px;
+			  	width:800px;
+			  	border-radius:50%;
+			}
+			
+.content{
+	position:absolute;
+	color:green;
+	display:none;
+	/*right:0;
+	top:328px;*/
+	width:220px;
+	height:100px;
+	margin-right:-50px;
+	transform:translateX(50%);	
+}
+.content img{
+	height:80px;
+}
+.content:nth-child(2){
+	color:orange;
+	width:220px;
+	/*right:-30px;*/
+	margin-right:0px;
+	/*top:350px;*/
+		transform:translateX(50%);	
+
+}
+ .content:nth-child(odd){
+	color:blue;
+	width:200px;
+	/*right:25px;
+	top:310px;*/
+	margin-right:-100px;
+		transform:translateX(50%);	
+
+}
+
+.contentWrapper{
+			font-size:20px;
+			color:#000000;
+			float:left;
+			width:650px;
+			margin-left:150px;
+				padding-top:90px;
+		}
+		.actionable{
+			color:#ffffff;
+			font-size:35.32px;
+			font-weight:500;
+			line-height:40px;
+			text-align:center;		
+			position:relative;
+			margin-bottom:90px;
+		}
+
+
+.actionable:after{
+	position:absolute;
+	content:"";
+	background:url("../images/circle.png")no-repeat;
+	height:35px;
+	width:35px;
+	left:20px;
+	top:6px;
+}
+.report{
+	padding-left:15px;
+}
+.report li{
+	display:inline-block;
+	width:90px;
+	height:90px;
+	border-radius:50%;
+	background-color:#ffffff;
+	position:relative;
+	margin-right:16px;
+	cursor:pointer;
+	vertical-align:middle;
+	padding-top: 18px;
+padding-left: 20px;
+}
+.report li:after{
+	position: absolute;
+content: "";
+background-color: #ef9491;
+height: 2px;
+width: 21px;
+right: 0px;
+top: 50%;
+margin-right: -21px;
+	
+}
+.report li:last-child:after{
+	position: absolute;
+content: "";
+background-color: #ef9491;
+height: 0px;
+width: 0px;
+right: 0px;
+top: 50%;
+margin-right: -21px;	
+}
+
+/*.reportprocess{
+	position:absolute;
+	height:55px;
+	width:60px;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:url("../images/report.png")no-repeat;
+}
+.identifier{
+	background:url("../images/identifier.png")no-repeat;
+}
+.filteration{
+	background:url("../images/filteration.png")no-repeat;
+	
+}
+.trail{
+	background:url("../images/clinical.png")no-repeat;
+}
+.decision{
+	background:url("../images/action.png")no-repeat;
+}
+.report{
+	
+}*/
+.report li span{
+	color:#ffffff;
+	position:absolute;
+	font-size:13px;
+	width:119px;
+	text-align:center;
+	left:-10px;
+}
+.report li:nth-child(even) span{
+	top:0;
+	margin-top:-40px;
+}
+.report li:nth-child(odd) span{
+	top:100%;
+	margin-top:20px;
+}
+.report-head{
+	font-size:20px;
+	padding-top:30px;
+	width:200px;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.circle-para{
+	font-size:15px;
+	color:#000000;
+}
+
+.report >li .para{
+	display:none;	
+}
+.circle-content{
+	text-align:center;	
+}
+.active{
+	border:4px solid green; 
+}

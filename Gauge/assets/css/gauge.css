@@ -1,0 +1,134 @@
+/*#gaugeContainer {
+    position: relative;
+    width:500px;
+}*/
+#meter {
+    width: 100%; height: 100%;
+    transform: rotateX(180deg);
+    position: relative;
+}
+.circle {
+    fill: none;
+}
+#meter_needle {
+    height: 56%;
+    left: 0px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 10%;
+     transform-origin: bottom center;
+    transform: rotate(453deg);
+    /*-webkit-transform: translateY(-50%)!important;
+    -moz-transform: translateY(-50%)!important;
+    -ms-transform: translateY(-50%)!important;
+    -o-transform: translateY(-50%)!important;
+    transform: translateY(-50%)!important;*/
+}
+.background{
+    background:red;
+}
+/*.overlayCircle{transform: rotateZ(270deg);transform-origin: center;}*/
+.range.fullrange{stroke:#8bc53f !important;}
+.range.middlerange{stroke:#86ae3f !important;}
+#meter_needle1{
+    transform: rotateX(180deg);
+    transform-origin: center;
+}
+#meter_needle2{
+   /*width: 209px;*/
+    transform: rotateX(181deg);
+    transform-origin: center;
+    -webkit-
+    /*y:94%;*/
+   /* x: 96;
+
+        y: 19;*/
+}
+.gaugeContainer{
+	/*width: 393px;
+	margin: 0 auto;
+	position: relative;
+	background: url("../img/Circle-image/cutouts/image4.png")no-repeat center top;
+	background-size: contain;
+	height: 218px;*/
+	width: 393px;
+
+margin: 0 auto;
+
+position: relative;
+
+background: url("../img/image4.png")no-repeat;
+
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+
+background-size: 315px 177px;
+
+height: 218px;
+
+background-position: 45px -5px;
+}
+span.left-digit, span.right-digit {
+	position: absolute;
+	font-size: 18px;
+	color: #4f5a65;
+	font-weight: 700;
+	font-family: Arial;
+}
+span.left-digit {
+	left: 55px;
+
+top: 133px;
+}
+span.right-digit {
+	right: 63px;
+
+top: 133px;
+}
+
+.lock{
+	position: absolute;
+	top: 112px;
+	left: 159px;
+	width:86px;
+	height:86px;
+	background:url("../img/Lockerorange.png") no-repeat;
+	z-index: 2;
+}
+.unlock{
+	background:url("../img/Lockergreen.png") no-repeat;
+}
+#meter_needle3 {
+	height: 71%;
+	left: 2px;
+	margin: auto;
+	position: absolute;
+	right: 2px;
+	top: 0%;
+	transform-origin: bottom center;
+	transform: rotate(453deg);
+	/*-webkit-transform: translateY(-50%)!important;
+	 -moz-transform: translateY(-50%)!important;
+	 -ms-transform: translateY(-50%)!important;
+	 -o-transform: translateY(-50%)!important;
+	 transform: translateY(-50%)!important;*/
+	z-index: 1;
+}
+.img1{
+	position: absolute;
+
+bottom: 63px;
+
+width: 392px;
+
+left: 2px;
+}
+.img2{
+	position: absolute;
+    top: 43px;
+    left: 87px;
+    height: 117px;
+    width: 227px;
+}

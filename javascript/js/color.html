@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+        ul{
+            text-align:center;
+            display:inline-block;
+           
+        }
+            li{
+                width:100px;
+                height:100px;
+                display:inline-block;
+                 position:relative;
+              border:1px solid #000000;
+              color:#ffffff;
+            }
+            li{
+            	  
+            }
+            /*.red{
+                background-color:red;
+              
+            }
+            .green{
+                background-color:green;
+              
+            }
+            .blue{
+                background-color:blue;
+                
+            }
+            .pink{
+                background-color:pink;
+                
+            }*/
+          
+            .blank{
+            	 /*background-color:#000000;*/
+            	
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li class="red" style="background-color: red"> prakash</li>
+            <li class="green"  style="background-color: green">vikash</li>
+            <li class="blue"  style="background-color: blue">ashish</li>
+            <li class="pink"  style="background-color: pink">munfed</li>
+             <li id="demo" style="background-color: #000000" class="blank">shashank</li>
+        </ul>
+       
+        <script>
+       
+        	// alert(document.getElementsByClassName('pink')[0].offsetLeft)
+        	var li=document.getElementsByTagName("li").length;
+      
+        for(var i=0; i<li; i++){
+        	document.getElementsByTagName("li")[i].addEventListener("click",demo);
+        }
+         document.getElementsByTagName("li")[4].removeEventListener("click",demo);
+       function demo(event){     	
+        // console.log(event.target.style.background);
+        	// if(document.getElementById("demo").getAttribute("class")!='blank'){
+        	// document.getElementsByClassName('blank')[0].setAttribute("class",document.getElementById("demo").getAttribute("class"));      	 	
+        	 // }
+        	// document.getElementById("demo").setAttribute("class",event.target.getAttribute("class"))
+        	// event.target.setAttribute("class",'blank');  
+        	var li =	 event.target.offsetLeft;
+        		var div = document.getElementById("demo").offsetLeft;
+        		
+        	if(li<div)    {   
+        		alert(div-li)
+        		alert(div)      		        		
+        	    event.target.style.left=(div-li) + "px"; 	        	
+        	    document.getElementById("demo").style.right=(div-li)   + "px"; 	
+        	 
+        	     }
+        	     else{
+        	     	 event.target.style.right=106 + "px"; 	        	
+        	    document.getElementById("demo").style.left=106 + "px"; 	
+        	   	alert(li-div)
+        	   	alert(div)   
+        	     }
+        }
+        </script>
+    </body>
+</html>

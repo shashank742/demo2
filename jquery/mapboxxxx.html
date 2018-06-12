@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Listing markers in clusters</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/leaflet.markercluster.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.css' rel='stylesheet' />
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.Default.css' rel='stylesheet' />
+
+<style>
+pre.ui-coordinates {
+  background:rgba(0,0,0,0.5);
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  padding:5px 10px;
+  color:#fff;
+  font-size:11px;
+  line-height:18px;
+  border-radius:3px;
+  max-height:240px;
+  overflow:auto;
+  width:100px;
+  }
+  #colors {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 150px;
+    padding:5px;
+}
+</style>
+
+<div id='map'></div>
+<pre id='coordinates' class='ui-coordinates'></pre>
+<form id='colors'>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='red' checked> red</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='green' checked> green</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='orange' checked> orange</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='yellow' checked> yellow</div>
+  <div><input type='checkbox' name='filters' onclick='showStations();' value='blue' checked> blue</div>
+</form>
+
+ <script src="https://www.mapbox.com/mapbox.js/assets/data/realworld.388.js">
+	
+</script>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoianRob21hc3NpZSIsImEiOiJHaUxIakJNIn0.-YMjtvwXuWt_ZwB9L5ZZYA';
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([-37.82, 175.215], 14);
+
+var markers = new L.MarkerClusterGroup();
+
+for (var i = 0; i < addressPoints.length; i++) {
+    var a = addressPoints[i];	
+    var title = a[2];
+    var marker = L.marker(new L.LatLng(a[0], a[1]), {
+        icon: L.mapbox.marker.icon({'marker-symbol': 'post', 'marker-color': '0044FF'}),
+        title: title
+    });
+    marker.bindPopup(title);
+    markers.addLayer(marker);
+}
+
+map.addLayer(markers);
+
+function onmove() {
+    // Get the map bounds - the top-left and bottom-right locations.
+    var inBounds = [],
+        bounds = map.getBounds();
+    markers.eachLayer(function(marker) {
+        // For each marker, consider whether it is currently visible by comparing
+        // with the current map bounds.
+        if (bounds.contains(marker.getLatLng())) {
+            inBounds.push(marker.options.title);
+        }
+    });
+    // Display a list of markers.
+    document.getElementById('coordinates').innerHTML = inBounds.join('\n');
+}
+
+map.on('move', onmove);
+
+// call onmove off the bat so that the list is populated.
+// otherwise, there will be no markers listed until the map is moved.
+onmove();
+
+
+
+
+
+var overlays = L.layerGroup().addTo(map);
+
+// we create the 'layers' variable outside of the on('ready' callback
+// so that it can be accessible in the showStations function. Otherwise,
+// JavaScript scope would prevent you from accessing it.
+var layers;
+
+// Since featureLayer is an asynchronous method, we use the `.on('ready'`
+// call to only use its marker data once we know it is actually loaded.
+L.mapbox.featureLayer()
+    .loadURL('mapfilter.json')
+    .on('ready', function(e) {
+        layers = e.target;
+        showStations();
+    });
+
+var filters = document.getElementById('colors').filters;
+
+// There are many ways to filter data. Mapbox.js has the .setFilter method,
+// but it only applies to L.mapbox.featureLayer layers, and that isn't what
+// we're creating - we're making marker groups in a MarkerClusterGroup layer.
+// Thus we distill filtering down to its essential part: an 'if' statement
+// in a loop.
+function showStations() {
+    // first collect all of the checked boxes and create an array of strings
+    // like ['green', 'blue']
+    var list = [];
+    for (var i = 0; i < filters.length; i++) {
+        if (filters[i].checked) list.push(filters[i].value);
+    }
+    // then remove any previously-displayed marker groups
+    overlays.clearLayers();
+    // create a new marker group
+    var clusterGroup = new L.MarkerClusterGroup().addTo(overlays);
+    // and add any markers that fit the filtered criteria to that group.
+    layers.eachLayer(function(layer) {
+        if (list.indexOf(layer.feature.properties.line) !== -1) {
+            clusterGroup.addLayer(layer);
+        }
+    });
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+
+@font-family-base:'Lato', sans-serif;
+@font-family-proxi: "ProximaNova Bold", Helvetica, Arial;
+@font-family-awesome: 'FontAwesome';
+
+
+@base-color:#fff;
+@grey-color:#303030;
+@yelw-dark:#eaa500;
+@orgl-blue:#0000FF;
+@blu-color:#405b97;
+@red-lgt:#e15445;
+@shadow: #ccc;
+@black-clr:#000000;
+@green-clr: #008000;
+
+@base-font: 16px;
+@font-size-large:         ceil((@base-font * 1.25)); // ~18px
+@font-size-small:         ceil((@base-font - 3px)); // ~13px
+
+@font-size-h1:            floor((@base-font * 5) + 5px ); // ~85px
+@font-size-h2:            floor((@base-font * 2)); // ~32px
+@font-size-h3:            ceil((@base-font * 1.25)); // ~20px
+@font-size22:            ceil((@font-size-h3 + 2px)); // ~18px
+@font-size-h5:            @base-font;
+@font-size10:            ceil((@base-font - 6px)); // ~11px
+@font-size11:            ceil((@base-font - 5px)); // ~11px
+@font-size12:            ceil((@base-font - 4px)); // ~12px
+@font-size14:            ceil((@base-font - 2px)); // ~14px
+@font-size15:            ceil((@base-font - 1px)); // ~15px
+@font-size17:            ceil((@base-font + 1px)); // ~17px
+@font-size18:            ceil((@base-font + 2px)); // ~18px
+@font-size19:            ceil((@base-font + 3px)); // ~19px
+@font-size24:            ceil((@base-font * 1.5)); // ~24px
+@font-size25:            ceil((@base-font * 1.5) + 1px); // ~25px
+@font-size27:            ceil((@base-font * 1.5) + 3px); // ~27px
+@font-size28:            ceil((@base-font * 1.5) + 4px); // ~28px
+@font-size35:            ceil((@base-font * 2) + 3px); 
+@font-size38:            ceil((@base-font * 2) + 6px); // ~38px
+@font-size45:            ceil((@base-font * 3) - 3px); // ~45px
+@font-size55:            ceil((@base-font * 3) + 7px); // ~55px
+
+
+@ln-hgt: @base-font * 1.87;
+
+
+.transition-all (@time: 0.2s, @property: all, @function: linear 0s) {
+  -webkit-transition:@property @time @function;
+  -moz-transition:@property @time @function;
+  -o-transition:@property @time @function;
+  transition:@property @time @function;
+}

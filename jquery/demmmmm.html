@@ -1,0 +1,94 @@
+<html>
+    <head>
+
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0; padding: 0 }
+  #map_canvas { height: 100% }
+</style>
+<script type="text/javascript"
+  src=
+"http://maps.googleapis.com/maps/api/js?key=AIzaSyB1tbIAqN0XqcgTR1-          FxYoVTVq6Is6lD98&sensor=false">
+</script>
+<script type="text/javascript">
+
+var locations = [
+    ['Noida', 28.62, 77.38],
+    ['Acton', 51.50901,  -0.2762],
+    ['Philadelphia', 39.952583, -75.165222]
+   
+];
+var myLatLng = {
+					lat : 28.62,
+					lng : 77.38
+				};
+  function initMap() {
+
+    var myOptions = {
+      center: myLatLng,
+      zoom: 2
+     
+
+    };
+    var map = new google.maps.Map(document.getElementById("map"),
+        myOptions);
+
+    setMarkers(map,locations)
+
+  }
+
+
+
+  function setMarkers(map,locations){
+
+      var marker, i
+
+for (i = 0; i < locations.length; i++)
+ {  
+
+ var loan = locations[i][0]
+ var lat = locations[i][1]
+ var long = locations[i][2]
+ var add =  locations[i][3]
+
+ latlngset = new google.maps.LatLng(lat, long);
+
+  var marker = new google.maps.Marker({  
+          map: map, title: loan , position: latlngset  
+        });
+        // map.setCenter(marker.getPosition())
+
+
+        var content = "Loan Number: " + loan +  '</h3>' + "Address: " + add     
+
+  var infowindow = new google.maps.InfoWindow()
+var lastOpenedInfoWindow;
+google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+        return function() {
+        	 closeLastOpenedInfoWindow();
+           infowindow.setContent(content);
+           infowindow.open(map,marker);
+            lastOpenedInfoWindow = infowindow;
+        };
+    })(marker,content,infowindow)); 
+    
+    function closeLastOpenedInfoWindow() {
+    if (lastOpenedInfoWindow) {
+        lastOpenedInfoWindow.close();
+    }
+}
+    
+
+  }
+  }
+
+
+
+  </script>
+ </head>
+ <body onload="initMap()">
+  <div id="map" style="width:100%; height:100%"></div>
+ </body>
+  </html>
+
+  

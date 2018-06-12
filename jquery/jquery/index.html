@@ -1,0 +1,45 @@
+<html>
+	<head>
+		
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+        $("#div1").load("load.html", function(responseTxt, statusTxt, xhr){
+            if(statusTxt == "success"){
+            	$(".hide").hide();
+            	
+            }
+               
+            if(statusTxt == "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+    
+                $(".text").click(function(){
+            		$(".texts").toggle();
+            	})
+            	$(".img").click(function(){
+            		$(".imgs").toggle();
+            	})
+            	$(".video").click(function(){
+            		$(".videos").toggle();
+            	})
+            	$(".load").click(function(){
+	$(".hide").show();
+});
+});
+</script>
+</head>
+<body>
+
+<div id="div1"></div>
+
+<button class="load">load</button>
+<div class="text">text</div>
+<div class="img">image</div>
+<div class="video">video</div>
+
+</body>
+
+</html>

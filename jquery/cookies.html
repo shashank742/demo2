@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to find out if cookies are enabled in your browser.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = "Cookies enabled: " + navigator.cookieEnabled;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

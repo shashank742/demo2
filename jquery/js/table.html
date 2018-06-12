@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>table</title>
+		<style>
+			table{
+				text-align:right;
+				border-collapse:collapse;
+				border:1px solid;
+			}
+			td{
+				border:1px solid;
+			}
+			th{
+				border:1px solid;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="js/angular.js"></script>
+			<div ng-app="myApp" ng-controller="myController">
+				<div>
+			Give discount<input type="number" ng-model="discount">
+				</div>
+				<table cellpadding="10" >
+					<tr>
+					<th>Date</th>
+					<th>Name</th>
+					<th>Quantity</th>
+					<th>Rs/peace</th>
+					<th>total cost</th>
+					<th>after discount</th>
+					</tr>
+					<tr ng-repeat="x in names">
+					<td>{{x.date}}</td>
+					<td>{{x.name}}</td>
+					<td>{{x.quantity}}</td>
+					<td>{{x.cost}}</td>
+					<td>{{x.cost * x.quantity}}</td>
+					
+					
+				        <tr >
+				    	<td ></td>
+				    	<td></td>
+				    	<td>total={{add}}</td>
+				    	
+				    	<td colspan="2">Grand total = {{addition}}</td>
+				  </tr>
+				 
+					</tr>
+						
+				</table>
+		   </div>
+		   <script>	
+		   	var app=angular.module('myApp',[]);
+		   	
+		   	app.controller("myController",function($scope){
+		   		$scope.addition=0;
+		   		$scope.add=0;
+		   		$scope.multiplication=0;
+		   		$scope.names=[
+		   		{date:'1jan17',name:'shashank',quantity:10,cost:100},
+		   		{date:'2jan17',name:'saurabh',quantity:20,cost:80},
+		   		{date:'3jan17',name:'shanky',quantity:32,cost:80},
+		   		{date:'4jan17',name:'aman',quantity:25,cost:150},
+		   		{date:'5jan17',name:'akash',quantity:72,cost:200}
+		   		
+		   		];
+		   		 angular.forEach($scope.names, function(value, key){
+        
+           console.log(JSON.stringify(value.cost));
+           
+           $scope.addition=$scope.addition + value.cost;
+           $scope.add=$scope.add+value.quantity;
+         });
+         console.log($scope.addition);
+         console.log($scope.add);
+		   	})
+		   </script>
+	</body>
+</html>

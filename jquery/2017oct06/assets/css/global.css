@@ -1,0 +1,391 @@
+/*=============================================
+ Table Of Contents
+ 1.) Eric Meyer's Reset
+ 2.) Global Typography
+	 2.0.1) Font Face
+	 2.0.2) Global Headings
+	 2.0.3) General Text Formatting
+	 2.0.4) Global Link style
+	 2.0.5) Global Button Styles
+	 2.0.6) Global Sprite Icons and Clearfix style
+ 3.) Global Site Wide Content
+ 4.) Header Style
+ 5.) Footer Style
+ ===============================================*/
+/* 1.) Eric Meyer's Reset ---------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 2.) Global Typography ---------------------------------------------*/
+*, :before, :after{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+}
+body {
+	font-size: 62.5%;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+}
+/* 2.0.1) Font Face ---------------------------------------------*/
+/* Put Your font face Styles here---------------------------------------------*/
+
+
+/* 2.0.2) Global Headings ---------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #161e21;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+
+}
+/* 2.0.3) General Text Formatting ---------------------------------------------*/
+p {
+	
+}
+blockquote, cite, q, var, dfn {
+	font-style: italic;
+}
+small {
+	font-size: 85.71429%;
+	line-height: 1.75;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* 2.0.4) Global Link style ---------------------------------------------*/
+a {
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+	outline: none;
+	font-weight: 700;
+}
+a:hover, a:focus {
+	color:#7b83d1;
+}
+/* 2.0.5) Global Button Styles ---------------------------------------------*/
+.button {
+}
+
+.button:hover, .button:focus{
+	
+}
+/* 2.0.6) Global Sprite Icons and Clearfix style ---------------------------------------------*/
+[class^="icon-"], [class*="icon-"] {
+	background-image: url(../images/sprite.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 15px;
+	vertical-align: text-top;
+	width: 15px;
+}
+/* Clear Floated Elements by use Clearfix class---------------------------------------------*/
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* 3.) Global Site Wide Content ---------------------------------------------*/
+
+
+	.float-left {
+		float: left;
+	}
+	.float-right {
+		float: right;
+	}
+
+/* ------------------  Code for UI Tools Removed this section from your project --------------------------- */
+.container{
+	width:800px;
+	margin:0 auto;
+}
+.form{
+	position:relative;
+	width:500px;
+	margin-left:83px;
+	border:1px solid #adadad;
+	padding-top:4px;
+	display:none;
+    height:200px;
+  
+	overflow: scroll;
+}
+
+.text{
+	color:#41362f;
+	font-size:16px;
+}
+.cate{
+	padding-top:10px;
+	display:inline-block;
+    margin-bottom:13px;
+	font-size:16px
+}
+.selectedCategories{
+	display:inline-block;
+	border:1px solid #000000;
+	padding:1px 0;
+	width:500px;
+	font-size:16px;
+	min-height:30px;
+		
+		vertical-align:middle;
+}
+.search-box{
+	
+	font-size:16px;
+	margin-bottom:10px;
+	text-align:center;
+}
+.list{
+	
+	margin-left:10px;
+	z-index: 1;
+}
+.list .dropdown{
+	cursor:pointer;
+	margin-top:5px;
+	color:#000000;
+	text-align:left;
+}
+.search-box input{
+	width:98%;
+	
+}
+ul.categories li{
+	font-family:"Estrangelo Edessa";
+	font-size:16px;
+	font-style:italic;
+	width:200px;
+	padding-left:15px;
+	position:relative;
+	
+}
+ul.categories li:before{
+	position:absolute;
+	content:"";
+	background-color:#e3e3e3;
+	height:2px;
+	width:20px;
+	top:6px;;
+	left:0;
+	margin-left:-10px;
+}
+ul{
+	margin-left:20px;
+	
+}
+.categories li >span{
+	display:inline-block;
+	
+	cursor:pointer;
+}
+.categories{
+	position:relative;
+	padding-top:15px;
+	display:none;		
+}
+.categories:after{
+	position:absolute;
+	content:"";
+	height:1px;
+	width:100%;
+	background-color: #e3e3e3;
+	left:-10px;
+	top:-4px;
+}
+.categories:before{
+	position:absolute;
+	content:"";
+	height:1px;
+	width:100%;
+	background-color: #e3e3e3;
+	left:-10px;
+	bottom:-10px;
+}
+
+.sub-categories{
+	display:none;
+}
+.sub-categories ul{
+	display:none;
+}
+.sub-categories li{
+	color:#ff0000;
+	
+}
+ ul{
+	padding-left:10px;
+	color:#00ff;
+	margin-bottom:20px;
+	border-left:solid 2px #e3e3e3;
+	
+}
+/*.categories li >span::before{
+	position:absolute;
+	content:"";
+	width:20px;
+	height:1px;
+	right:100%;
+	top:7%;
+	background-color:#000000;
+	
+}*/
+
+
+
+.append-category{
+	display:inline-block;
+	border:1px solid #000000;
+	
+	margin:2px;
+	
+}
+.append-element{
+	display:inline-block;
+	font-family:"Estrangelo Edessa";
+	font-size:16px;
+	font-style:italic;
+	padding:5px;
+	padding-right:20px;
+	
+}
+.remove-element{
+	display:inline-block;
+	position:relative;
+	height:12px;
+	width:16px;
+	left:16px;
+	cursor:pointer;
+}
+.remove-element::after{
+	position:absolute;
+	content:"";
+	height:15px;
+	margin-top:-11px;
+	left:7px;
+	width:2px;
+	background-color:#000000;
+	top:12px;
+	transform:rotate(45deg);
+}
+.remove-element::before{
+	position:absolute;
+	content:"";
+	height:15px;
+	margin-top:-11px;
+	left:7px;
+	width:2px;
+	background-color:#000000;
+	top:12px;
+	transform:rotate(-45deg);
+}
+.collapse{
+	position:relative;
+	padding:5px;
+}
+.collapse::after{
+	position:absolute;
+	content:"";
+	height:10px;
+	width:2px;
+	right:3px;
+	top:10px;
+	margin-top:-10px;
+	margin-left:-33px;
+	background-color:#000000;
+}
+
+.expand{
+	display:none;
+	position:relative;
+	padding:5px;
+}
+.expand::before{
+	position:absolute;
+	content:"";
+	height:2px;
+	width:10px;
+	right:0px;
+	top:10px;
+	margin-left:-33px;
+	margin-top:-6px;
+	background-color:#000000;
+}
+.done{
+	
+	
+	text-align:center;
+	margin:0 auto;
+	
+}
+.done >div{
+	display:inline-block;
+	padding:5px 20px;
+	background-color:#e3e3e3;
+	font-size:14px;
+	color:#514943;
+	border:#adadad;
+	font-weight:700;
+	margin-bottom:10px;
+	cursor:pointer;
+}

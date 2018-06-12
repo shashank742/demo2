@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="105px" height="106px" viewBox="0 0 105 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M52.3992054,105.579799 C23.6420474,105.579799 0.329764749,82.1253683 0.329764749,53.1928618 C0.329764749,24.2603552 23.6420474,0.805924534 52.3992054,0.805924534 C81.1563634,0.805924534 104.468646,24.2603552 104.468646,53.1928618 C104.468646,82.1253683 81.1563634,105.579799 52.3992054,105.579799 Z M52.3992054,102.498214 C79.4647659,102.498214 101.405738,80.4234561 101.405738,53.1928618 C101.405738,25.9622674 79.4647659,3.88750908 52.3992054,3.88750908 C25.3336449,3.88750908 3.39267302,25.9622674 3.39267302,53.1928618 C3.39267302,80.4234561 25.3336449,102.498214 52.3992054,102.498214 Z" id="path-1"></path>
+        <linearGradient x1="0%" y1="10.8125%" x2="100%" y2="93.1875%" id="linearGradient-3">
+            <stop stop-color="#B19039" offset="0%"></stop>
+            <stop stop-color="#BF9F43" offset="29.3289635%"></stop>
+            <stop stop-color="#E2C25C" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1.30951557,22.9993872 C0.97282226,23.0096365 0.645684575,22.8909687 0.400092602,22.669498 C0.154500629,22.4480272 0.0105792937,22.1419018 0,21.8184878 L0,1.17972829 C0.0235237956,0.50716065 0.609267998,-0.020262399 1.30951557,0.000598060979 L22.5822368,10.6154238 C22.8477251,10.8386517 23,11.1610777 23,11.4999926 C23,11.8389076 22.8477251,12.1613335 22.5822368,12.3845615 C21.6033233,13.2691303 1.30951557,22.9993872 1.30951557,22.9993872 Z" id="path-4"></path>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Portrait" transform="translate(-331.000000, -2223.000000)">
+            <g id="FarmPanel" transform="translate(-73.000000, 1845.000000)">
+                <g transform="translate(-165.000000, 0.000000)" id="Group-7">
+                    <g transform="translate(569.000000, 378.000000)">
+                        <g id="Group-3-Copy">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#333333" xlink:href="#path-1"></use>
+                            <g id="Base-/-Fill-/-Primary" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                                <g transform="translate(-23.152532, -26.928336)" id="Fill">
+                                    <rect x="0" y="0" width="153" height="154"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Group-2-Copy" transform="translate(44.000000, 41.000000)">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-4"></use>
+                            </mask>
+                            <use id="Icon" fill="#333333" xlink:href="#path-4"></use>
+                            <g id="Base-/-Fill-/-Primary" mask="url(#mask-5)" fill="url(#linearGradient-3)">
+                                <g transform="translate(-19.000000, -5.750000)" id="Fill">
+                                    <rect x="0" y="0" width="58" height="41"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

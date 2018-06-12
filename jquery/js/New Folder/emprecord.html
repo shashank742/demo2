@@ -1,0 +1,157 @@
+<html>
+	<head>
+		
+	</head>
+	<style>
+		table,td,th,tr{
+			border:1px solid;
+			border-collapse:collapse;
+		}
+		#table{
+			margin-left:95px;
+			
+		}
+		th{ 
+			padding-right:70px;
+		}
+	</style>
+	<body>
+		<div class="userInput">
+Employee name<input type="text" id="input1" autofocus />
+Department name<input type="text" id="input2"><button onclick="update()" id="update">Update</button><button onclick="addTable()" id="add">create Table</button><br>
+<input type="text" /><button onclick="search()">search</button>
+
+</div>
+
+<button onclick="empRecord()" id="emprecord">click to add record in table</button>
+<table id="table"></table>
+	
+
+	</body>
+	<script>
+	var a;
+	var b;
+	function search(){
+		
+	}
+	function clearData(){
+		//document.querySelector('userInput')
+ for(i=0;i<document.getElementsByTagName("input").length;i++)
+		 
+		// document.querySelector("body").getElementsByTagName("INPUT")[i].value="";
+
+		document.getElementsByTagName("input")[i].value="";			
+	}
+	
+	
+	var table=document.createElement("table");	
+	var tr=document.createElement("tr");				
+	var th=document.createElement("th");
+	var emp=document.createTextNode("emp name");
+	th.appendChild(emp);
+	tr.appendChild(th);		
+	var th=document.createElement("th");
+	var dept=document.createTextNode("dept name");
+	th.appendChild(dept);
+	tr.appendChild(th);
+	var remove=document.createElement("button");
+	var dept=document.createTextNode("remove table");
+	remove.appendChild(dept);
+	tr.appendChild(remove);
+	table.appendChild(tr);
+	remove.setAttribute('onclick','removeTable(event)')
+	document.getElementById("table").appendChild(table);
+	
+	function removeTable(event){
+		(event.target).parentNode.parentNode.remove();	
+		document.getElementById("add").disabled = false;	
+	}
+	function addTable(event){
+	
+		 table=document.createElement("table");	
+	 tr=document.createElement("tr");				
+	 th=document.createElement("th");
+	 emp=document.createTextNode("emp name");
+	th.appendChild(emp);
+	tr.appendChild(th);		
+	 th=document.createElement("th");
+	 dept=document.createTextNode("dept name");
+	th.appendChild(dept);
+	tr.appendChild(th);
+	remove=document.createElement("button");
+	dept=document.createTextNode("remove table");
+	remove.appendChild(dept);
+	tr.appendChild(remove);
+	table.appendChild(tr);
+	remove.setAttribute('onclick','removeTable(event)')
+	document.getElementById("table").appendChild(table);
+	document.getElementById("add").disabled = true;
+	}	document.getElementById("add").disabled = true;
+	function empRecord(){
+
+		if((document.getElementById("input1").value=="") || (document.getElementById("input2").value==""))
+		{
+			alert("you need to fill input first");
+		}
+	else{
+	
+	var tr=document.createElement("tr");	
+	var td=document.createElement("td");			
+	var Empname=document.createTextNode(document.getElementById("input1").value);
+	
+	
+	td.appendChild(Empname);
+	tr.appendChild(td); 
+	
+	
+		
+	var td=document.createElement("td");			
+	var Deptname=document.createTextNode(document.getElementById("input2").value);
+	
+	td.appendChild(Deptname);
+	tr.appendChild(td);
+	
+	var button=document.createElement("button");
+	var btn=document.createTextNode("edit");	
+	button.appendChild(btn);
+	tr.appendChild(button);	
+	var bt=document.createElement("button");
+	var btnn=document.createTextNode("remove");		
+	bt.setAttribute('onclick','removeNode(event)')
+	button.setAttribute('onclick','edit(event)')
+	bt.appendChild(btnn);
+	tr.appendChild(bt);
+	table.appendChild(tr);
+	
+	clearData();
+	document.getElementById("update").disabled = true;
+	}	
+		
+
+	}
+	function removeNode(event){
+			
+			(event.target).parentNode.remove();
+			
+			
+		// console.log("hello");
+}
+	function edit(event){
+		a=(event.target).previousSibling.previousSibling;
+		b=(event.target).previousSibling;
+	document.getElementById("input2").value=(event.target).previousSibling.textContent;	
+	document.getElementById("input1").value=(event.target).previousSibling.previousSibling.textContent;
+	document.getElementById("emprecord").disabled = true;
+	document.getElementById("update").disabled = false;
+	document.getElementById("input1").focus();
+	}
+	function update(){
+		document.getElementById("emprecord").disabled = false;
+		document.getElementById("update").disabled = true;
+		a.innerHTML=document.getElementById("input1").value
+		b.innerHTML=document.getElementById("input2").value
+		clearData();
+	}
+	document.getElementById("update").disabled = true;
+	</script>
+</html>

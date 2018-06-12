@@ -1,0 +1,27 @@
+{
+
+
+	"font_face": [
+		{
+
+			"fontFamily": "coolremote",
+			"name": "irohakakuC Regular",
+			"eot": "media/font_ttf/Normal/irohakakuC-Regular.eot",
+			"ttf": "media/font_ttf/Normal/irohakakuC-Regular.ttf",
+			"woff": "media/font_ttf/Normal/irohakakuC-Regular.woff",
+			"woff2": "media/font_ttf/Normal/irohakakuC-Regular.woff2",
+			"isdefault": 0
+		},
+		 {
+
+			"name": "irohakakuC Regular",
+			"eot": "media/font_ttf/Normal/askjdfgiau-Regular.eot",
+			"ttf": "media/font_ttf/Normal/irohakakuC-Regular.ttf",
+			"woff": "media/font_ttf/Normal/asfqaf-Regular.woff",
+			"woff2": "media/font_ttf/Normal/irohakakuC-Regular.woff2",
+			"isdefault": 0
+		}
+	]
+}
+
+

@@ -1,0 +1,138 @@
+<html>
+	<title>Form</title>
+	<head>
+		<style>
+			div {
+				margin: 8px 0px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="required.js"></script>
+	</head>
+	<body>
+		<div id="id"></div>
+		<form id="form1">
+			<div class="wrapper">
+				Name
+				<input class="stringOnly resetInput" type="text">
+			</div>
+			<div class="wrapper">
+				Name
+				<input class="stringOnly resetInput" type="text">
+			</div>
+			<div class="wrapper">
+				Name
+				<input class="stringOnly resetInput" type="text">
+			</div>
+			
+			<div  class="wrapper">
+				Age
+				<input class="age resetInput" type="text">
+			</div>
+			<div class="wrapper" >
+				Age
+				<input class="age resetInput" type="text">
+			</div>
+			<div class="wrapper" >
+				Age
+				<input class="age resetInput" type="text">
+			</div>
+			<div class="wrapper">
+				Gender
+				<select class="selectGender resetSelect">
+					<option style="display:none;" selected="selected">Select</option>
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+
+			</div>
+			<div class="wrapper">
+				Gender
+				<select class="selectGender resetSelect">
+					<option style="display:none;" selected="selected">Select</option>
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+
+			</div>
+			<div class="wrapper">
+				Gender
+				<select class="selectGender resetSelect">
+					<option style="display:none;" selected="selected">Select</option>
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+
+			</div>
+			<div class="wrapper">
+				Gender
+				<select class="selectGender resetSelect">
+					<option style="display:none;" selected="selected">Select</option>
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+
+			</div>
+			<div class="wrapper">
+				Number
+				<input class="phoneNumber resetInput" type="text" >
+			</div>
+			<div class="wrapper">
+				Number
+				<input class="phoneNumber resetInput" type="text" >
+			</div>
+			<div class="wrapper">
+				Number
+				<input class="phoneNumber resetInput" type="text" >
+			</div>
+			<div class="wrapper">
+				Email
+				<input class="email resetInput" type="email">
+			</div>
+			<div class="wrapper">
+				Email
+				<input class="email resetInput" type="email">
+			</div>
+			<div class="wrapper">
+				Email
+				<input class="email resetInput" type="email">
+			</div>
+			<input class="submitButton" type="submit" value="submit">
+
+		
+		<script>
+		// $(document).ready(function() {
+				// $("#form1").requiredFields({
+// 				
+						// validate:{
+							// checkInput:"true",
+							// onlyString:"true",
+							// onlyNum:"true",
+							// phoneNum:"true",
+							// validAge:"true",
+							// validEmail:"true",
+							// gender:"true"
+// 							
+						// }
+// 						
+// 					
+// 					
+				// });
+// 
+			// })
+			$(document).ready(function() {
+				for(var z=0; z<10; z++){
+				console.log(z)
+			}
+		console.log(z)
+				$("#form1").requiredFields({
+					
+					
+				});
+
+			})
+
+		</script>
+	</body>
+
+</html>

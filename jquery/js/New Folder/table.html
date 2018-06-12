@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>table</title>
+		<style>
+			table{
+				text-align:right;
+				border-collapse:collapse;
+				border:1px solid;
+			}
+			td{
+				border:1px solid;
+			}
+			th{
+				border:1px solid;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<script src="assets/js/angular.js"></script>
+			<div ng-app="myApp" ng-controller="myController">
+				<div>
+			Give discount<input type="text" ng-model="allowance" ng-keyup="demo()">
+				</div>
+				<table cellpadding="20" >
+					<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Quantity</th>
+					<th>Rs/peace</th>
+					<th>total cost</th>
+					<th>after discount</th>
+					</tr>
+					<tr ng-repeat="x in names" ng-init="grand((x.peace*x.quantity)+(((x.peace*x.quantity)*allowance)/100),(x.peace * x.quantity))"  >   
+					<!-- <tr ng-repeat="x in names" ng-init="addition=addition+(x.peace*x.quantity)+(((x.peace*x.quantity)*allowance)/100)"  > -->
+					
+					 
+					<td>{{x.Id}}</td>
+					<td>{{x.name}}</td>
+					<td>{{x.quantity}}</td>
+					<td>{{x.peace}}</td>
+					<td ng-init="dd=(x.peace*x.quantity)">{{x.peace * x.quantity}}</td>
+					
+					<td ng-bind="(x.peace*x.quantity)+(((x.peace*x.quantity)*allowance)/100)"></td>
+					
+					<!-- (+(())/100)) -->
+					
+					
+					
+					
+					
+					 </tr>
+				        <tr>
+				        <td></td>
+				    	<td></td>
+				    	<td></td>
+				    	<td></td>
+				    	<td >total={{add}}</td>
+				    	<td >Grand total = {{addition}}</td>
+				    	</tr>
+				        	
+				 </table>
+		 </div>
+		<script src="assets/js/app.js"></script>
+		   <script src="assets/js/controller/mainCtrl.js"></script>
+	</body>
+</html>
+		   

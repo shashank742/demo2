@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Evolution Series</title>
+<link rel="stylesheet" href="assets/css/reset.css"/>
+<link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body>
+
+
+  	<div class="main">
+    	<section class="slider-wrapper">
+            <section class="design-your-mantel" id="design-your-mantel">
+                </section>
+
+           <a id="model_link" href="Cast-Stone-Mantel-1.php" title=" "><section class="model-details" id="model-details">
+                	<span class="first">model</span>
+                    <strong><small id="shelf_no">3042</small>.<small id="leg_no">410</small></strong>
+                    <span>Show size ></span>
+                </section></a>
+            <section class="slider-right">
+           	<!--<div class="overflow_h"><section class="slider-bg-color"><strong>Change Background Image : </strong><span class="brown">brown</span><span class="maroon">maroon</span></section></div>-->
+            <div class="mantel-slider">
+           	  <div class="shelf-wrapper" id="shelf">
+           		<div class="slides_container">
+               	  <div><img src="assets/images/shelf1.png" width="538" height="500" alt="3042" /></div>
+               	  <div><img src="assets/images/shelf2.png" width="538" height="500" alt="3044" /></div>
+               	  <div><img src="assets/images/shelf3.png" width="538" height="500" alt="3048" /></div>
+               	  <div><img src="assets/images/shelf4.png" width="538" height="500" alt="3050" /></div>
+               	  <div><img src="assets/images/shelf5.png" width="538" height="500" alt="3052" /></div>
+               	  
+               	  
+           		</div>
+           	  </div>		
+           	  <!--shelf-wrapper ends here -->
+              <div class="leg-wrapper" id="leg">
+           		<div class="slides_container">
+               	  <div><img src="assets/images/leg6.png" width="538" height="500" alt="410" /></div>
+               	  <div><img src="assets/images/leg5.png" width="538" height="500" alt="420" /></div>
+               	  <div><img src="assets/images/leg4.png" width="538" height="500" alt="430" /></div>
+               	  <div><img src="assets/images/leg3.png" width="538" height="500" alt="450" /></div>
+               	  <div><img src="assets/images/leg2.png" width="538" height="500" alt="470" /></div>
+               	  <div><img src="assets/images/leg1.png" width="538" height="500" alt="480" /></div>
+           		</div>
+              </div>		<!--led-wrapper ends here -->
+            </div>
+            </section>
+        </section>
+        		<!--find-mantel ends here-->
+  	</div>
+
+
+<script type="text/javascript" src="assets/js/jquery_1_8_2.js"></script>
+<script type="text/javascript" src="assets/js/easing-functions.js"></script>
+<script type="text/javascript">
+	// for changing background color of slider
+$(function(){
+	$('.slider-bg-color span').click(function(){
+		var new_color=$(this).css('background-color');
+		$('.slider-wrapper').css({ 'background' : new_color });
+		});
+	});
+
+$(function(){
+	$('.mantel-slider').hover(function(){ $('a.next , a.prev , .pagination').fadeIn(100);} , function(){$('a.next , a.prev , .pagination').stop(true , true).fadeOut();});
+	});
+	
+
+	//changing text of model details
+$(function(){
+	$('.mantel-slider').click(function(){
+		var shelf_ele= $(' #shelf .slides_control div:visible');
+		var leg_ele= $(' #leg .slides_control div:visible');
+		
+		var shelf=$(shelf_ele).children('img').attr('alt');
+		var leg=$(leg_ele).children('img').attr('alt');
+		var leg_length = $(' #leg .slides_control div').length;
+		
+		$('#shelf_no').text(shelf);
+		$('#leg_no').text(leg);
+
+		var product_no = (leg_length * $(shelf_ele).index()) + $(leg_ele).index() +1;
+/*		var new_link= "product-" + product_no + ".html";*/
+		var new_link= "Cast-Stone-Mantel-" + product_no + ".php";
+		
+		//console.log(new_link);
+		$('#model_link').attr({'href' : new_link });
+
+		});
+	});
+	
+	
+	// for animation
+$(window).load(function(){
+	
+	$('.mantel-slider').css({ 'visibility' : 'visible'});
+	
+	$('#heading').animate({ 'top' : '0px'} , "slow" ,  "easeOutBounce");
+	
+	var elements = $('#combinations').children('span');
+	var i=0;
+	child_animate = setInterval(function(){
+		if(i <= elements.length )
+		{
+			$(elements).filter(':eq('+i+')').animate({ 'right' : '0px'} , 700 ,  "easeOutBack");
+			i++;
+		}
+		else
+			clearInterval(child_animate);
+	}, 700);
+		
+
+	$('#model-details').delay(600).animate({ 'bottom' : '100px' }, 1000 ,  "easeInBack" , function(){
+		$(this).animate({ 'bottom' : '10px' }, 500 ,  "easeOutBack" , function(){
+			$(this).animate({ 'bottom' : '25px' }, 300 ,  "easeOutBack");
+			});
+		} );
+	
+	$('.slider-bg-color').children().delay(600).slideDown();
+});
+</script>
+
+<script type="text/javascript" src="assets/js/slides.min.jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#shelf , #leg').slides({
+		preload: true,
+		generateNextPrev: true,
+		fadeSpeed: 0,
+		effect : 'fade'
+	});
+	$('.pagination a').click(function(){ 
+		$('.mantel-slider').click();
+	});
+});
+</script>
+
+
+</body>
+</html>

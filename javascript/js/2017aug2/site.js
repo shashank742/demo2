@@ -1,0 +1,3 @@
+$(".gmnoprint img").click(function(){
+	
+});
